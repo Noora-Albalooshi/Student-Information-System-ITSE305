@@ -1,3 +1,5 @@
+package com.example;
+
 // Business layer class responsible for validation and logic
 public class CourseService {
 

@@ -1,3 +1,5 @@
+package com.example;
+
 import java.util.ArrayList;
 
 // Data layer class responsible for storing courses

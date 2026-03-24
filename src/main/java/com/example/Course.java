@@ -1,3 +1,5 @@
+package com.example;
+
 // Model class that stores course information
 public class Course {
     private String courseId;
