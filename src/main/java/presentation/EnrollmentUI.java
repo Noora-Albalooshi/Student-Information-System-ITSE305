@@ -45,7 +45,7 @@ public class EnrollmentUI {
                 case 2:
                     enrollInCourse();
                     break;
-                case 3:  // Changed from 4 to 3
+                case 3:  
                     System.out.println("\nThank you for using the Enrollment System!");
                     scanner.close();
                     return;
