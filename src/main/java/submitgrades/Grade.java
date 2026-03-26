@@ -1,3 +1,5 @@
+package submitgrades;
+
 // Model class that stores submitted grade information
 public class Grade {
     private String courseId;
@@ -21,6 +23,18 @@ public class Grade {
 
     public String getStudentId() {
         return studentId;
+    }
+
+    public String getFinalGrade() {
+        return finalGrade;
+    }
+
+    public boolean isEnrolled() {
+        return enrolled;
+    }
+
+    public boolean isAssessmentsRecorded() {
+        return assessmentsRecorded;
     }
 
     // Returns formatted grade details for display

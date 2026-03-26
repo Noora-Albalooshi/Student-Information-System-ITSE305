@@ -1,4 +1,6 @@
 // Business layer class responsible for validation and logic
+package submitgrades;
+
 public class GradeService {
 
     private GradeRepository repository;
