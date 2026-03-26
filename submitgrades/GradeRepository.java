@@ -1,5 +1,3 @@
-package submitgrades;
-
 import java.util.ArrayList;
 
 // Data layer class responsible for storing grades

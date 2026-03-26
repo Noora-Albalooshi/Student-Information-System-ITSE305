@@ -1,5 +1,3 @@
-package submitgrades;
-
 import javax.swing.*;
 import java.awt.*;
 
