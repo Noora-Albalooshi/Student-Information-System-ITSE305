@@ -1,9 +1,8 @@
-package presentation;
+package Presentation;
 
 import java.util.Scanner;
-import business.LoginService;
-import data.User;
-import data.UserRepository;
+import data.*;
+import business.*;
 
 /*
  * Presentation Layer
