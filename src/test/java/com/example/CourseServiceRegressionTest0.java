@@ -1,8 +1,8 @@
-import org.junit.FixMethodOrder;
-import org.junit.Test;
-import org.junit.runners.MethodSorters;
+package com.example;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
 public class CourseServiceRegressionTest0 {
 
     public static boolean debug = false;
@@ -24,7 +24,7 @@ public class CourseServiceRegressionTest0 {
             System.out.format("%n%s%n", "CourseServiceRegressionTest0.test0001");
         java.lang.Object obj0 = new java.lang.Object();
         java.lang.Class<?> wildcardClass1 = obj0.getClass();
-        org.junit.Assert.assertNotNull(wildcardClass1);
+        assertNotNull(wildcardClass1);
     }
 
     @Test
@@ -33,7 +33,7 @@ public class CourseServiceRegressionTest0 {
             System.out.format("%n%s%n", "CourseServiceRegressionTest0.test0002");
         com.example.CourseService courseService0 = new com.example.CourseService();
         java.lang.Class<?> wildcardClass1 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(wildcardClass1);
+        assertNotNull(wildcardClass1);
     }
 
     @Test
@@ -44,7 +44,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "hi!", (int) '4', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -59,11 +59,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -73,8 +73,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", (int) 'a', "");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -86,11 +86,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -100,8 +100,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", (int) 'a', "");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -112,7 +112,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) (byte) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -126,7 +126,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "hi!", (int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -140,7 +140,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("hi!", "", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -154,7 +154,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -168,7 +168,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -183,11 +183,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -199,11 +199,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -215,11 +215,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) '4', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -230,7 +230,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -243,8 +243,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", 100, "hi!");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -256,11 +256,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (-1), "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -271,7 +271,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("hi!", "", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -284,8 +284,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", 100, "hi!");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -296,7 +296,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "", (int) (short) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -310,7 +310,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "hi!", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -325,11 +325,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) ' ', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -341,11 +341,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -356,7 +356,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "hi!", (int) (short) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -371,11 +371,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -387,11 +387,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -401,8 +401,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", (int) 'a', "hi!");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -414,11 +414,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) 'a', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -430,11 +430,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -446,11 +446,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -461,7 +461,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("hi!", "", (int) (short) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -476,11 +476,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -492,11 +492,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -507,7 +507,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "", (int) (short) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -522,11 +522,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) '#', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -538,11 +538,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -552,8 +552,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) (short) 100, "hi!");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -565,11 +565,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -581,11 +581,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -597,11 +597,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -612,7 +612,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) (byte) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -627,11 +627,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -642,7 +642,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "hi!", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -657,11 +657,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -673,11 +673,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -687,8 +687,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) (short) 100, "hi!");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -700,11 +700,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -714,8 +714,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) (short) 1, "");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -727,11 +727,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) ' ', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -743,11 +743,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -759,11 +759,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -775,11 +775,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -791,11 +791,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -807,11 +807,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -823,11 +823,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) '4', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -839,11 +839,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) '#', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -855,11 +855,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -871,11 +871,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -887,11 +887,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -901,8 +901,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) (short) 1, "");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -914,11 +914,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -930,11 +930,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -945,7 +945,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "hi!", (-1), "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -960,11 +960,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -976,11 +976,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) 'a', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -990,8 +990,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) (byte) 1, "hi!");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -1001,8 +1001,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", (int) 'a', "hi!");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -1014,11 +1014,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1030,11 +1030,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1046,11 +1046,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) '#', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1062,11 +1062,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1078,11 +1078,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1094,11 +1094,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1109,7 +1109,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) (short) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -1124,11 +1124,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1140,11 +1140,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1156,11 +1156,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1170,8 +1170,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) (byte) 1, "hi!");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -1183,11 +1183,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1197,8 +1197,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) ' ', "");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -1210,11 +1210,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1226,11 +1226,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1240,8 +1240,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) ' ', "");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -1253,11 +1253,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1269,11 +1269,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1285,11 +1285,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1301,11 +1301,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1317,11 +1317,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1333,11 +1333,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1349,11 +1349,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) '4', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1365,11 +1365,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1381,11 +1381,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1397,11 +1397,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1413,11 +1413,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1429,11 +1429,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1445,11 +1445,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1461,11 +1461,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1477,11 +1477,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) ' ', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1493,11 +1493,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) ' ', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1508,7 +1508,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("hi!", "hi!", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -1523,11 +1523,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) 'a', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1539,11 +1539,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1554,7 +1554,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "hi!", (int) (byte) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -1569,11 +1569,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) ' ', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1585,11 +1585,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1601,11 +1601,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (-1), "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1617,11 +1617,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1633,11 +1633,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1649,11 +1649,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) ' ', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1665,11 +1665,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1681,11 +1681,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (-1), "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1697,11 +1697,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1713,11 +1713,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1729,11 +1729,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1745,11 +1745,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1761,11 +1761,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1776,7 +1776,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "", (-1), "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -1791,11 +1791,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1807,11 +1807,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1822,7 +1822,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "", (int) (short) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -1837,11 +1837,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1853,11 +1853,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1869,11 +1869,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) '#', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1885,11 +1885,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) ' ', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1901,11 +1901,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1915,8 +1915,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) 'a', "");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -1928,11 +1928,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1944,11 +1944,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1960,11 +1960,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (-1), "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1976,11 +1976,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -1992,11 +1992,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2008,11 +2008,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2024,11 +2024,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2040,11 +2040,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2054,8 +2054,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", (int) (byte) 10, "hi!");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -2067,11 +2067,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2083,11 +2083,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2099,11 +2099,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2115,11 +2115,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2129,8 +2129,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) 'a', "");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -2142,11 +2142,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2158,11 +2158,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2174,11 +2174,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2190,11 +2190,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2206,11 +2206,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2222,11 +2222,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2237,7 +2237,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) (short) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -2252,11 +2252,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2266,8 +2266,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", (int) (byte) 10, "hi!");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -2279,11 +2279,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2295,11 +2295,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2311,11 +2311,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2327,11 +2327,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (-1), "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2343,11 +2343,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2359,11 +2359,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2375,11 +2375,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2391,11 +2391,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2407,11 +2407,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2423,11 +2423,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2439,11 +2439,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2455,11 +2455,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2471,11 +2471,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2487,11 +2487,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (-1), "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2503,11 +2503,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2519,11 +2519,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2535,11 +2535,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2551,11 +2551,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) '4', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2567,11 +2567,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2583,11 +2583,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2599,11 +2599,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2615,11 +2615,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2631,11 +2631,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2647,11 +2647,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2663,11 +2663,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2679,11 +2679,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (-1), "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2695,11 +2695,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2711,11 +2711,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2727,11 +2727,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2743,11 +2743,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) '#', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2759,11 +2759,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) ' ', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2775,11 +2775,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) ' ', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2791,11 +2791,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2807,11 +2807,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2823,11 +2823,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (-1), "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2839,11 +2839,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2855,11 +2855,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2871,11 +2871,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2887,11 +2887,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2903,11 +2903,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2919,11 +2919,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2935,11 +2935,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2951,11 +2951,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) '4', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2967,11 +2967,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2983,11 +2983,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (-1), "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -2999,11 +2999,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) '#', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3015,11 +3015,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3031,11 +3031,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3047,11 +3047,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3063,11 +3063,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) '4', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3079,11 +3079,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) ' ', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3095,11 +3095,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3111,11 +3111,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3127,11 +3127,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3143,11 +3143,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3159,11 +3159,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3175,11 +3175,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) '#', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3189,8 +3189,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) '4', "hi!");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -3201,7 +3201,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "hi!", (int) (short) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -3216,11 +3216,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3232,11 +3232,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3248,11 +3248,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3264,11 +3264,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) ' ', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3280,11 +3280,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3294,8 +3294,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", 100, "");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -3307,11 +3307,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3323,11 +3323,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (-1), "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3339,11 +3339,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3355,11 +3355,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3371,11 +3371,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3387,11 +3387,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3403,11 +3403,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3419,11 +3419,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) '#', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3435,11 +3435,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3451,11 +3451,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3467,11 +3467,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3483,11 +3483,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3497,8 +3497,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) (byte) 100, "hi!");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -3508,8 +3508,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", (int) (short) 1, "hi!");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -3519,8 +3519,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) '4', "hi!");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -3532,11 +3532,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3548,11 +3548,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3564,11 +3564,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3580,11 +3580,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3596,11 +3596,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3612,11 +3612,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3628,11 +3628,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3642,8 +3642,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", 10, "");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -3655,11 +3655,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3671,11 +3671,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) ' ', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3687,11 +3687,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3703,11 +3703,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3719,11 +3719,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3735,11 +3735,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (-1), "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3751,11 +3751,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3767,11 +3767,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3783,11 +3783,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3799,11 +3799,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3815,11 +3815,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3831,11 +3831,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3847,11 +3847,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3863,11 +3863,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3879,11 +3879,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3895,11 +3895,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (-1), "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3911,11 +3911,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3927,11 +3927,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3943,11 +3943,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3958,7 +3958,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "", (int) '4', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -3973,11 +3973,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -3989,11 +3989,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) ' ', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4005,11 +4005,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4021,11 +4021,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4035,8 +4035,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", (int) (short) 1, "hi!");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -4048,11 +4048,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (-1), "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4064,11 +4064,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4078,8 +4078,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", 100, "");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -4091,11 +4091,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4107,11 +4107,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) '#', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4123,11 +4123,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4137,8 +4137,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", 10, "");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -4148,8 +4148,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) (byte) 100, "hi!");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -4161,11 +4161,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4177,11 +4177,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4193,11 +4193,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4209,11 +4209,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4225,11 +4225,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (-1), "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4241,11 +4241,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4257,11 +4257,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) '4', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4273,11 +4273,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4289,11 +4289,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4305,11 +4305,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4320,7 +4320,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -4335,11 +4335,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4351,11 +4351,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4367,11 +4367,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4383,11 +4383,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4397,8 +4397,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) (short) 10, "");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -4410,11 +4410,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4426,11 +4426,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4442,11 +4442,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) ' ', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4458,11 +4458,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4474,11 +4474,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4490,11 +4490,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4506,11 +4506,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4522,11 +4522,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) '4', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4538,11 +4538,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4554,11 +4554,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4570,11 +4570,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4586,11 +4586,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4602,11 +4602,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) 'a', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4618,11 +4618,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (-1), "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4634,11 +4634,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4649,7 +4649,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("hi!", "hi!", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -4664,11 +4664,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4680,11 +4680,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4696,11 +4696,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4712,11 +4712,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4728,11 +4728,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4744,11 +4744,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) ' ', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4760,11 +4760,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4776,11 +4776,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (-1), "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4792,11 +4792,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4806,8 +4806,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) (short) 10, "");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -4819,11 +4819,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4835,11 +4835,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4851,11 +4851,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4865,8 +4865,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) '#', "");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -4878,11 +4878,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4894,11 +4894,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4910,11 +4910,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4926,11 +4926,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) ' ', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4942,11 +4942,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4958,11 +4958,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4974,11 +4974,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -4990,11 +4990,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5006,11 +5006,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) 'a', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5020,8 +5020,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", (int) (byte) 100, "");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -5031,8 +5031,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", (int) (byte) 100, "");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -5044,11 +5044,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5060,11 +5060,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5076,11 +5076,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5092,11 +5092,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5108,11 +5108,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5124,11 +5124,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) ' ', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5140,11 +5140,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5156,11 +5156,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5172,11 +5172,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) '4', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5188,11 +5188,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5204,11 +5204,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5220,11 +5220,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5236,11 +5236,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) '#', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5252,11 +5252,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5268,11 +5268,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5284,11 +5284,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5300,11 +5300,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5316,11 +5316,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5332,11 +5332,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5348,11 +5348,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5364,11 +5364,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5380,11 +5380,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5396,11 +5396,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5412,11 +5412,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) '#', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5428,11 +5428,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5444,11 +5444,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5460,11 +5460,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5476,11 +5476,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (-1), "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5492,11 +5492,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5508,11 +5508,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5524,11 +5524,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) ' ', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5540,11 +5540,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5556,11 +5556,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5572,11 +5572,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5588,11 +5588,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5604,11 +5604,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) '#', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5620,11 +5620,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5636,11 +5636,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5652,11 +5652,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5668,11 +5668,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5684,11 +5684,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5700,11 +5700,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5716,11 +5716,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) '4', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5732,11 +5732,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) '4', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5746,8 +5746,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "hi!", (int) '#', "");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -5759,11 +5759,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (-1), "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5775,11 +5775,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5791,11 +5791,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5807,11 +5807,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5823,11 +5823,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5839,11 +5839,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5855,11 +5855,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5871,11 +5871,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5887,11 +5887,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5903,11 +5903,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5919,11 +5919,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5935,11 +5935,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5951,11 +5951,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) '4', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5967,11 +5967,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5983,11 +5983,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) '#', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -5999,11 +5999,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6015,11 +6015,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6031,11 +6031,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6047,11 +6047,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6063,11 +6063,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6079,11 +6079,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) ' ', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6095,11 +6095,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6110,7 +6110,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "hi!", (int) 'a', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -6125,11 +6125,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6141,11 +6141,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) '#', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6157,11 +6157,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6173,11 +6173,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6189,11 +6189,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6205,11 +6205,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) '4', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6221,11 +6221,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6237,11 +6237,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6253,11 +6253,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6269,11 +6269,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6285,11 +6285,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6299,8 +6299,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", (int) ' ', "hi!");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -6312,11 +6312,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6328,11 +6328,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6344,11 +6344,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6360,11 +6360,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6376,11 +6376,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) 'a', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6392,11 +6392,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6408,11 +6408,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6424,11 +6424,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6440,11 +6440,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6456,11 +6456,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6472,11 +6472,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) '#', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6488,11 +6488,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) 'a', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6504,11 +6504,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6520,11 +6520,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6536,11 +6536,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) 'a', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6552,11 +6552,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6568,11 +6568,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6584,11 +6584,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6599,7 +6599,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "", (int) (byte) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -6614,11 +6614,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6629,7 +6629,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "", (int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -6644,11 +6644,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6660,11 +6660,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6676,11 +6676,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6692,11 +6692,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6708,11 +6708,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6724,11 +6724,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6740,11 +6740,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6756,11 +6756,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6772,11 +6772,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6788,11 +6788,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) '4', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6804,11 +6804,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6820,11 +6820,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) ' ', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6834,8 +6834,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", (int) ' ', "hi!");
         java.lang.Class<?> wildcardClass6 = course5.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -6847,11 +6847,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6863,11 +6863,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) ' ', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6879,11 +6879,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6895,11 +6895,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6911,11 +6911,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6927,11 +6927,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6943,11 +6943,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6959,11 +6959,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) 'a', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6975,11 +6975,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -6991,11 +6991,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7007,11 +7007,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7023,11 +7023,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7039,11 +7039,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7055,11 +7055,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7071,11 +7071,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7087,11 +7087,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7103,11 +7103,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7119,11 +7119,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7135,11 +7135,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7151,11 +7151,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (short) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7167,11 +7167,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (-1), "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7183,11 +7183,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7199,11 +7199,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7214,7 +7214,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "hi!", (int) (short) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -7229,11 +7229,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (-1), "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7245,11 +7245,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7261,11 +7261,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7277,11 +7277,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7293,11 +7293,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7308,7 +7308,7 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course5 = courseService0.addCourse("", "hi!", 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -7323,11 +7323,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7339,11 +7339,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) '4', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7355,11 +7355,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7371,11 +7371,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) (byte) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7387,11 +7387,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 10, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7401,8 +7401,8 @@ public class CourseServiceRegressionTest0 {
         com.example.CourseService courseService0 = new com.example.CourseService();
         com.example.Course course5 = courseService0.addCourse("hi!", "", (int) (byte) 100, "hi!");
         java.lang.Class<?> wildcardClass6 = courseService0.getClass();
-        org.junit.Assert.assertNotNull(course5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
+        assertNotNull(course5);
+        assertNotNull(wildcardClass6);
     }
 
     @Test
@@ -7414,11 +7414,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (-1), "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7430,11 +7430,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", (int) 'a', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7446,11 +7446,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7462,11 +7462,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 0, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7478,11 +7478,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7494,11 +7494,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) 100, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7510,11 +7510,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) ' ', "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7526,11 +7526,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) '4', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7542,11 +7542,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7558,11 +7558,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (-1), "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7574,11 +7574,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7590,11 +7590,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "hi!", 0, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7606,11 +7606,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (short) 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7622,11 +7622,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (short) 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7638,11 +7638,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", (int) (byte) -1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Credit hours must be greater than 0.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7654,11 +7654,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) 'a', "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7670,11 +7670,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7686,11 +7686,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (short) -1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7702,11 +7702,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 100, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7718,11 +7718,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "", 10, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7734,11 +7734,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("hi!", "hi!", 1, "hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID already exists.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 
     @Test
@@ -7750,11 +7750,11 @@ public class CourseServiceRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             com.example.Course course10 = courseService0.addCourse("", "", (int) (byte) 1, "");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Course ID cannot be empty.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(course5);
+        assertNotNull(course5);
     }
 }
 

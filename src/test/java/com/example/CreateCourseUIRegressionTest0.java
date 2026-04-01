@@ -1,8 +1,8 @@
-import org.junit.FixMethodOrder;
-import org.junit.Test;
-import org.junit.runners.MethodSorters;
+package com.example;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
 public class CreateCourseUIRegressionTest0 {
 
     public static boolean debug = false;
@@ -23,7 +23,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test001");
         int int0 = java.awt.Frame.NE_RESIZE_CURSOR;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 7 + "'", int0 == 7);
+        assertTrue(int0 == 7, "'" + int0 + "' != '" + 7 + "'");
     }
 
     @Test
@@ -31,7 +31,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test002");
         int int0 = java.awt.Frame.W_RESIZE_CURSOR;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 10 + "'", int0 == 10);
+        assertTrue(int0 == 10, "'" + int0 + "' != '" + 10 + "'");
     }
 
     @Test
@@ -39,7 +39,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test003");
         int int0 = java.awt.Frame.MAXIMIZED_HORIZ;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 2 + "'", int0 == 2);
+        assertTrue(int0 == 2, "'" + int0 + "' != '" + 2 + "'");
     }
 
     @Test
@@ -47,7 +47,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test004");
         int int0 = javax.swing.WindowConstants.DISPOSE_ON_CLOSE;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 2 + "'", int0 == 2);
+        assertTrue(int0 == 2, "'" + int0 + "' != '" + 2 + "'");
     }
 
     @Test
@@ -55,7 +55,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test005");
         int int0 = javax.swing.WindowConstants.EXIT_ON_CLOSE;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 3 + "'", int0 == 3);
+        assertTrue(int0 == 3, "'" + int0 + "' != '" + 3 + "'");
     }
 
     @Test
@@ -63,7 +63,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test006");
         int int0 = java.awt.image.ImageObserver.PROPERTIES;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 4 + "'", int0 == 4);
+        assertTrue(int0 == 4, "'" + int0 + "' != '" + 4 + "'");
     }
 
     @Test
@@ -71,7 +71,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test007");
         float float0 = java.awt.Component.CENTER_ALIGNMENT;
-        org.junit.Assert.assertTrue("'" + float0 + "' != '" + 0.5f + "'", float0 == 0.5f);
+        assertTrue(float0 == 0.5f, "'" + float0 + "' != '" + 0.5f + "'");
     }
 
     @Test
@@ -79,7 +79,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test008");
         int int0 = java.awt.Frame.ICONIFIED;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 1 + "'", int0 == 1);
+        assertTrue(int0 == 1, "'" + int0 + "' != '" + 1 + "'");
     }
 
     @Test
@@ -87,7 +87,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test009");
         int int0 = java.awt.Frame.NW_RESIZE_CURSOR;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 6 + "'", int0 == 6);
+        assertTrue(int0 == 6, "'" + int0 + "' != '" + 6 + "'");
     }
 
     @Test
@@ -102,7 +102,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test011");
         int int0 = java.awt.Frame.E_RESIZE_CURSOR;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 11 + "'", int0 == 11);
+        assertTrue(int0 == 11, "'" + int0 + "' != '" + 11 + "'");
     }
 
     @Test
@@ -110,7 +110,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test012");
         int int0 = java.awt.Frame.MAXIMIZED_BOTH;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 6 + "'", int0 == 6);
+        assertTrue(int0 == 6, "'" + int0 + "' != '" + 6 + "'");
     }
 
     @Test
@@ -118,7 +118,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test013");
         int int0 = java.awt.Frame.DEFAULT_CURSOR;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 0 + "'", int0 == 0);
+        assertTrue(int0 == 0, "'" + int0 + "' != '" + 0 + "'");
     }
 
     @Test
@@ -126,7 +126,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test014");
         int int0 = java.awt.Frame.HAND_CURSOR;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 12 + "'", int0 == 12);
+        assertTrue(int0 == 12, "'" + int0 + "' != '" + 12 + "'");
     }
 
     @Test
@@ -135,9 +135,9 @@ public class CreateCourseUIRegressionTest0 {
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test015");
         java.awt.Window[] windowArray0 = java.awt.Window.getOwnerlessWindows();
         java.lang.Class<?> wildcardClass1 = windowArray0.getClass();
-        org.junit.Assert.assertNotNull(windowArray0);
-        org.junit.Assert.assertArrayEquals(windowArray0, new java.awt.Window[] {});
-        org.junit.Assert.assertNotNull(wildcardClass1);
+        assertNotNull(windowArray0);
+        assertArrayEquals(windowArray0, new java.awt.Window[] {});
+        assertNotNull(wildcardClass1);
     }
 
     @Test
@@ -145,7 +145,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test016");
         int int0 = java.awt.Frame.TEXT_CURSOR;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 2 + "'", int0 == 2);
+        assertTrue(int0 == 2, "'" + int0 + "' != '" + 2 + "'");
     }
 
     @Test
@@ -153,7 +153,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test017");
         float float0 = java.awt.Component.LEFT_ALIGNMENT;
-        org.junit.Assert.assertTrue("'" + float0 + "' != '" + 0.0f + "'", float0 == 0.0f);
+        assertTrue(float0 == 0.0f, "'" + float0 + "' != '" + 0.0f + "'");
     }
 
     @Test
@@ -161,7 +161,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test018");
         float float0 = java.awt.Component.TOP_ALIGNMENT;
-        org.junit.Assert.assertTrue("'" + float0 + "' != '" + 0.0f + "'", float0 == 0.0f);
+        assertTrue(float0 == 0.0f, "'" + float0 + "' != '" + 0.0f + "'");
     }
 
     @Test
@@ -169,7 +169,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test019");
         float float0 = java.awt.Component.RIGHT_ALIGNMENT;
-        org.junit.Assert.assertTrue("'" + float0 + "' != '" + 1.0f + "'", float0 == 1.0f);
+        assertTrue(float0 == 1.0f, "'" + float0 + "' != '" + 1.0f + "'");
     }
 
     @Test
@@ -177,7 +177,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test020");
         int int0 = java.awt.image.ImageObserver.SOMEBITS;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 8 + "'", int0 == 8);
+        assertTrue(int0 == 8, "'" + int0 + "' != '" + 8 + "'");
     }
 
     @Test
@@ -185,7 +185,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test021");
         int int0 = java.awt.Frame.MAXIMIZED_VERT;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 4 + "'", int0 == 4);
+        assertTrue(int0 == 4, "'" + int0 + "' != '" + 4 + "'");
     }
 
     @Test
@@ -193,8 +193,8 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test022");
         java.awt.Frame[] frameArray0 = java.awt.Frame.getFrames();
-        org.junit.Assert.assertNotNull(frameArray0);
-        org.junit.Assert.assertArrayEquals(frameArray0, new java.awt.Frame[] {});
+        assertNotNull(frameArray0);
+        assertArrayEquals(frameArray0, new java.awt.Frame[] {});
     }
 
     @Test
@@ -202,7 +202,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test023");
         int int0 = java.awt.Frame.CROSSHAIR_CURSOR;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 1 + "'", int0 == 1);
+        assertTrue(int0 == 1, "'" + int0 + "' != '" + 1 + "'");
     }
 
     @Test
@@ -210,7 +210,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test024");
         int int0 = java.awt.image.ImageObserver.ERROR;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 64 + "'", int0 == 64);
+        assertTrue(int0 == 64, "'" + int0 + "' != '" + 64 + "'");
     }
 
     @Test
@@ -218,7 +218,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test025");
         int int0 = java.awt.Frame.N_RESIZE_CURSOR;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 8 + "'", int0 == 8);
+        assertTrue(int0 == 8, "'" + int0 + "' != '" + 8 + "'");
     }
 
     @Test
@@ -226,7 +226,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test026");
         int int0 = javax.swing.WindowConstants.HIDE_ON_CLOSE;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 1 + "'", int0 == 1);
+        assertTrue(int0 == 1, "'" + int0 + "' != '" + 1 + "'");
     }
 
     @Test
@@ -234,7 +234,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test027");
         int int0 = java.awt.image.ImageObserver.ABORT;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 128 + "'", int0 == 128);
+        assertTrue(int0 == 128, "'" + int0 + "' != '" + 128 + "'");
     }
 
     @Test
@@ -242,7 +242,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test028");
         boolean boolean0 = javax.swing.JFrame.isDefaultLookAndFeelDecorated();
-        org.junit.Assert.assertTrue("'" + boolean0 + "' != '" + true + "'", boolean0 == true);
+        assertTrue(boolean0 == true, "'" + boolean0 + "' != '" + true + "'");
     }
 
     @Test
@@ -250,7 +250,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test029");
         int int0 = java.awt.Frame.SW_RESIZE_CURSOR;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 4 + "'", int0 == 4);
+        assertTrue(int0 == 4, "'" + int0 + "' != '" + 4 + "'");
     }
 
     @Test
@@ -258,7 +258,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test030");
         int int0 = javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 0 + "'", int0 == 0);
+        assertTrue(int0 == 0, "'" + int0 + "' != '" + 0 + "'");
     }
 
     @Test
@@ -266,7 +266,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test031");
         int int0 = java.awt.Frame.NORMAL;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 0 + "'", int0 == 0);
+        assertTrue(int0 == 0, "'" + int0 + "' != '" + 0 + "'");
     }
 
     @Test
@@ -274,7 +274,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test032");
         int int0 = java.awt.image.ImageObserver.HEIGHT;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 2 + "'", int0 == 2);
+        assertTrue(int0 == 2, "'" + int0 + "' != '" + 2 + "'");
     }
 
     @Test
@@ -282,7 +282,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test033");
         int int0 = java.awt.Frame.S_RESIZE_CURSOR;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 9 + "'", int0 == 9);
+        assertTrue(int0 == 9, "'" + int0 + "' != '" + 9 + "'");
     }
 
     @Test
@@ -290,7 +290,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test034");
         int int0 = java.awt.Frame.MOVE_CURSOR;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 13 + "'", int0 == 13);
+        assertTrue(int0 == 13, "'" + int0 + "' != '" + 13 + "'");
     }
 
     @Test
@@ -298,7 +298,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test035");
         int int0 = java.awt.image.ImageObserver.WIDTH;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 1 + "'", int0 == 1);
+        assertTrue(int0 == 1, "'" + int0 + "' != '" + 1 + "'");
     }
 
     @Test
@@ -306,7 +306,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test036");
         int int0 = java.awt.image.ImageObserver.ALLBITS;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 32 + "'", int0 == 32);
+        assertTrue(int0 == 32, "'" + int0 + "' != '" + 32 + "'");
     }
 
     @Test
@@ -314,7 +314,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test037");
         int int0 = java.awt.image.ImageObserver.FRAMEBITS;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 16 + "'", int0 == 16);
+        assertTrue(int0 == 16, "'" + int0 + "' != '" + 16 + "'");
     }
 
     @Test
@@ -322,7 +322,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test038");
         int int0 = java.awt.Frame.WAIT_CURSOR;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 3 + "'", int0 == 3);
+        assertTrue(int0 == 3, "'" + int0 + "' != '" + 3 + "'");
     }
 
     @Test
@@ -330,7 +330,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test039");
         int int0 = java.awt.Frame.SE_RESIZE_CURSOR;
-        org.junit.Assert.assertTrue("'" + int0 + "' != '" + 5 + "'", int0 == 5);
+        assertTrue(int0 == 5, "'" + int0 + "' != '" + 5 + "'");
     }
 
     @Test
@@ -338,7 +338,7 @@ public class CreateCourseUIRegressionTest0 {
         if (debug)
             System.out.format("%n%s%n", "CreateCourseUIRegressionTest0.test040");
         float float0 = java.awt.Component.BOTTOM_ALIGNMENT;
-        org.junit.Assert.assertTrue("'" + float0 + "' != '" + 1.0f + "'", float0 == 1.0f);
+        assertTrue(float0 == 1.0f, "'" + float0 + "' != '" + 1.0f + "'");
     }
 
     @Test
@@ -351,7 +351,7 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.resize(dimension2);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"width\" because \"d\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"width\" because \"d\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -370,11 +370,11 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.list(printStream10, 7);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintStream.print(String)\" because \"out\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintStream.print(String)\" because \"out\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame6" + "'", str9, "frame6");
+        assertEquals("'" + str9 + "' != '" + "frame6" + "'", str9, "frame6");
     }
 
     @Test
@@ -391,12 +391,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean11 = jMenuBar7.mouseDrag(event8, 64, 7);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.getClass()\" because \"o\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.getClass()\" because \"o\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
     }
 
     @Test
@@ -408,7 +408,7 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.transferFocus();
         java.awt.event.ContainerListener containerListener3 = null;
         createCourseUI0.removeContainerListener(containerListener3);
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
     }
 
     @Test
@@ -430,8 +430,8 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Event event2 = null;
         boolean boolean4 = createCourseUI0.action(event2, (java.lang.Object) (byte) 1);
         createCourseUI0.setExtendedState((int) '#');
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -445,11 +445,11 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.setLayeredPane(jLayeredPane4);
-            org.junit.Assert.fail("Expected exception of type java.awt.IllegalComponentStateException; message: layeredPane cannot be set to null.");
+            fail("Expected exception of type java.awt.IllegalComponentStateException; message: layeredPane cannot be set to null.");
         } catch (java.awt.IllegalComponentStateException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
     }
 
     @Test
@@ -462,9 +462,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension4 = createCourseUI0.getMaximumSize();
         java.awt.Event event5 = null;
         boolean boolean8 = createCourseUI0.mouseMove(event5, 5, (int) (byte) 100);
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension4);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -478,11 +478,11 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component5 = createCourseUI0.add("frame18", (java.awt.Component) createCourseUI4);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 1 + "'", int2 == 1);
+        assertTrue(int2 == 1, "'" + int2 + "' != '" + 1 + "'");
     }
 
     @Test
@@ -513,14 +513,14 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean21 = component18.inside(4, 13);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.getClass()\" because \"o\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.getClass()\" because \"o\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "frame21" + "'", str12, "frame21");
-        org.junit.Assert.assertNotNull(point16);
-        org.junit.Assert.assertNotNull(component17);
-        org.junit.Assert.assertNull(component18);
+        assertEquals("'" + str12 + "' != '" + "frame21" + "'", str12, "frame21");
+        assertNotNull(point16);
+        assertNotNull(component17);
+        assertNull(component18);
     }
 
     @Test
@@ -532,9 +532,9 @@ public class CreateCourseUIRegressionTest0 {
         float float3 = createCourseUI0.getOpacity();
         java.awt.Dimension dimension4 = createCourseUI0.getMaximumSize();
         int int5 = createCourseUI0.getComponentCount();
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 1 + "'", int5 == 1);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension4);
+        assertTrue(int5 == 1, "'" + int5 + "' != '" + 1 + "'");
     }
 
     @Test
@@ -550,13 +550,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.setContentPane((java.awt.Container) createCourseUI6);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == false, "'" + boolean5 + "' != '" + false + "'");
     }
 
     @Test
@@ -572,7 +572,7 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.list(printWriter5, 6);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.print(String)\" because \"out\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.print(String)\" because \"out\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -590,11 +590,11 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.list(printWriter4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.println(Object)\" because \"out\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.println(Object)\" because \"out\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
     }
 
     @Test
@@ -610,11 +610,11 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.createBufferStrategy((int) (short) -1, bufferCapabilities11);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Number of buffers must be at least 1");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Number of buffers must be at least 1");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame24" + "'", str9, "frame24");
+        assertEquals("'" + str9 + "' != '" + "frame24" + "'", str9, "frame24");
     }
 
     @Test
@@ -630,13 +630,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.setContentPane(container6);
-            org.junit.Assert.fail("Expected exception of type java.awt.IllegalComponentStateException; message: contentPane cannot be set to null.");
+            fail("Expected exception of type java.awt.IllegalComponentStateException; message: contentPane cannot be set to null.");
         } catch (java.awt.IllegalComponentStateException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == false, "'" + boolean5 + "' != '" + false + "'");
     }
 
     @Test
@@ -653,12 +653,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.FontMetrics fontMetrics9 = createCourseUI0.getFontMetrics(font8);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.hashCode()\" because \"key\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.hashCode()\" because \"key\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(rectangle7);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(rectangle7);
     }
 
     @Test
@@ -676,12 +676,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.deliverEvent(event12);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"x\" because \"e\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"x\" because \"e\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(rectangle7);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(rectangle7);
     }
 
     @Test
@@ -695,9 +695,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setMaximizedBounds(rectangle4);
         java.awt.Container container6 = createCourseUI0.getContentPane();
         java.awt.dnd.DropTarget dropTarget7 = container6.getDropTarget();
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(container6);
-        org.junit.Assert.assertNull(dropTarget7);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
+        assertNotNull(container6);
+        assertNull(dropTarget7);
     }
 
     @Test
@@ -716,10 +716,10 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setLayout(layoutManager11);
         createCourseUI0.revalidate();
         float float14 = createCourseUI0.getAlignmentY();
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNotNull(color10);
-        org.junit.Assert.assertNotNull(layoutManager11);
-        org.junit.Assert.assertTrue("'" + float14 + "' != '" + 0.5f + "'", float14 == 0.5f);
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
+        assertNotNull(color10);
+        assertNotNull(layoutManager11);
+        assertTrue(float14 == 0.5f,"'" + float14 + "' != '" + 0.5f + "'");
     }
 
     @Test
@@ -731,8 +731,8 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean2 = createCourseUI0.isFocusTraversable();
         javax.swing.JMenuBar jMenuBar3 = null;
         createCourseUI0.setJMenuBar(jMenuBar3);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true,"'" + boolean2 + "' != '" + true + "'");
     }
 
     @Test
@@ -747,8 +747,8 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseListener mouseListener10 = null;
         createCourseUI1.removeMouseListener(mouseListener10);
         boolean boolean12 = createCourseUI1.isVisible();
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean9 == true, "'" + boolean9 + "' != '" + true + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -767,12 +767,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component15 = createCourseUI1.add((java.awt.Component) createCourseUI10, (int) (byte) 1);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        assertTrue(boolean9 == true, "'" + boolean9 + "' != '" + true + "'");
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
     }
 
     @Test
@@ -785,11 +785,11 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component4 = createCourseUI0.getComponent(12);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: No such child: 12");
+            fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: No such child: 12");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 1 + "'", int2 == 1);
+        assertTrue(int2 == 1, "'" + int2 + "' != '" + 1 + "'");
     }
 
     @Test
@@ -806,14 +806,14 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.add(popupMenu7);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"parent\" because \"popup\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"parent\" because \"popup\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertNotNull(color6);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == false, "'" + boolean5 + "' != '" + false + "'");
+        assertNotNull(color6);
     }
 
     @Test
@@ -831,10 +831,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component12 = createCourseUI0.getComponentAt((int) ' ', 4);
         java.beans.PropertyChangeListener propertyChangeListener14 = null;
         component12.removePropertyChangeListener("frame30", propertyChangeListener14);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertNotNull(component12);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertNotNull(component12);
     }
 
     @Test
@@ -845,7 +845,7 @@ public class CreateCourseUIRegressionTest0 {
         com.example.CreateCourseUI createCourseUI1 = new com.example.CreateCourseUI();
         createCourseUI0.setLocationRelativeTo((java.awt.Component) createCourseUI1);
         boolean boolean3 = createCourseUI0.isDisplayable();
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
     }
 
     @Test
@@ -858,9 +858,9 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean4 = createCourseUI0.keyUp(event2, (int) (byte) 0);
         java.awt.Toolkit toolkit5 = createCourseUI0.getToolkit();
         createCourseUI0.transferFocusUpCycle();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(toolkit5);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(toolkit5);
     }
 
     @Test
@@ -878,13 +878,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component11 = createCourseUI0.add((java.awt.Component) createCourseUI3, 0);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true, "'" + boolean2 + "' != '" + true + "'");
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
     }
 
     @Test
@@ -899,9 +899,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension10 = createCourseUI1.minimumSize();
         java.awt.Point point12 = createCourseUI1.getMousePosition(false);
         createCourseUI1.toBack();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame46" + "'", str9, "frame46");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(point12);
+        assertEquals("'" + str9 + "' != '" + "frame46" + "'", str9, "frame46");
+        assertNotNull(dimension10);
+        assertNull(point12);
     }
 
     @Test
@@ -923,15 +923,15 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component18 = createCourseUI0.add((java.awt.Component) createCourseUI11, (int) (byte) 10);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: illegal component position");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: illegal component position");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
-        org.junit.Assert.assertTrue("'" + float12 + "' != '" + 0.5f + "'", float12 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
+        assertTrue(float12 == 0.5f, "'" + float12 + "' != '" + 0.5f + "'");
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -942,8 +942,8 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean1 = createCourseUI0.isForegroundSet();
         java.awt.Component[] componentArray2 = createCourseUI0.getComponents();
         createCourseUI0.firePropertyChange("com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]", '4', ' ');
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(componentArray2);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(componentArray2);
     }
 
     @Test
@@ -956,7 +956,7 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.createBufferStrategy((int) (short) 0, bufferCapabilities4);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Number of buffers must be at least 1");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Number of buffers must be at least 1");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -987,19 +987,19 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI9.setComponentZOrder((java.awt.Component) createCourseUI20, 0);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(toolkit5);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(component18);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 32 + "'", int19 == 32);
-        org.junit.Assert.assertTrue("'" + float21 + "' != '" + 0.5f + "'", float21 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(toolkit5);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(component18);
+        assertTrue(int19 == 32, "'" + int19 + "' != '" + 32 + "'");
+        assertTrue(float21 == 0.5f, "'" + float21 + "' != '" + 0.5f + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean25 == false, "'" + boolean25 + "' != '" + false + "'");
     }
 
     @Test
@@ -1014,8 +1014,8 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Rectangle rectangle7 = createCourseUI0.getMaximizedBounds();
         createCourseUI0.firePropertyChange("hi!", 0.5f, (float) '#');
         createCourseUI0.setFocusTraversalKeysEnabled(false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(rectangle7);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(rectangle7);
     }
 
     @Test
@@ -1029,10 +1029,10 @@ public class CreateCourseUIRegressionTest0 {
         java.lang.String str9 = createCourseUI1.getName();
         java.lang.String str10 = createCourseUI1.getTitle();
         java.awt.event.WindowFocusListener[] windowFocusListenerArray11 = createCourseUI1.getWindowFocusListeners();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame52" + "'", str9, "frame52");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertNotNull(windowFocusListenerArray11);
-        org.junit.Assert.assertArrayEquals(windowFocusListenerArray11, new java.awt.event.WindowFocusListener[] {});
+        assertEquals("'" + str9 + "' != '" + "frame52" + "'", str9, "frame52");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertNotNull(windowFocusListenerArray11);
+        assertArrayEquals(windowFocusListenerArray11, new java.awt.event.WindowFocusListener[] {});
     }
 
     @Test
@@ -1045,9 +1045,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Image image3 = createCourseUI0.getIconImage();
         createCourseUI0.setFocusTraversalPolicyProvider(false);
         createCourseUI0.repaint();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(componentArray2);
-        org.junit.Assert.assertNull(image3);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(componentArray2);
+        assertNull(image3);
     }
 
     @Test
@@ -1059,7 +1059,7 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setLocationRelativeTo((java.awt.Component) createCourseUI1);
         createCourseUI1.repaint(0L, (int) (short) -1, (int) (short) 0, 3, 0);
         boolean boolean9 = createCourseUI1.isMaximumSizeSet();
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
     }
 
     @Test
@@ -1076,12 +1076,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean9 = createCourseUI0.postEvent(event8);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"id\" because \"evt\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"id\" because \"evt\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "com.example.CreateCourseUI[frame63,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str7, "com.example.CreateCourseUI[frame63,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertEquals("'" + str7 + "' != '" + "com.example.CreateCourseUI[frame63,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str7, "com.example.CreateCourseUI[frame63,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
     }
 
     @Test
@@ -1099,8 +1099,8 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.FocusListener focusListener13 = null;
         createCourseUI1.removeFocusListener(focusListener13);
         createCourseUI1.list();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame70" + "'", str9, "frame70");
-        org.junit.Assert.assertNotNull(dimension10);
+        assertEquals("'" + str9 + "' != '" + "frame70" + "'", str9, "frame70");
+        assertNotNull(dimension10);
     }
 
     @Test
@@ -1117,9 +1117,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.transferFocusDownCycle();
         java.awt.Graphics graphics10 = null;
         createCourseUI0.paintComponents(graphics10);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
     }
 
     @Test
@@ -1134,13 +1134,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean6 = window5.isFocusCycleRoot();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.getClass()\" because \"o\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.getClass()\" because \"o\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(window5);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNull(window5);
     }
 
     @Test
@@ -1158,12 +1158,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.update(graphics12);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.awt.Graphics.getClip()\" because \"g\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.awt.Graphics.getClip()\" because \"g\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
     }
 
     @Test
@@ -1175,7 +1175,7 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Graphics graphics2 = null;
         createCourseUI0.paintComponents(graphics2);
         boolean boolean4 = createCourseUI0.isFocusOwner();
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -1190,13 +1190,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.setOpacity((float) (short) -1);
-            org.junit.Assert.fail("Expected exception of type java.awt.IllegalComponentStateException; message: The frame is decorated");
+            fail("Expected exception of type java.awt.IllegalComponentStateException; message: The frame is decorated");
         } catch (java.awt.IllegalComponentStateException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(toolkit5);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(toolkit5);
     }
 
     @Test
@@ -1212,10 +1212,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.WindowStateListener[] windowStateListenerArray8 = createCourseUI0.getWindowStateListeners();
         createCourseUI0.setEnabled(true);
         createCourseUI0.setFocusTraversalKeysEnabled(true);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
-        org.junit.Assert.assertNotNull(windowStateListenerArray8);
-        org.junit.Assert.assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
+        assertNotNull(windowStateListenerArray8);
+        assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
     }
 
     @Test
@@ -1231,11 +1231,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Point point12 = createCourseUI1.getMousePosition(false);
         boolean boolean13 = createCourseUI1.isShowing();
         int int14 = createCourseUI1.getCursorType();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame80" + "'", str9, "frame80");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(point12);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + 0 + "'", int14 == 0);
+        assertEquals("'" + str9 + "' != '" + "frame80" + "'", str9, "frame80");
+        assertNotNull(dimension10);
+        assertNull(point12);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertTrue(int14 == 0, "'" + int14 + "' != '" + 0 + "'");
     }
 
     @Test
@@ -1255,13 +1255,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.list(printWriter12, (int) (short) 100);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.print(String)\" because \"out\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.print(String)\" because \"out\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
     }
 
     @Test
@@ -1282,15 +1282,15 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component14 = createCourseUI0.add((java.awt.Component) createCourseUI5, 32);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: illegal component position");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: illegal component position");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(container11);
-        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str12, "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(container11);
+        assertEquals("'" + str12 + "' != '" + "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str12, "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
     }
 
     @Test
@@ -1302,7 +1302,7 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean3 = createCourseUI0.isFocusOwner();
         createCourseUI0.invalidate();
         createCourseUI0.setLocationByPlatform(true);
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
     }
 
     @Test
@@ -1319,12 +1319,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             component9.list(printWriter10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.println(Object)\" because \"out\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.println(Object)\" because \"out\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
     }
 
     @Test
@@ -1358,14 +1358,14 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI4.setLocation(point30);
         java.awt.Rectangle rectangle33 = createCourseUI4.getBounds();
         boolean boolean34 = createCourseUI0.action(event3, (java.lang.Object) rectangle33);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNotNull(color14);
-        org.junit.Assert.assertNotNull(layoutManager15);
-        org.junit.Assert.assertEquals("'" + str26 + "' != '" + "frame88" + "'", str26, "frame88");
-        org.junit.Assert.assertNotNull(point30);
-        org.junit.Assert.assertNotNull(component31);
-        org.junit.Assert.assertNotNull(rectangle33);
-        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + false + "'", boolean34 == false);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNotNull(color14);
+        assertNotNull(layoutManager15);
+        assertEquals("'" + str26 + "' != '" + "frame88" + "'", str26, "frame88");
+        assertNotNull(point30);
+        assertNotNull(component31);
+        assertNotNull(rectangle33);
+        assertTrue(boolean34 == false, "'" + boolean34 + "' != '" + false + "'");
     }
 
     @Test
@@ -1395,16 +1395,16 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component34 = createCourseUI0.add("frame36", (java.awt.Component) createCourseUI18);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
-        org.junit.Assert.assertNotNull(insets11);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertNotNull(component27);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
+        assertNotNull(insets11);
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertNotNull(component27);
+        assertTrue(boolean28 == false, "'" + boolean28 + "' != '" + false + "'");
     }
 
     @Test
@@ -1422,12 +1422,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.list(printStream7);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintStream.println(Object)\" because \"out\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintStream.println(Object)\" because \"out\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(point3);
-        org.junit.Assert.assertNotNull(point4);
+        assertNotNull(point3);
+        assertNotNull(point4);
     }
 
     @Test
@@ -1450,13 +1450,13 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI15.setName("");
         java.awt.Dimension dimension22 = createCourseUI15.minimumSize();
         component14.resize(dimension22);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame95" + "'", str9, "frame95");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertNotNull(container13);
-        org.junit.Assert.assertNotNull(component14);
-        org.junit.Assert.assertTrue("'" + float16 + "' != '" + 0.5f + "'", float16 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertNotNull(dimension22);
+        assertEquals("'" + str9 + "' != '" + "frame95" + "'", str9, "frame95");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertNotNull(container13);
+        assertNotNull(component14);
+        assertTrue(float16 == 0.5f, "'" + float16 + "' != '" + 0.5f + "'");
+        assertTrue(boolean19 == false, "'" + boolean19 + "' != '" + false + "'");
+        assertNotNull(dimension22);
     }
 
     @Test
@@ -1472,13 +1472,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.list(printWriter6, 0);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.println(Object)\" because \"out\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.println(Object)\" because \"out\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == true, "'" + boolean5 + "' != '" + true + "'");
     }
 
     @Test
@@ -1501,15 +1501,15 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.setOpacity((float) (short) 100);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: The value of opacity should be in the range [0.0f .. 1.0f].");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: The value of opacity should be in the range [0.0f .. 1.0f].");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame99" + "'", str9, "frame99");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
-        org.junit.Assert.assertNull(inputMethodRequests14);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
+        assertEquals("'" + str9 + "' != '" + "frame99" + "'", str9, "frame99");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == true, "'" + boolean13 + "' != '" + true + "'");
+        assertNull(inputMethodRequests14);
+        assertTrue(boolean17 == true, "'" + boolean17 + "' != '" + true + "'");
     }
 
     @Test
@@ -1526,7 +1526,7 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.setComponentZOrder((java.awt.Component) createCourseUI6, (int) 'a');
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: illegal component position");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: illegal component position");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
@@ -1544,9 +1544,9 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean8 = createCourseUI0.isLightweight();
         java.awt.event.MouseListener[] mouseListenerArray9 = createCourseUI0.getMouseListeners();
         createCourseUI0.setLocationByPlatform(true);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
     }
 
     @Test
@@ -1560,8 +1560,8 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.firePropertyChange("frame3", (-1L), (long) '4');
         java.awt.Dimension dimension8 = createCourseUI0.getMinimumSize();
         boolean boolean9 = createCourseUI0.isFocusable();
-        org.junit.Assert.assertNotNull(dimension8);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+        assertNotNull(dimension8);
+        assertTrue(boolean9 == true, "'" + boolean9 + "' != '" + true + "'");
     }
 
     @Test
@@ -1580,13 +1580,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component11 = createCourseUI0.getComponent(160);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: No such child: 160");
+            fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: No such child: 160");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(container6);
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str7, "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
+        assertNotNull(container6);
+        assertEquals("'" + str7 + "' != '" + "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str7, "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
     }
 
     @Test
@@ -1602,10 +1602,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Graphics graphics6 = null;
         createCourseUI1.paintAll(graphics6);
         int int8 = createCourseUI1.getY();
-        org.junit.Assert.assertNotNull(point3);
-        org.junit.Assert.assertNotNull(point4);
-        org.junit.Assert.assertNotNull(component5);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 160 + "'", int8 == 160);
+        assertNotNull(point3);
+        assertNotNull(point4);
+        assertNotNull(component5);
+        assertTrue(int8 == 160, "'" + int8 + "' != '" + 160 + "'");
     }
 
     @Test
@@ -1617,10 +1617,10 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setFocusable(false);
         java.util.Locale locale4 = createCourseUI0.getLocale();
         javax.swing.JMenuBar jMenuBar5 = createCourseUI0.getJMenuBar();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(locale4);
-        org.junit.Assert.assertEquals(locale4.toString(), "en_US");
-        org.junit.Assert.assertNull(jMenuBar5);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(locale4);
+        assertEquals(locale4.toString(), "en_US");
+        assertNull(jMenuBar5);
     }
 
     @Test
@@ -1635,12 +1635,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.applyResourceBundle(resourceBundle5);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.ResourceBundle.getLocale()\" because \"bdl\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.ResourceBundle.getLocale()\" because \"bdl\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -1675,17 +1675,17 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component34 = createCourseUI0.findComponentAt(point31);
         float float35 = createCourseUI0.getAlignmentX();
         java.awt.Container container36 = createCourseUI0.getFocusCycleRootAncestor();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(color15);
-        org.junit.Assert.assertNotNull(layoutManager16);
-        org.junit.Assert.assertEquals("'" + str27 + "' != '" + "frame108" + "'", str27, "frame108");
-        org.junit.Assert.assertNotNull(point31);
-        org.junit.Assert.assertNotNull(component32);
-        org.junit.Assert.assertNull(component34);
-        org.junit.Assert.assertTrue("'" + float35 + "' != '" + 0.5f + "'", float35 == 0.5f);
-        org.junit.Assert.assertNull(container36);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(color15);
+        assertNotNull(layoutManager16);
+        assertEquals("'" + str27 + "' != '" + "frame108" + "'", str27, "frame108");
+        assertNotNull(point31);
+        assertNotNull(component32);
+        assertNull(component34);
+        assertTrue(float35 == 0.5f, "'" + float35 + "' != '" + 0.5f + "'");
+        assertNull(container36);
     }
 
     @Test
@@ -1708,11 +1708,11 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.printComponents(graphics18);
         java.awt.Graphics graphics20 = null;
         createCourseUI0.paintComponents(graphics20);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(toolkit5);
-        org.junit.Assert.assertEquals("'" + str15 + "' != '" + "frame110" + "'", str15, "frame110");
-        org.junit.Assert.assertNotNull(dimension16);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(toolkit5);
+        assertEquals("'" + str15 + "' != '" + "frame110" + "'", str15, "frame110");
+        assertNotNull(dimension16);
     }
 
     @Test
@@ -1727,8 +1727,8 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Graphics graphics7 = null;
         createCourseUI0.paintComponents(graphics7);
         boolean boolean9 = createCourseUI0.isMinimumSizeSet();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
     }
 
     @Test
@@ -1741,9 +1741,9 @@ public class CreateCourseUIRegressionTest0 {
         java.lang.Object obj3 = new java.lang.Object();
         boolean boolean4 = createCourseUI0.lostFocus(event2, obj3);
         java.awt.image.ColorModel colorModel5 = createCourseUI0.getColorModel();
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "com.example.CreateCourseUI[frame111,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str1, "com.example.CreateCourseUI[frame111,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(colorModel5);
+        assertEquals("'" + str1 + "' != '" + "com.example.CreateCourseUI[frame111,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str1, "com.example.CreateCourseUI[frame111,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(colorModel5);
     }
 
     @Test
@@ -1768,14 +1768,14 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean20 = createCourseUI0.isAlwaysOnTopSupported();
         java.awt.im.InputMethodRequests inputMethodRequests21 = createCourseUI0.getInputMethodRequests();
         createCourseUI0.repaint(0, 6, (int) (byte) 10, 160);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component11);
-        org.junit.Assert.assertTrue("'" + float13 + "' != '" + 0.5f + "'", float13 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertNotNull(color18);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
-        org.junit.Assert.assertNull(inputMethodRequests21);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component11);
+        assertTrue(float13 == 0.5f, "'" + float13 + "' != '" + 0.5f + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean17 == false, "'" + boolean17 + "' != '" + false + "'");
+        assertNotNull(color18);
+        assertTrue(boolean20 == true, "'" + boolean20 + "' != '" + true + "'");
+        assertNull(inputMethodRequests21);
     }
 
     @Test
@@ -1788,8 +1788,8 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean3 = createCourseUI0.isFontSet();
         java.awt.Insets insets4 = createCourseUI0.getInsets();
         createCourseUI0.firePropertyChange("com.example.CreateCourseUI[frame89,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]", (long) (short) 100, (long) (short) 100);
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(insets4);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
+        assertNotNull(insets4);
     }
 
     @Test
@@ -1821,19 +1821,19 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.setGlassPane((java.awt.Component) createCourseUI20);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component11);
-        org.junit.Assert.assertTrue("'" + float13 + "' != '" + 0.5f + "'", float13 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertNotNull(color18);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertNotNull(color27);
-        org.junit.Assert.assertTrue("'" + int28 + "' != '" + 0 + "'", int28 == 0);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component11);
+        assertTrue(float13 == 0.5f, "'" + float13 + "' != '" + 0.5f + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean17 == false, "'" + boolean17 + "' != '" + false + "'");
+        assertNotNull(color18);
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertNotNull(color27);
+        assertTrue(int28 == 0, "'" + int28 + "' != '" + 0 + "'");
     }
 
     @Test
@@ -1845,9 +1845,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setFocusable(false);
         java.util.Locale locale4 = createCourseUI0.getLocale();
         createCourseUI0.setFocusable(true);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(locale4);
-        org.junit.Assert.assertEquals(locale4.toString(), "en_US");
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(locale4);
+        assertEquals(locale4.toString(), "en_US");
     }
 
     @Test
@@ -1870,13 +1870,13 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean18 = createCourseUI1.getFocusableWindowState();
         java.awt.Event event19 = null;
         boolean boolean22 = createCourseUI1.mouseEnter(event19, (int) (short) 100, 5);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame116" + "'", str9, "frame116");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
-        org.junit.Assert.assertNull(inputMethodRequests14);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + true + "'", boolean18 == true);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        assertEquals("'" + str9 + "' != '" + "frame116" + "'", str9, "frame116");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == true, "'" + boolean13 + "' != '" + true + "'");
+        assertNull(inputMethodRequests14);
+        assertTrue(boolean17 == true, "'" + boolean17 + "' != '" + true + "'");
+        assertTrue(boolean18 == true, "'" + boolean18 + "' != '" + true + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
     }
 
     @Test
@@ -1901,14 +1901,14 @@ public class CreateCourseUIRegressionTest0 {
         int int21 = createCourseUI0.checkImage(image8, (int) (short) -1, (int) (short) 100, (java.awt.image.ImageObserver) createCourseUI11);
         java.awt.event.HierarchyBoundsListener hierarchyBoundsListener22 = null;
         createCourseUI11.addHierarchyBoundsListener(hierarchyBoundsListener22);
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(point7);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(insets15);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertNotNull(rectangle20);
-        org.junit.Assert.assertTrue("'" + int21 + "' != '" + 32 + "'", int21 == 32);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(point7);
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(insets15);
+        assertTrue(boolean19 == false, "'" + boolean19 + "' != '" + false + "'");
+        assertNotNull(rectangle20);
+        assertTrue(int21 == 32, "'" + int21 + "' != '" + 32 + "'");
     }
 
     @Test
@@ -1922,9 +1922,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setFocusableWindowState(false);
         java.awt.event.MouseMotionListener mouseMotionListener6 = null;
         createCourseUI0.removeMouseMotionListener(mouseMotionListener6);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 1 + "'", int3 == 1);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true, "'" + boolean2 + "' != '" + true + "'");
+        assertTrue(int3 == 1, "'" + int3 + "' != '" + 1 + "'");
     }
 
     @Test
@@ -1937,11 +1937,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Image image3 = createCourseUI0.getIconImage();
         java.awt.Component component4 = createCourseUI0.getMostRecentFocusOwner();
         java.awt.MenuBar menuBar5 = createCourseUI0.getMenuBar();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(componentArray2);
-        org.junit.Assert.assertNull(image3);
-        org.junit.Assert.assertNotNull(component4);
-        org.junit.Assert.assertNull(menuBar5);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(componentArray2);
+        assertNull(image3);
+        assertNotNull(component4);
+        assertNull(menuBar5);
     }
 
     @Test
@@ -1959,13 +1959,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.setType(type13);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: type should not be null.");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: type should not be null.");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame122" + "'", str9, "frame122");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(point12);
+        assertEquals("'" + str9 + "' != '" + "frame122" + "'", str9, "frame122");
+        assertNotNull(dimension10);
+        assertNull(point12);
     }
 
     @Test
@@ -1986,11 +1986,11 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.removeWindowStateListener(windowStateListener15);
         boolean boolean17 = createCourseUI1.isResizable();
         createCourseUI1.setSize(13, 433);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame123" + "'", str9, "frame123");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
-        org.junit.Assert.assertNull(inputMethodRequests14);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
+        assertEquals("'" + str9 + "' != '" + "frame123" + "'", str9, "frame123");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == true, "'" + boolean13 + "' != '" + true + "'");
+        assertNull(inputMethodRequests14);
+        assertTrue(boolean17 == true, "'" + boolean17 + "' != '" + true + "'");
     }
 
     @Test
@@ -2010,14 +2010,14 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             container14.printAll(graphics15);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.getClass()\" because \"o\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.getClass()\" because \"o\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame125" + "'", str9, "frame125");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNull(container14);
+        assertEquals("'" + str9 + "' != '" + "frame125" + "'", str9, "frame125");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNull(container14);
     }
 
     @Test
@@ -2034,11 +2034,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Container container13 = createCourseUI1.getContentPane();
         java.awt.Component component14 = createCourseUI1.getGlassPane();
         java.awt.Insets insets15 = createCourseUI1.insets();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame128" + "'", str9, "frame128");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertNotNull(container13);
-        org.junit.Assert.assertNotNull(component14);
-        org.junit.Assert.assertNotNull(insets15);
+        assertEquals("'" + str9 + "' != '" + "frame128" + "'", str9, "frame128");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertNotNull(container13);
+        assertNotNull(component14);
+        assertNotNull(insets15);
     }
 
     @Test
@@ -2052,8 +2052,8 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.firePropertyChange("frame3", (-1L), (long) '4');
         boolean boolean8 = createCourseUI0.isLightweight();
         java.awt.GraphicsConfiguration graphicsConfiguration9 = createCourseUI0.getGraphicsConfiguration();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(graphicsConfiguration9);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(graphicsConfiguration9);
     }
 
     @Test
@@ -2077,10 +2077,10 @@ public class CreateCourseUIRegressionTest0 {
         javax.swing.JMenuBar jMenuBar7 = createCourseUI0.getJMenuBar();
         java.awt.Dimension dimension8 = createCourseUI0.minimumSize();
         java.lang.String str9 = createCourseUI0.getName();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
-        org.junit.Assert.assertNotNull(dimension8);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame134" + "'", str9, "frame134");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
+        assertNotNull(dimension8);
+        assertEquals("'" + str9 + "' != '" + "frame134" + "'", str9, "frame134");
     }
 
     @Test
@@ -2097,8 +2097,8 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.removeWindowFocusListener(windowFocusListener11);
         java.awt.event.HierarchyListener hierarchyListener13 = null;
         createCourseUI1.removeHierarchyListener(hierarchyListener13);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame135" + "'", str9, "frame135");
-        org.junit.Assert.assertNotNull(dimension10);
+        assertEquals("'" + str9 + "' != '" + "frame135" + "'", str9, "frame135");
+        assertNotNull(dimension10);
     }
 
     @Test
@@ -2115,8 +2115,8 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.im.InputContext inputContext7 = createCourseUI1.getInputContext();
         createCourseUI1.setResizable(false);
         boolean boolean10 = createCourseUI1.isActive();
-        org.junit.Assert.assertNotNull(inputContext7);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertNotNull(inputContext7);
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -2132,8 +2132,8 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setComponentOrientation(componentOrientation7);
         createCourseUI0.move(7, 7);
         boolean boolean12 = createCourseUI0.isValidateRoot();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + true + "'", boolean12 == true);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean12 == true, "'" + boolean12 + "' != '" + true + "'");
     }
 
     @Test
@@ -2149,10 +2149,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.FocusEvent.Cause cause11 = null;
         boolean boolean12 = createCourseUI1.requestFocusInWindow(cause11);
         java.lang.String str13 = createCourseUI1.getTitle();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame138" + "'", str9, "frame138");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertEquals("'" + str13 + "' != '" + "Create Course" + "'", str13, "Create Course");
+        assertEquals("'" + str9 + "' != '" + "frame138" + "'", str9, "frame138");
+        assertNotNull(dimension10);
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertEquals("'" + str13 + "' != '" + "Create Course" + "'", str13, "Create Course");
     }
 
     @Test
@@ -2166,7 +2166,7 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setState((int) (byte) 100);
         boolean boolean6 = createCourseUI0.isFocusableWindow();
         createCourseUI0.transferFocusUpCycle();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        assertTrue(boolean6 == true, "'" + boolean6 + "' != '" + true + "'");
     }
 
     @Test
@@ -2181,10 +2181,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Event event5 = null;
         boolean boolean8 = createCourseUI0.mouseUp(event5, (int) (byte) 1, (int) '4');
         java.lang.String str9 = createCourseUI0.toString();
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(insets4);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame140,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame140,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
+        assertNotNull(insets4);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame140,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame140,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
     }
 
     @Test
@@ -2200,11 +2200,11 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.FontMetrics fontMetrics9 = createCourseUI1.getFontMetrics(font8);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.hashCode()\" because \"key\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.hashCode()\" because \"key\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(point3);
+        assertNotNull(point3);
     }
 
     @Test
@@ -2219,10 +2219,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension10 = createCourseUI1.minimumSize();
         boolean boolean11 = createCourseUI1.isForegroundSet();
         boolean boolean12 = createCourseUI1.getIgnoreRepaint();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame141" + "'", str9, "frame141");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertEquals("'" + str9 + "' != '" + "frame141" + "'", str9, "frame141");
+        assertNotNull(dimension10);
+        assertTrue(boolean11 == false, "'" + boolean11 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -2238,11 +2238,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseListener[] mouseListenerArray9 = createCourseUI0.getMouseListeners();
         boolean boolean10 = createCourseUI0.isDisplayable();
         java.lang.Object obj11 = createCourseUI0.getTreeLock();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(obj11);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(obj11);
     }
 
     @Test
@@ -2261,12 +2261,12 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setMixingCutoutShape(shape10);
         java.awt.Dimension dimension12 = createCourseUI0.getMinimumSize();
         java.util.List<java.awt.Image> imageList13 = createCourseUI0.getIconImages();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame146,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame146,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertNotNull(dimension12);
-        org.junit.Assert.assertNotNull(imageList13);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame146,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame146,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertNotNull(dimension12);
+        assertNotNull(imageList13);
     }
 
     @Test
@@ -2283,10 +2283,10 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.toBack();
         createCourseUI0.firePropertyChange("frame62", (long) 5, 0L);
         boolean boolean16 = createCourseUI0.getIgnoreRepaint();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -2307,9 +2307,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.InputMethodListener inputMethodListener16 = null;
         createCourseUI1.removeInputMethodListener(inputMethodListener16);
         boolean boolean18 = createCourseUI1.isFocusTraversalPolicyProvider();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame148" + "'", str9, "frame148");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertEquals("'" + str9 + "' != '" + "frame148" + "'", str9, "frame148");
+        assertNotNull(dimension10);
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -2325,11 +2325,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseListener[] mouseListenerArray9 = createCourseUI0.getMouseListeners();
         java.awt.Dimension dimension10 = createCourseUI0.minimumSize();
         java.awt.Image image11 = createCourseUI0.getIconImage();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(image11);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertNotNull(dimension10);
+        assertNull(image11);
     }
 
     @Test
@@ -2343,11 +2343,11 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.dispatchEvent(aWTEvent4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.awt.AWTEvent.getID()\" because \"e\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.awt.AWTEvent.getID()\" because \"e\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
     }
 
     @Test
@@ -2364,9 +2364,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setResizable(true);
         java.awt.event.HierarchyBoundsListener hierarchyBoundsListener12 = null;
         createCourseUI0.removeHierarchyBoundsListener(hierarchyBoundsListener12);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
     }
 
     @Test
@@ -2383,11 +2383,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Container container13 = createCourseUI1.getContentPane();
         java.awt.Component component14 = createCourseUI1.getGlassPane();
         boolean boolean15 = createCourseUI1.isShowing();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame153" + "'", str9, "frame153");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertNotNull(container13);
-        org.junit.Assert.assertNotNull(component14);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        assertEquals("'" + str9 + "' != '" + "frame153" + "'", str9, "frame153");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertNotNull(container13);
+        assertNotNull(component14);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
     }
 
     @Test
@@ -2400,8 +2400,8 @@ public class CreateCourseUIRegressionTest0 {
         int int3 = createCourseUI1.getExtendedState();
         java.awt.Event event4 = null;
         boolean boolean7 = createCourseUI1.mouseDrag(event4, (int) (short) 0, (int) 'a');
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 0 + "'", int3 == 0);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        assertTrue(int3 == 0, "'" + int3 + "' != '" + 0 + "'");
+        assertTrue(boolean7 == false, "'" + boolean7 + "' != '" + false + "'");
     }
 
     @Test
@@ -2417,10 +2417,10 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean8 = createCourseUI0.mouseUp(event5, (int) (byte) 1, (int) '4');
         java.awt.Rectangle rectangle9 = createCourseUI0.getBounds();
         createCourseUI0.doLayout();
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(insets4);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(rectangle9);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
+        assertNotNull(insets4);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(rectangle9);
     }
 
     @Test
@@ -2448,15 +2448,15 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component24 = createCourseUI11.getComponentAt(point23);
         java.awt.Component component25 = createCourseUI8.findComponentAt(point23);
         boolean boolean26 = createCourseUI0.contains(point23);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 1 + "'", int3 == 1);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 433 + "'", int6 == 433);
-        org.junit.Assert.assertEquals("'" + str19 + "' != '" + "frame159" + "'", str19, "frame159");
-        org.junit.Assert.assertNotNull(point23);
-        org.junit.Assert.assertNotNull(component24);
-        org.junit.Assert.assertNull(component25);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + true + "'", boolean26 == true);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true, "'" + boolean2 + "' != '" + true + "'");
+        assertTrue(int3 == 1, "'" + int3 + "' != '" + 1 + "'");
+        assertTrue(int6 == 433, "'" + int6 + "' != '" + 433 + "'");
+        assertEquals("'" + str19 + "' != '" + "frame159" + "'", str19, "frame159");
+        assertNotNull(point23);
+        assertNotNull(component24);
+        assertNull(component25);
+        assertTrue(boolean26 == true, "'" + boolean26 + "' != '" + true + "'");
     }
 
     @Test
@@ -2475,12 +2475,12 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setMixingCutoutShape(shape10);
         java.awt.Dimension dimension12 = createCourseUI0.getMinimumSize();
         int int13 = createCourseUI0.getWidth();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame161,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame161,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertNotNull(dimension12);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 500 + "'", int13 == 500);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame161,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame161,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertNotNull(dimension12);
+        assertTrue(int13 == 500, "'" + int13 + "' != '" + 500 + "'");
     }
 
     @Test
@@ -2498,13 +2498,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.applyResourceBundle("frame112");
-            org.junit.Assert.fail("Expected exception of type java.util.MissingResourceException; message: Can't find bundle for base name frame112, locale en_US");
+            fail("Expected exception of type java.util.MissingResourceException; message: Can't find bundle for base name frame112, locale en_US");
         } catch (java.util.MissingResourceException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNotNull(point3);
-        org.junit.Assert.assertNotNull(point4);
-        org.junit.Assert.assertNotNull(component5);
+        assertNotNull(point3);
+        assertNotNull(point4);
+        assertNotNull(component5);
     }
 
     @Test
@@ -2522,15 +2522,15 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.dispatchEvent(aWTEvent8);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.awt.AWTEvent.getID()\" because \"e\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.awt.AWTEvent.getID()\" because \"e\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(mouseListenerArray4);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray7);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray7, new java.beans.PropertyChangeListener[] {});
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(mouseListenerArray4);
+        assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
+        assertNotNull(propertyChangeListenerArray7);
+        assertArrayEquals(propertyChangeListenerArray7, new java.beans.PropertyChangeListener[] {});
     }
 
     @Test
@@ -2545,10 +2545,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.image.VolatileImage volatileImage7 = createCourseUI0.createVolatileImage((int) (short) 10, (int) (byte) -1);
         createCourseUI0.setState(13);
         java.lang.Object obj10 = createCourseUI0.getTreeLock();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertNull(volatileImage7);
-        org.junit.Assert.assertNotNull(obj10);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(dimension4);
+        assertNull(volatileImage7);
+        assertNotNull(obj10);
     }
 
     @Test
@@ -2568,11 +2568,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Event event13 = null;
         java.lang.Object obj14 = null;
         boolean boolean15 = createCourseUI0.gotFocus(event13, obj14);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertNotNull(componentArray12);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertNotNull(componentArray12);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
     }
 
     @Test
@@ -2589,12 +2589,12 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setEnabled(true);
         boolean boolean11 = createCourseUI0.isForegroundSet();
         boolean boolean12 = createCourseUI0.isOpaque();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
-        org.junit.Assert.assertNotNull(windowStateListenerArray8);
-        org.junit.Assert.assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + true + "'", boolean12 == true);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
+        assertNotNull(windowStateListenerArray8);
+        assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
+        assertTrue(boolean11 == false, "'" + boolean11 + "' != '" + false + "'");
+        assertTrue(boolean12 == true, "'" + boolean12 + "' != '" + true + "'");
     }
 
     @Test
@@ -2626,14 +2626,14 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.ContainerListener containerListener30 = null;
         createCourseUI0.addContainerListener(containerListener30);
         float float32 = createCourseUI0.getOpacity();
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNotNull(color10);
-        org.junit.Assert.assertNotNull(layoutManager11);
-        org.junit.Assert.assertEquals("'" + str22 + "' != '" + "frame173" + "'", str22, "frame173");
-        org.junit.Assert.assertNotNull(point26);
-        org.junit.Assert.assertNotNull(component27);
-        org.junit.Assert.assertNotNull(rectangle29);
-        org.junit.Assert.assertTrue("'" + float32 + "' != '" + 1.0f + "'", float32 == 1.0f);
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
+        assertNotNull(color10);
+        assertNotNull(layoutManager11);
+        assertEquals("'" + str22 + "' != '" + "frame173" + "'", str22, "frame173");
+        assertNotNull(point26);
+        assertNotNull(component27);
+        assertNotNull(rectangle29);
+        assertTrue(float32 == 1.0f, "'" + float32 + "' != '" + 1.0f + "'");
     }
 
     @Test
@@ -2658,11 +2658,11 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI4.removeInputMethodListener(inputMethodListener19);
         java.awt.LayoutManager layoutManager21 = createCourseUI4.getLayout();
         createCourseUI0.setLayout(layoutManager21);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
-        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "frame174" + "'", str12, "frame174");
-        org.junit.Assert.assertNotNull(dimension13);
-        org.junit.Assert.assertNotNull(layoutManager21);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(int2 == 0, "'" + int2 + "' != '" + 0 + "'");
+        assertEquals("'" + str12 + "' != '" + "frame174" + "'", str12, "frame174");
+        assertNotNull(dimension13);
+        assertNotNull(layoutManager21);
     }
 
     @Test
@@ -2676,9 +2676,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setName("");
         java.awt.Point point7 = createCourseUI0.location();
         createCourseUI0.firePropertyChange("frame69", (short) (byte) -1, (short) 100);
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(point7);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(point7);
     }
 
     @Test
@@ -2700,9 +2700,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.addHierarchyListener(hierarchyListener16);
         java.awt.Event event18 = null;
         boolean boolean21 = createCourseUI1.mouseUp(event18, 0, 10);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame175" + "'", str9, "frame175");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        assertEquals("'" + str9 + "' != '" + "frame175" + "'", str9, "frame175");
+        assertNotNull(dimension10);
+        assertTrue(boolean21 == false, "'" + boolean21 + "' != '" + false + "'");
     }
 
     @Test
@@ -2715,9 +2715,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension4 = createCourseUI0.getMaximumSize();
         java.awt.image.VolatileImage volatileImage7 = createCourseUI0.createVolatileImage(16, 100);
         createCourseUI0.transferFocusBackward();
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertNull(volatileImage7);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension4);
+        assertNull(volatileImage7);
     }
 
     @Test
@@ -2747,13 +2747,13 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setLocation(point26);
         java.awt.Event event29 = null;
         boolean boolean32 = createCourseUI0.mouseUp(event29, 11, 500);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNotNull(color10);
-        org.junit.Assert.assertNotNull(layoutManager11);
-        org.junit.Assert.assertEquals("'" + str22 + "' != '" + "frame184" + "'", str22, "frame184");
-        org.junit.Assert.assertNotNull(point26);
-        org.junit.Assert.assertNotNull(component27);
-        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
+        assertNotNull(color10);
+        assertNotNull(layoutManager11);
+        assertEquals("'" + str22 + "' != '" + "frame184" + "'", str22, "frame184");
+        assertNotNull(point26);
+        assertNotNull(component27);
+        assertTrue(boolean32 == false, "'" + boolean32 + "' != '" + false + "'");
     }
 
     @Test
@@ -2771,11 +2771,11 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean11 = createCourseUI0.isForegroundSet();
         java.awt.event.MouseMotionListener mouseMotionListener12 = null;
         createCourseUI0.addMouseMotionListener(mouseMotionListener12);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
-        org.junit.Assert.assertNotNull(windowStateListenerArray8);
-        org.junit.Assert.assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
+        assertNotNull(windowStateListenerArray8);
+        assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
+        assertTrue(boolean11 == false, "'" + boolean11 + "' != '" + false + "'");
     }
 
     @Test
@@ -2811,15 +2811,15 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI4.addContainerListener(containerListener34);
         createCourseUI0.setLocationRelativeTo((java.awt.Component) createCourseUI4);
         boolean boolean37 = createCourseUI0.isAlwaysOnTop();
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNotNull(color14);
-        org.junit.Assert.assertNotNull(layoutManager15);
-        org.junit.Assert.assertEquals("'" + str26 + "' != '" + "frame185" + "'", str26, "frame185");
-        org.junit.Assert.assertNotNull(point30);
-        org.junit.Assert.assertNotNull(component31);
-        org.junit.Assert.assertNotNull(rectangle33);
-        org.junit.Assert.assertTrue("'" + boolean37 + "' != '" + false + "'", boolean37 == false);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNotNull(color14);
+        assertNotNull(layoutManager15);
+        assertEquals("'" + str26 + "' != '" + "frame185" + "'", str26, "frame185");
+        assertNotNull(point30);
+        assertNotNull(component31);
+        assertNotNull(rectangle33);
+        assertTrue(boolean37 == false, "'" + boolean37 + "' != '" + false + "'");
     }
 
     @Test
@@ -2833,9 +2833,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setName("");
         java.awt.Dimension dimension7 = createCourseUI0.minimumSize();
         createCourseUI0.setIgnoreRepaint(false);
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(dimension7);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(dimension7);
     }
 
     @Test
@@ -2852,9 +2852,9 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean12 = createCourseUI0.isAutoRequestFocus();
         java.awt.Cursor cursor13 = null;
         createCourseUI0.setCursor(cursor13);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(rectangle7);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + true + "'", boolean12 == true);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(rectangle7);
+        assertTrue(boolean12 == true, "'" + boolean12 + "' != '" + true + "'");
     }
 
     @Test
@@ -2869,9 +2869,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component9 = createCourseUI0.getComponentAt((int) (short) 0, (int) (byte) 10);
         createCourseUI0.show(true);
         java.awt.Dimension dimension12 = createCourseUI0.preferredSize();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
-        org.junit.Assert.assertNotNull(dimension12);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
+        assertNotNull(dimension12);
     }
 
     @Test
@@ -2889,12 +2889,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.setOpacity((float) 64);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: The value of opacity should be in the range [0.0f .. 1.0f].");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: The value of opacity should be in the range [0.0f .. 1.0f].");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(container6);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
+        assertNotNull(container6);
     }
 
     @Test
@@ -2914,10 +2914,10 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.setModalExclusionType(modalExclusionType14);
         java.awt.event.MouseListener[] mouseListenerArray16 = createCourseUI1.getMouseListeners();
         createCourseUI1.firePropertyChange("frame170", (short) 100, (short) -1);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame188" + "'", str9, "frame188");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNotNull(mouseListenerArray16);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray16, new java.awt.event.MouseListener[] {});
+        assertEquals("'" + str9 + "' != '" + "frame188" + "'", str9, "frame188");
+        assertNotNull(dimension10);
+        assertNotNull(mouseListenerArray16);
+        assertArrayEquals(mouseListenerArray16, new java.awt.event.MouseListener[] {});
     }
 
     @Test
@@ -2956,22 +2956,22 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI18.add((java.awt.Component) createCourseUI26, obj44);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame189" + "'", str9, "frame189");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNotNull(windowFocusListenerArray14);
-        org.junit.Assert.assertArrayEquals(windowFocusListenerArray14, new java.awt.event.WindowFocusListener[] {});
-        org.junit.Assert.assertTrue("'" + float21 + "' != '" + 1.0f + "'", float21 == 1.0f);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + true + "'", boolean22 == true);
-        org.junit.Assert.assertEquals("'" + str34 + "' != '" + "frame190" + "'", str34, "frame190");
-        org.junit.Assert.assertNotNull(dimension35);
-        org.junit.Assert.assertNull(point37);
-        org.junit.Assert.assertTrue("'" + boolean40 + "' != '" + false + "'", boolean40 == false);
-        org.junit.Assert.assertNotNull(jRootPane43);
+        assertEquals("'" + str9 + "' != '" + "frame189" + "'", str9, "frame189");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNotNull(windowFocusListenerArray14);
+        assertArrayEquals(windowFocusListenerArray14, new java.awt.event.WindowFocusListener[] {});
+        assertTrue(float21 == 1.0f, "'" + float21 + "' != '" + 1.0f + "'");
+        assertTrue(boolean22 == true, "'" + boolean22 + "' != '" + true + "'");
+        assertEquals("'" + str34 + "' != '" + "frame190" + "'", str34, "frame190");
+        assertNotNull(dimension35);
+        assertNull(point37);
+        assertTrue(boolean40 == false, "'" + boolean40 + "' != '" + false + "'");
+        assertNotNull(jRootPane43);
     }
 
     @Test
@@ -2981,7 +2981,7 @@ public class CreateCourseUIRegressionTest0 {
         com.example.CreateCourseUI createCourseUI0 = new com.example.CreateCourseUI();
         createCourseUI0.setFocusTraversalPolicyProvider(false);
         boolean boolean5 = createCourseUI0.inside(2, 0);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+        assertTrue(boolean5 == true, "'" + boolean5 + "' != '" + true + "'");
     }
 
     @Test
@@ -2994,9 +2994,9 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean3 = createCourseUI0.isFontSet();
         java.awt.Insets insets4 = createCourseUI0.getInsets();
         java.lang.Class<?> wildcardClass5 = createCourseUI0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(insets4);
-        org.junit.Assert.assertNotNull(wildcardClass5);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
+        assertNotNull(insets4);
+        assertNotNull(wildcardClass5);
     }
 
     @Test
@@ -3011,11 +3011,11 @@ public class CreateCourseUIRegressionTest0 {
         javax.swing.JMenuBar jMenuBar7 = createCourseUI0.getJMenuBar();
         java.awt.event.WindowStateListener[] windowStateListenerArray8 = createCourseUI0.getWindowStateListeners();
         java.awt.Point point10 = createCourseUI0.getMousePosition(true);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
-        org.junit.Assert.assertNotNull(windowStateListenerArray8);
-        org.junit.Assert.assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
-        org.junit.Assert.assertNull(point10);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
+        assertNotNull(windowStateListenerArray8);
+        assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
+        assertNull(point10);
     }
 
     @Test
@@ -3040,16 +3040,16 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component21 = createCourseUI1.add((java.awt.Component) createCourseUI12, (int) (short) -1);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame193" + "'", str9, "frame193");
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
-        org.junit.Assert.assertNotNull(point14);
-        org.junit.Assert.assertNotNull(point15);
-        org.junit.Assert.assertNotNull(component16);
-        org.junit.Assert.assertNotNull(toolkit19);
+        assertEquals("'" + str9 + "' != '" + "frame193" + "'", str9, "frame193");
+        assertTrue(boolean10 == true, "'" + boolean10 + "' != '" + true + "'");
+        assertNotNull(point14);
+        assertNotNull(point15);
+        assertNotNull(component16);
+        assertNotNull(toolkit19);
     }
 
     @Test
@@ -3061,7 +3061,7 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setLocationRelativeTo((java.awt.Component) createCourseUI1);
         createCourseUI1.setAlwaysOnTop(false);
         java.lang.String str5 = createCourseUI1.toString();
-        org.junit.Assert.assertEquals("'" + str5 + "' != '" + "com.example.CreateCourseUI[frame194,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str5, "com.example.CreateCourseUI[frame194,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertEquals("'" + str5 + "' != '" + "com.example.CreateCourseUI[frame194,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str5, "com.example.CreateCourseUI[frame194,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
     }
 
     @Test
@@ -3089,17 +3089,17 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.setGlassPane((java.awt.Component) createCourseUI9);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(color16);
-        org.junit.Assert.assertNotNull(accessibleContext17);
-        org.junit.Assert.assertEquals("'" + str18 + "' != '" + "com.example.CreateCourseUI[frame195,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str18, "com.example.CreateCourseUI[frame195,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(color16);
+        assertNotNull(accessibleContext17);
+        assertEquals("'" + str18 + "' != '" + "com.example.CreateCourseUI[frame195,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str18, "com.example.CreateCourseUI[frame195,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
     }
 
     @Test
@@ -3114,8 +3114,8 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseListener mouseListener5 = null;
         createCourseUI1.removeMouseListener(mouseListener5);
         createCourseUI1.transferFocusBackward();
-        org.junit.Assert.assertNotNull(point3);
-        org.junit.Assert.assertNotNull(point4);
+        assertNotNull(point3);
+        assertNotNull(point4);
     }
 
     @Test
@@ -3143,15 +3143,15 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.setOpacity(0.5f);
-            org.junit.Assert.fail("Expected exception of type java.awt.IllegalComponentStateException; message: The frame is decorated");
+            fail("Expected exception of type java.awt.IllegalComponentStateException; message: The frame is decorated");
         } catch (java.awt.IllegalComponentStateException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertEquals("'" + str15 + "' != '" + "frame197" + "'", str15, "frame197");
-        org.junit.Assert.assertNotNull(point19);
-        org.junit.Assert.assertNotNull(component20);
-        org.junit.Assert.assertNull(component21);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertEquals("'" + str15 + "' != '" + "frame197" + "'", str15, "frame197");
+        assertNotNull(point19);
+        assertNotNull(component20);
+        assertNull(component21);
     }
 
     @Test
@@ -3175,15 +3175,15 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component19 = createCourseUI1.add((java.awt.Component) createCourseUI15);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame200" + "'", str9, "frame200");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertNotNull(toolkit18);
+        assertEquals("'" + str9 + "' != '" + "frame200" + "'", str9, "frame200");
+        assertNotNull(dimension10);
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean17 == false, "'" + boolean17 + "' != '" + false + "'");
+        assertNotNull(toolkit18);
     }
 
     @Test
@@ -3195,8 +3195,8 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setLocationRelativeTo((java.awt.Component) createCourseUI1);
         int int3 = createCourseUI1.getExtendedState();
         float float4 = createCourseUI1.getOpacity();
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 0 + "'", int3 == 0);
-        org.junit.Assert.assertTrue("'" + float4 + "' != '" + 1.0f + "'", float4 == 1.0f);
+        assertTrue(int3 == 0, "'" + int3 + "' != '" + 0 + "'");
+        assertTrue(float4 == 1.0f, "'" + float4 + "' != '" + 1.0f + "'");
     }
 
     @Test
@@ -3211,14 +3211,14 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component7 = createCourseUI0.getComponent(184);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: No such child: 184");
+            fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: No such child: 184");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(locale4);
-        org.junit.Assert.assertEquals(locale4.toString(), "en_US");
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(locale4);
+        assertEquals(locale4.toString(), "en_US");
+        assertTrue(boolean5 == true, "'" + boolean5 + "' != '" + true + "'");
     }
 
     @Test
@@ -3238,12 +3238,12 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Event event16 = null;
         boolean boolean18 = createCourseUI14.action(event16, (java.lang.Object) (byte) 1);
         createCourseUI1.setLocationRelativeTo((java.awt.Component) createCourseUI14);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame201" + "'", str9, "frame201");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertNotNull(focusListenerArray13);
-        org.junit.Assert.assertArrayEquals(focusListenerArray13, new java.awt.event.FocusListener[] {});
-        org.junit.Assert.assertTrue("'" + float15 + "' != '" + 0.5f + "'", float15 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertEquals("'" + str9 + "' != '" + "frame201" + "'", str9, "frame201");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertNotNull(focusListenerArray13);
+        assertArrayEquals(focusListenerArray13, new java.awt.event.FocusListener[] {});
+        assertTrue(float15 == 0.5f, "'" + float15 + "' != '" + 0.5f + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -3259,9 +3259,9 @@ public class CreateCourseUIRegressionTest0 {
         int int8 = createCourseUI0.getCursorType();
         java.awt.event.ContainerListener containerListener9 = null;
         createCourseUI0.removeContainerListener(containerListener9);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 0 + "'", int8 == 0);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertTrue(int8 == 0, "'" + int8 + "' != '" + 0 + "'");
     }
 
     @Test
@@ -3276,12 +3276,12 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Window[] windowArray5 = java.awt.Window.getWindows();
         java.lang.Class<?> wildcardClass6 = windowArray5.getClass();
         boolean boolean7 = createCourseUI0.gotFocus(event4, (java.lang.Object) wildcardClass6);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(componentArray2);
-        org.junit.Assert.assertNull(image3);
-        org.junit.Assert.assertNotNull(windowArray5);
-        org.junit.Assert.assertNotNull(wildcardClass6);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(componentArray2);
+        assertNull(image3);
+        assertNotNull(windowArray5);
+        assertNotNull(wildcardClass6);
+        assertTrue(boolean7 == false, "'" + boolean7 + "' != '" + false + "'");
     }
 
     @Test
@@ -3299,11 +3299,11 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.doLayout();
         boolean boolean14 = createCourseUI1.isFocused();
         java.util.Locale locale15 = createCourseUI1.getLocale();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame202" + "'", str9, "frame202");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(locale15);
-        org.junit.Assert.assertEquals(locale15.toString(), "en_US");
+        assertEquals("'" + str9 + "' != '" + "frame202" + "'", str9, "frame202");
+        assertNotNull(dimension10);
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(locale15);
+        assertEquals(locale15.toString(), "en_US");
     }
 
     @Test
@@ -3326,15 +3326,15 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.dispatchEvent(aWTEvent18);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.awt.AWTEvent.getID()\" because \"e\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.awt.AWTEvent.getID()\" because \"e\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame203" + "'", str9, "frame203");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(imageList17);
+        assertEquals("'" + str9 + "' != '" + "frame203" + "'", str9, "frame203");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(imageList17);
     }
 
     @Test
@@ -3350,14 +3350,14 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean6 = createCourseUI0.postEvent(event5);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"id\" because \"evt\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"id\" because \"evt\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 1 + "'", int3 == 1);
-        org.junit.Assert.assertNull(graphics4);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true, "'" + boolean2 + "' != '" + true + "'");
+        assertTrue(int3 == 1, "'" + int3 + "' != '" + 1 + "'");
+        assertNull(graphics4);
     }
 
     @Test
@@ -3375,13 +3375,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.setGlassPane(component11);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: glassPane cannot be set to null.");
+            fail("Expected exception of type java.lang.NullPointerException; message: glassPane cannot be set to null.");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -3393,9 +3393,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setFocusable(false);
         boolean boolean4 = createCourseUI0.isMinimumSizeSet();
         java.awt.Point point5 = createCourseUI0.getLocation();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(point5);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(point5);
     }
 
     @Test
@@ -3411,9 +3411,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.LayoutManager layoutManager8 = createCourseUI0.getLayout();
         java.awt.Image image9 = null;
         createCourseUI0.setIconImage(image9);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(layoutManager8);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(layoutManager8);
     }
 
     @Test
@@ -3425,7 +3425,7 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component2 = createCourseUI0.getGlassPane();
         java.awt.dnd.DropTarget dropTarget3 = null;
         createCourseUI0.setDropTarget(dropTarget3);
-        org.junit.Assert.assertNotNull(component2);
+        assertNotNull(component2);
     }
 
     @Test
@@ -3444,10 +3444,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.im.InputMethodRequests inputMethodRequests14 = createCourseUI1.getInputMethodRequests();
         java.awt.event.WindowListener windowListener15 = null;
         createCourseUI1.addWindowListener(windowListener15);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame209" + "'", str9, "frame209");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
-        org.junit.Assert.assertNull(inputMethodRequests14);
+        assertEquals("'" + str9 + "' != '" + "frame209" + "'", str9, "frame209");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == true, "'" + boolean13 + "' != '" + true + "'");
+        assertNull(inputMethodRequests14);
     }
 
     @Test
@@ -3462,10 +3462,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Color color7 = createCourseUI0.getBackground();
         java.awt.FocusTraversalPolicy focusTraversalPolicy8 = createCourseUI0.getFocusTraversalPolicy();
         int int9 = createCourseUI0.getX();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(focusTraversalPolicy8);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 433 + "'", int9 == 433);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(focusTraversalPolicy8);
+        assertTrue(int9 == 433, "'" + int9 + "' != '" + 433 + "'");
     }
 
     @Test
@@ -3480,10 +3480,10 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean8 = createCourseUI0.isLightweight();
         java.awt.Component.BaselineResizeBehavior baselineResizeBehavior9 = createCourseUI0.getBaselineResizeBehavior();
         java.awt.event.HierarchyBoundsListener[] hierarchyBoundsListenerArray10 = createCourseUI0.getHierarchyBoundsListeners();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + baselineResizeBehavior9 + "' != '" + java.awt.Component.BaselineResizeBehavior.OTHER + "'", baselineResizeBehavior9.equals(java.awt.Component.BaselineResizeBehavior.OTHER));
-        org.junit.Assert.assertNotNull(hierarchyBoundsListenerArray10);
-        org.junit.Assert.assertArrayEquals(hierarchyBoundsListenerArray10, new java.awt.event.HierarchyBoundsListener[] {});
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(baselineResizeBehavior9.equals(java.awt.Component.BaselineResizeBehavior.OTHER), "'" + baselineResizeBehavior9 + "' != '" + java.awt.Component.BaselineResizeBehavior.OTHER + "'");
+        assertNotNull(hierarchyBoundsListenerArray10);
+        assertArrayEquals(hierarchyBoundsListenerArray10, new java.awt.event.HierarchyBoundsListener[] {});
     }
 
     @Test
@@ -3508,14 +3508,14 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI10.show(true);
         boolean boolean22 = createCourseUI0.lostFocus(event9, (java.lang.Object) true);
         int int23 = createCourseUI0.getComponentCount();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertNotNull(color6);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(component19);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + int23 + "' != '" + 1 + "'", int23 == 1);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == false, "'" + boolean5 + "' != '" + false + "'");
+        assertNotNull(color6);
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(component19);
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(int23 == 1, "'" + int23 + "' != '" + 1 + "'");
     }
 
     @Test
@@ -3551,16 +3551,16 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI4.addContainerListener(containerListener34);
         createCourseUI0.setLocationRelativeTo((java.awt.Component) createCourseUI4);
         java.awt.event.WindowFocusListener[] windowFocusListenerArray37 = createCourseUI0.getWindowFocusListeners();
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNotNull(color14);
-        org.junit.Assert.assertNotNull(layoutManager15);
-        org.junit.Assert.assertEquals("'" + str26 + "' != '" + "frame212" + "'", str26, "frame212");
-        org.junit.Assert.assertNotNull(point30);
-        org.junit.Assert.assertNotNull(component31);
-        org.junit.Assert.assertNotNull(rectangle33);
-        org.junit.Assert.assertNotNull(windowFocusListenerArray37);
-        org.junit.Assert.assertArrayEquals(windowFocusListenerArray37, new java.awt.event.WindowFocusListener[] {});
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNotNull(color14);
+        assertNotNull(layoutManager15);
+        assertEquals("'" + str26 + "' != '" + "frame212" + "'", str26, "frame212");
+        assertNotNull(point30);
+        assertNotNull(component31);
+        assertNotNull(rectangle33);
+        assertNotNull(windowFocusListenerArray37);
+        assertArrayEquals(windowFocusListenerArray37, new java.awt.event.WindowFocusListener[] {});
     }
 
     @Test
@@ -3585,14 +3585,14 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.list(printWriter19, 128);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.print(String)\" because \"out\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.print(String)\" because \"out\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "frame214" + "'", str12, "frame214");
-        org.junit.Assert.assertNotNull(point16);
-        org.junit.Assert.assertNotNull(component17);
-        org.junit.Assert.assertNull(component18);
+        assertEquals("'" + str12 + "' != '" + "frame214" + "'", str12, "frame214");
+        assertNotNull(point16);
+        assertNotNull(component17);
+        assertNull(component18);
     }
 
     @Test
@@ -3605,11 +3605,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Image image3 = createCourseUI0.getIconImage();
         java.awt.Component component4 = createCourseUI0.getMostRecentFocusOwner();
         java.awt.im.InputMethodRequests inputMethodRequests5 = createCourseUI0.getInputMethodRequests();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(componentArray2);
-        org.junit.Assert.assertNull(image3);
-        org.junit.Assert.assertNotNull(component4);
-        org.junit.Assert.assertNull(inputMethodRequests5);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(componentArray2);
+        assertNull(image3);
+        assertNotNull(component4);
+        assertNull(inputMethodRequests5);
     }
 
     @Test
@@ -3624,13 +3624,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean6 = window5.isFocused();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.getClass()\" because \"o\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.getClass()\" because \"o\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(window5);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNull(window5);
     }
 
     @Test
@@ -3647,10 +3647,10 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean12 = createCourseUI1.requestFocusInWindow(cause11);
         createCourseUI1.setAlwaysOnTop(false);
         java.awt.Rectangle rectangle15 = createCourseUI1.getMaximizedBounds();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame216" + "'", str9, "frame216");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNull(rectangle15);
+        assertEquals("'" + str9 + "' != '" + "frame216" + "'", str9, "frame216");
+        assertNotNull(dimension10);
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNull(rectangle15);
     }
 
     @Test
@@ -3674,15 +3674,15 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.dnd.DropTarget dropTarget23 = createCourseUI18.getDropTarget();
         java.awt.Image image24 = null;
         boolean boolean30 = createCourseUI18.imageUpdate(image24, (int) 'a', (int) (byte) 10, (int) ' ', 0, 7);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame217" + "'", str9, "frame217");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNotNull(windowFocusListenerArray14);
-        org.junit.Assert.assertArrayEquals(windowFocusListenerArray14, new java.awt.event.WindowFocusListener[] {});
-        org.junit.Assert.assertTrue("'" + float21 + "' != '" + 1.0f + "'", float21 == 1.0f);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + true + "'", boolean22 == true);
-        org.junit.Assert.assertNull(dropTarget23);
-        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
+        assertEquals("'" + str9 + "' != '" + "frame217" + "'", str9, "frame217");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNotNull(windowFocusListenerArray14);
+        assertArrayEquals(windowFocusListenerArray14, new java.awt.event.WindowFocusListener[] {});
+        assertTrue(float21 == 1.0f, "'" + float21 + "' != '" + 1.0f + "'");
+        assertTrue(boolean22 == true, "'" + boolean22 + "' != '" + true + "'");
+        assertNull(dropTarget23);
+        assertTrue(boolean30 == false, "'" + boolean30 + "' != '" + false + "'");
     }
 
     @Test
@@ -3696,11 +3696,11 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean5 = createCourseUI0.isOpaque();
         java.awt.Event event6 = null;
         boolean boolean9 = createCourseUI0.mouseDown(event6, (int) (short) 100, (int) (short) 1);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(locale4);
-        org.junit.Assert.assertEquals(locale4.toString(), "en_US");
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(locale4);
+        assertEquals(locale4.toString(), "en_US");
+        assertTrue(boolean5 == true, "'" + boolean5 + "' != '" + true + "'");
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
     }
 
     @Test
@@ -3718,11 +3718,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component14 = createCourseUI1.getGlassPane();
         java.awt.Event event15 = null;
         boolean boolean18 = component14.mouseDrag(event15, (int) (byte) 1, 0);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame218" + "'", str9, "frame218");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertNotNull(container13);
-        org.junit.Assert.assertNotNull(component14);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertEquals("'" + str9 + "' != '" + "frame218" + "'", str9, "frame218");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertNotNull(container13);
+        assertNotNull(component14);
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -3737,10 +3737,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Rectangle rectangle5 = createCourseUI0.bounds();
         java.awt.event.FocusEvent.Cause cause6 = null;
         boolean boolean7 = createCourseUI0.requestFocusInWindow(cause6);
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "com.example.CreateCourseUI[frame220,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str1, "com.example.CreateCourseUI[frame220,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 500 + "'", int2 == 500);
-        org.junit.Assert.assertNotNull(rectangle5);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
+        assertEquals("'" + str1 + "' != '" + "com.example.CreateCourseUI[frame220,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str1, "com.example.CreateCourseUI[frame220,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertTrue(int2 == 500, "'" + int2 + "' != '" + 500 + "'");
+        assertNotNull(rectangle5);
+        assertTrue(boolean7 == false, "'" + boolean7 + "' != '" + false + "'");
     }
 
     @Test
@@ -3753,9 +3753,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.image.BufferStrategy bufferStrategy3 = createCourseUI0.getBufferStrategy();
         java.awt.ImageCapabilities imageCapabilities6 = null;
         java.awt.image.VolatileImage volatileImage7 = createCourseUI0.createVolatileImage(2, 64, imageCapabilities6);
-        org.junit.Assert.assertNotNull(focusTraversalPolicy2);
-        org.junit.Assert.assertNull(bufferStrategy3);
-        org.junit.Assert.assertNull(volatileImage7);
+        assertNotNull(focusTraversalPolicy2);
+        assertNull(bufferStrategy3);
+        assertNull(volatileImage7);
     }
 
     @Test
@@ -3779,18 +3779,18 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component21 = createCourseUI0.add("frame170", (java.awt.Component) createCourseUI10);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
-        org.junit.Assert.assertNull(image8);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNull(jMenuBar17);
-        org.junit.Assert.assertNotNull(windowStateListenerArray18);
-        org.junit.Assert.assertArrayEquals(windowStateListenerArray18, new java.awt.event.WindowStateListener[] {});
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean7 == true, "'" + boolean7 + "' != '" + true + "'");
+        assertNull(image8);
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNull(jMenuBar17);
+        assertNotNull(windowStateListenerArray18);
+        assertArrayEquals(windowStateListenerArray18, new java.awt.event.WindowStateListener[] {});
     }
 
     @Test
@@ -3812,15 +3812,15 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component15 = createCourseUI0.getComponentAt(point14);
         java.awt.event.WindowListener[] windowListenerArray16 = createCourseUI0.getWindowListeners();
         float float17 = createCourseUI0.getOpacity();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNotNull(point14);
-        org.junit.Assert.assertNotNull(component15);
-        org.junit.Assert.assertNotNull(windowListenerArray16);
-        org.junit.Assert.assertArrayEquals(windowListenerArray16, new java.awt.event.WindowListener[] {});
-        org.junit.Assert.assertTrue("'" + float17 + "' != '" + 1.0f + "'", float17 == 1.0f);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertNotNull(dimension10);
+        assertNotNull(point14);
+        assertNotNull(component15);
+        assertNotNull(windowListenerArray16);
+        assertArrayEquals(windowListenerArray16, new java.awt.event.WindowListener[] {});
+        assertTrue(float17 == 1.0f, "'" + float17 + "' != '" + 1.0f + "'");
     }
 
     @Test
@@ -3868,21 +3868,21 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component51 = createCourseUI1.add((java.awt.Component) createCourseUI19);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "frame225" + "'", str12, "frame225");
-        org.junit.Assert.assertNotNull(point16);
-        org.junit.Assert.assertNotNull(component17);
-        org.junit.Assert.assertNull(component18);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
-        org.junit.Assert.assertNotNull(color29);
-        org.junit.Assert.assertNotNull(layoutManager30);
-        org.junit.Assert.assertEquals("'" + str41 + "' != '" + "frame226" + "'", str41, "frame226");
-        org.junit.Assert.assertNotNull(point45);
-        org.junit.Assert.assertNotNull(component46);
-        org.junit.Assert.assertNotNull(rectangle48);
+        assertEquals("'" + str12 + "' != '" + "frame225" + "'", str12, "frame225");
+        assertNotNull(point16);
+        assertNotNull(component17);
+        assertNull(component18);
+        assertTrue(boolean28 == false, "'" + boolean28 + "' != '" + false + "'");
+        assertNotNull(color29);
+        assertNotNull(layoutManager30);
+        assertEquals("'" + str41 + "' != '" + "frame226" + "'", str41, "frame226");
+        assertNotNull(point45);
+        assertNotNull(component46);
+        assertNotNull(rectangle48);
     }
 
     @Test
@@ -3897,7 +3897,7 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseListener mouseListener10 = null;
         createCourseUI1.removeMouseListener(mouseListener10);
         createCourseUI1.disable();
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+        assertTrue(boolean9 == true, "'" + boolean9 + "' != '" + true + "'");
     }
 
     @Test
@@ -3909,8 +3909,8 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setLocationRelativeTo((java.awt.Component) createCourseUI1);
         int int3 = createCourseUI1.getExtendedState();
         java.awt.Window window4 = createCourseUI1.getOwner();
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 0 + "'", int3 == 0);
-        org.junit.Assert.assertNull(window4);
+        assertTrue(int3 == 0, "'" + int3 + "' != '" + 0 + "'");
+        assertNull(window4);
     }
 
     @Test
@@ -3940,18 +3940,18 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.add((java.awt.Component) jRootPane30, (java.lang.Object) (byte) 1);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: cannot add to layout: constraint must be a string (or null)");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: cannot add to layout: constraint must be a string (or null)");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(volatileImage11);
-        org.junit.Assert.assertEquals("'" + str21 + "' != '" + "frame231" + "'", str21, "frame231");
-        org.junit.Assert.assertNotNull(dimension22);
-        org.junit.Assert.assertNull(point24);
-        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
-        org.junit.Assert.assertNotNull(jRootPane30);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNull(volatileImage11);
+        assertEquals("'" + str21 + "' != '" + "frame231" + "'", str21, "frame231");
+        assertNotNull(dimension22);
+        assertNull(point24);
+        assertTrue(boolean27 == false, "'" + boolean27 + "' != '" + false + "'");
+        assertNotNull(jRootPane30);
     }
 
     @Test
@@ -3966,8 +3966,8 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean8 = createCourseUI0.isLightweight();
         java.awt.Component.BaselineResizeBehavior baselineResizeBehavior9 = createCourseUI0.getBaselineResizeBehavior();
         createCourseUI0.toBack();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + baselineResizeBehavior9 + "' != '" + java.awt.Component.BaselineResizeBehavior.OTHER + "'", baselineResizeBehavior9.equals(java.awt.Component.BaselineResizeBehavior.OTHER));
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(baselineResizeBehavior9.equals(java.awt.Component.BaselineResizeBehavior.OTHER), "'" + baselineResizeBehavior9 + "' != '" + java.awt.Component.BaselineResizeBehavior.OTHER + "'");
     }
 
     @Test
@@ -3991,16 +3991,16 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension17 = createCourseUI9.getMinimumSize();
         createCourseUI0.setSize(dimension17);
         boolean boolean19 = createCourseUI0.isPreferredSizeSet();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertNull(volatileImage7);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
-        org.junit.Assert.assertTrue("'" + float12 + "' != '" + 1.0f + "'", float12 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray13);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray13, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + float14 + "' != '" + 0.5f + "'", float14 == 0.5f);
-        org.junit.Assert.assertNotNull(dimension17);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(dimension4);
+        assertNull(volatileImage7);
+        assertTrue(boolean8 == true, "'" + boolean8 + "' != '" + true + "'");
+        assertTrue(float12 == 1.0f, "'" + float12 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray13);
+        assertArrayEquals(hierarchyListenerArray13, new java.awt.event.HierarchyListener[] {});
+        assertTrue(float14 == 0.5f, "'" + float14 + "' != '" + 0.5f + "'");
+        assertNotNull(dimension17);
+        assertTrue(boolean19 == false, "'" + boolean19 + "' != '" + false + "'");
     }
 
     @Test
@@ -4016,12 +4016,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component11 = createCourseUI0.getComponent((int) (byte) -1);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: No such child: -1");
+            fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: No such child: -1");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
     }
 
     @Test
@@ -4043,16 +4043,16 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component15 = createCourseUI3.getComponent((int) (byte) 1);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: No such child: 1");
+            fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: No such child: 1");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "com.example.CreateCourseUI[frame234,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str1, "com.example.CreateCourseUI[frame234,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(insets7);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertNotNull(rectangle12);
-        org.junit.Assert.assertTrue("'" + int13 + "' != '" + 32 + "'", int13 == 32);
+        assertEquals("'" + str1 + "' != '" + "com.example.CreateCourseUI[frame234,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str1, "com.example.CreateCourseUI[frame234,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(insets7);
+        assertTrue(boolean11 == false, "'" + boolean11 + "' != '" + false + "'");
+        assertNotNull(rectangle12);
+        assertTrue(int13 == 32, "'" + int13 + "' != '" + 32 + "'");
     }
 
     @Test
@@ -4073,12 +4073,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component17 = createCourseUI1.add((java.awt.Component) createCourseUI4, 8);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: illegal component position");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: illegal component position");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNull(rectangle11);
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNull(rectangle11);
     }
 
     @Test
@@ -4093,10 +4093,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dialog.ModalExclusionType modalExclusionType6 = null;
         createCourseUI0.setModalExclusionType(modalExclusionType6);
         createCourseUI0.list();
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray4);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + float5 + "' != '" + 0.5f + "'", float5 == 0.5f);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray4);
+        assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
+        assertTrue(float5 == 0.5f, "'" + float5 + "' != '" + 0.5f + "'");
     }
 
     @Test
@@ -4127,20 +4127,20 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean26 = component18.prepareImage(image19, (java.awt.image.ImageObserver) createCourseUI20);
         java.awt.Point point27 = component18.getLocation();
         boolean boolean28 = createCourseUI0.contains(point27);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(componentArray2);
-        org.junit.Assert.assertNull(image3);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(color13);
-        org.junit.Assert.assertNotNull(accessibleContext14);
-        org.junit.Assert.assertNotNull(component18);
-        org.junit.Assert.assertTrue("'" + float23 + "' != '" + 1.0f + "'", float23 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray24);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray24, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + float25 + "' != '" + 0.5f + "'", float25 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + true + "'", boolean26 == true);
-        org.junit.Assert.assertNotNull(point27);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + true + "'", boolean28 == true);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(componentArray2);
+        assertNull(image3);
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(color13);
+        assertNotNull(accessibleContext14);
+        assertNotNull(component18);
+        assertTrue(float23 == 1.0f, "'" + float23 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray24);
+        assertArrayEquals(hierarchyListenerArray24, new java.awt.event.HierarchyListener[] {});
+        assertTrue(float25 == 0.5f, "'" + float25 + "' != '" + 0.5f + "'");
+        assertTrue(boolean26 == true, "'" + boolean26 + "' != '" + true + "'");
+        assertNotNull(point27);
+        assertTrue(boolean28 == true, "'" + boolean28 + "' != '" + true + "'");
     }
 
     @Test
@@ -4155,11 +4155,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseMotionListener[] mouseMotionListenerArray6 = createCourseUI0.getMouseMotionListeners();
         javax.swing.TransferHandler transferHandler7 = null;
         createCourseUI0.setTransferHandler(transferHandler7);
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertNotNull(mouseMotionListenerArray6);
-        org.junit.Assert.assertArrayEquals(mouseMotionListenerArray6, new java.awt.event.MouseMotionListener[] {});
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == true, "'" + boolean5 + "' != '" + true + "'");
+        assertNotNull(mouseMotionListenerArray6);
+        assertArrayEquals(mouseMotionListenerArray6, new java.awt.event.MouseMotionListener[] {});
     }
 
     @Test
@@ -4191,13 +4191,13 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.ContainerListener containerListener30 = null;
         createCourseUI0.addContainerListener(containerListener30);
         createCourseUI0.list();
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNotNull(color10);
-        org.junit.Assert.assertNotNull(layoutManager11);
-        org.junit.Assert.assertEquals("'" + str22 + "' != '" + "frame238" + "'", str22, "frame238");
-        org.junit.Assert.assertNotNull(point26);
-        org.junit.Assert.assertNotNull(component27);
-        org.junit.Assert.assertNotNull(rectangle29);
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
+        assertNotNull(color10);
+        assertNotNull(layoutManager11);
+        assertEquals("'" + str22 + "' != '" + "frame238" + "'", str22, "frame238");
+        assertNotNull(point26);
+        assertNotNull(component27);
+        assertNotNull(rectangle29);
     }
 
     @Test
@@ -4218,12 +4218,12 @@ public class CreateCourseUIRegressionTest0 {
         java.util.List<java.awt.Image> imageList15 = createCourseUI7.getIconImages();
         createCourseUI0.setIconImages(imageList15);
         boolean boolean17 = createCourseUI0.isResizable();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + float8 + "' != '" + 0.5f + "'", float8 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertNotNull(dimension14);
-        org.junit.Assert.assertNotNull(imageList15);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(float8 == 0.5f, "'" + float8 + "' != '" + 0.5f + "'");
+        assertTrue(boolean11 == false, "'" + boolean11 + "' != '" + false + "'");
+        assertNotNull(dimension14);
+        assertNotNull(imageList15);
+        assertTrue(boolean17 == true, "'" + boolean17 + "' != '" + true + "'");
     }
 
     @Test
@@ -4237,8 +4237,8 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.FocusEvent.Cause cause5 = null;
         createCourseUI0.requestFocus(cause5);
         createCourseUI0.addNotify();
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension4);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension4);
     }
 
     @Test
@@ -4258,13 +4258,13 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Color color11 = createCourseUI6.getBackground();
         createCourseUI0.setBackground(color11);
         boolean boolean13 = createCourseUI0.isCursorSet();
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNull(menuBar4);
-        org.junit.Assert.assertNotNull(rectangle5);
-        org.junit.Assert.assertTrue("'" + float7 + "' != '" + 0.5f + "'", float7 == 0.5f);
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNotNull(color11);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNull(menuBar4);
+        assertNotNull(rectangle5);
+        assertTrue(float7 == 0.5f, "'" + float7 + "' != '" + 0.5f + "'");
+        assertNotNull(dimension10);
+        assertNotNull(color11);
+        assertTrue(boolean13 == true, "'" + boolean13 + "' != '" + true + "'");
     }
 
     @Test
@@ -4277,11 +4277,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.HierarchyListener[] hierarchyListenerArray4 = createCourseUI0.getHierarchyListeners();
         boolean boolean5 = createCourseUI0.isResizable();
         boolean boolean6 = createCourseUI0.isEnabled();
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray4);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray4);
+        assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
+        assertTrue(boolean5 == true, "'" + boolean5 + "' != '" + true + "'");
+        assertTrue(boolean6 == true, "'" + boolean6 + "' != '" + true + "'");
     }
 
     @Test
@@ -4356,38 +4356,38 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI9.setShape((java.awt.Shape) rectangle81);
-            org.junit.Assert.fail("Expected exception of type java.awt.IllegalComponentStateException; message: The frame is decorated");
+            fail("Expected exception of type java.awt.IllegalComponentStateException; message: The frame is decorated");
         } catch (java.awt.IllegalComponentStateException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(toolkit5);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(component18);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 32 + "'", int19 == 32);
-        org.junit.Assert.assertTrue("'" + float23 + "' != '" + 1.0f + "'", float23 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension24);
-        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + false + "'", boolean29 == false);
-        org.junit.Assert.assertTrue("'" + int30 + "' != '" + 0 + "'", int30 == 0);
-        org.junit.Assert.assertTrue("'" + float32 + "' != '" + 0.5f + "'", float32 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + false + "'", boolean35 == false);
-        org.junit.Assert.assertTrue("'" + boolean36 + "' != '" + false + "'", boolean36 == false);
-        org.junit.Assert.assertNotNull(color37);
-        org.junit.Assert.assertTrue("'" + boolean39 + "' != '" + false + "'", boolean39 == false);
-        org.junit.Assert.assertTrue("'" + boolean49 + "' != '" + false + "'", boolean49 == false);
-        org.junit.Assert.assertNotNull(color50);
-        org.junit.Assert.assertNotNull(layoutManager51);
-        org.junit.Assert.assertEquals("'" + str62 + "' != '" + "frame241" + "'", str62, "frame241");
-        org.junit.Assert.assertNotNull(point66);
-        org.junit.Assert.assertNotNull(component67);
-        org.junit.Assert.assertNotNull(rectangle69);
-        org.junit.Assert.assertTrue("'" + boolean75 + "' != '" + false + "'", boolean75 == false);
-        org.junit.Assert.assertNotNull(insets76);
-        org.junit.Assert.assertTrue("'" + boolean80 + "' != '" + false + "'", boolean80 == false);
-        org.junit.Assert.assertNotNull(rectangle81);
-        org.junit.Assert.assertNotNull(rectangle82);
-        org.junit.Assert.assertNotNull(rectangle83);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(toolkit5);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(component18);
+        assertTrue(int19 == 32, "'" + int19 + "' != '" + 32 + "'");
+        assertTrue(float23 == 1.0f, "'" + float23 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension24);
+        assertTrue(boolean29 == false, "'" + boolean29 + "' != '" + false + "'");
+        assertTrue(int30 == 0, "'" + int30 + "' != '" + 0 + "'");
+        assertTrue(float32 == 0.5f, "'" + float32 + "' != '" + 0.5f + "'");
+        assertTrue(boolean35 == false, "'" + boolean35 + "' != '" + false + "'");
+        assertTrue(boolean36 == false, "'" + boolean36 + "' != '" + false + "'");
+        assertNotNull(color37);
+        assertTrue(boolean39 == false, "'" + boolean39 + "' != '" + false + "'");
+        assertTrue(boolean49 == false, "'" + boolean49 + "' != '" + false + "'");
+        assertNotNull(color50);
+        assertNotNull(layoutManager51);
+        assertEquals("'" + str62 + "' != '" + "frame241" + "'", str62, "frame241");
+        assertNotNull(point66);
+        assertNotNull(component67);
+        assertNotNull(rectangle69);
+        assertTrue(boolean75 == false, "'" + boolean75 + "' != '" + false + "'");
+        assertNotNull(insets76);
+        assertTrue(boolean80 == false, "'" + boolean80 + "' != '" + false + "'");
+        assertNotNull(rectangle81);
+        assertNotNull(rectangle82);
+        assertNotNull(rectangle83);
     }
 
     @Test
@@ -4403,9 +4403,9 @@ public class CreateCourseUIRegressionTest0 {
         int int8 = createCourseUI0.getCursorType();
         java.awt.event.InputMethodListener inputMethodListener9 = null;
         createCourseUI0.removeInputMethodListener(inputMethodListener9);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 0 + "'", int8 == 0);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertTrue(int8 == 0, "'" + int8 + "' != '" + 0 + "'");
     }
 
     @Test
@@ -4420,9 +4420,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Rectangle rectangle7 = createCourseUI0.getMaximizedBounds();
         createCourseUI0.setEnabled(true);
         boolean boolean10 = createCourseUI0.isMaximumSizeSet();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(rectangle7);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(rectangle7);
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -4437,10 +4437,10 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.removeHierarchyListener(hierarchyListener5);
         createCourseUI0.setFocusTraversalPolicyProvider(false);
         java.beans.PropertyChangeListener[] propertyChangeListenerArray9 = createCourseUI0.getPropertyChangeListeners();
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray9);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray9, new java.beans.PropertyChangeListener[] {});
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension4);
+        assertNotNull(propertyChangeListenerArray9);
+        assertArrayEquals(propertyChangeListenerArray9, new java.beans.PropertyChangeListener[] {});
     }
 
     @Test
@@ -4457,11 +4457,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Container container13 = createCourseUI1.getContentPane();
         java.awt.Component component14 = createCourseUI1.getGlassPane();
         float float15 = createCourseUI1.getAlignmentX();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame246" + "'", str9, "frame246");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertNotNull(container13);
-        org.junit.Assert.assertNotNull(component14);
-        org.junit.Assert.assertTrue("'" + float15 + "' != '" + 0.5f + "'", float15 == 0.5f);
+        assertEquals("'" + str9 + "' != '" + "frame246" + "'", str9, "frame246");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertNotNull(container13);
+        assertNotNull(component14);
+        assertTrue(float15 == 0.5f, "'" + float15 + "' != '" + 0.5f + "'");
     }
 
     @Test
@@ -4475,11 +4475,11 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean5 = createCourseUI0.isAutoRequestFocus();
         java.awt.event.MouseMotionListener[] mouseMotionListenerArray6 = createCourseUI0.getMouseMotionListeners();
         createCourseUI0.setFocusableWindowState(true);
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertNotNull(mouseMotionListenerArray6);
-        org.junit.Assert.assertArrayEquals(mouseMotionListenerArray6, new java.awt.event.MouseMotionListener[] {});
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == true, "'" + boolean5 + "' != '" + true + "'");
+        assertNotNull(mouseMotionListenerArray6);
+        assertArrayEquals(mouseMotionListenerArray6, new java.awt.event.MouseMotionListener[] {});
     }
 
     @Test
@@ -4519,23 +4519,23 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.add((java.awt.Component) createCourseUI12, (java.lang.Object) createCourseUI18, 3);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: illegal component position");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: illegal component position");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component11);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(toolkit17);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray27);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray27, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(dimension28);
-        org.junit.Assert.assertNotNull(point32);
-        org.junit.Assert.assertNotNull(component33);
-        org.junit.Assert.assertTrue("'" + boolean37 + "' != '" + false + "'", boolean37 == false);
-        org.junit.Assert.assertTrue("'" + boolean40 + "' != '" + false + "'", boolean40 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component11);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(toolkit17);
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray27);
+        assertArrayEquals(mouseListenerArray27, new java.awt.event.MouseListener[] {});
+        assertNotNull(dimension28);
+        assertNotNull(point32);
+        assertNotNull(component33);
+        assertTrue(boolean37 == false, "'" + boolean37 + "' != '" + false + "'");
+        assertTrue(boolean40 == false, "'" + boolean40 + "' != '" + false + "'");
     }
 
     @Test
@@ -4575,20 +4575,20 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.add((java.awt.Component) createCourseUI18, (java.lang.Object) "", (int) (short) -1);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertNull(volatileImage30);
-        org.junit.Assert.assertNotNull(accessibleContext31);
-        org.junit.Assert.assertEquals("'" + str41 + "' != '" + "frame248" + "'", str41, "frame248");
-        org.junit.Assert.assertEquals("'" + str42 + "' != '" + "Create Course" + "'", str42, "Create Course");
-        org.junit.Assert.assertNull(str43);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertNull(volatileImage30);
+        assertNotNull(accessibleContext31);
+        assertEquals("'" + str41 + "' != '" + "frame248" + "'", str41, "frame248");
+        assertEquals("'" + str42 + "' != '" + "Create Course" + "'", str42, "Create Course");
+        assertNull(str43);
     }
 
     @Test
@@ -4603,10 +4603,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.image.VolatileImage volatileImage7 = createCourseUI0.createVolatileImage((int) (short) 10, (int) (byte) -1);
         boolean boolean8 = createCourseUI0.isEnabled();
         createCourseUI0.list();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertNull(volatileImage7);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(dimension4);
+        assertNull(volatileImage7);
+        assertTrue(boolean8 == true, "'" + boolean8 + "' != '" + true + "'");
     }
 
     @Test
@@ -4626,11 +4626,11 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean16 = createCourseUI1.isLightweight();
         boolean boolean17 = createCourseUI1.isFocusCycleRoot();
         createCourseUI1.transferFocus();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame251" + "'", str9, "frame251");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
+        assertEquals("'" + str9 + "' != '" + "frame251" + "'", str9, "frame251");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean17 == true, "'" + boolean17 + "' != '" + true + "'");
     }
 
     @Test
@@ -4645,9 +4645,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.image.VolatileImage volatileImage7 = createCourseUI0.createVolatileImage((int) (short) 10, (int) (byte) -1);
         createCourseUI0.setState(13);
         createCourseUI0.repaint((long) 8, (int) (byte) 1, (int) 'a', 100, (int) (short) 0);
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertNull(volatileImage7);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(dimension4);
+        assertNull(volatileImage7);
     }
 
     @Test
@@ -4666,14 +4666,14 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.applyResourceBundle(resourceBundle14);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.ResourceBundle.getLocale()\" because \"bdl\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.util.ResourceBundle.getLocale()\" because \"bdl\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame252" + "'", str9, "frame252");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(point12);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        assertEquals("'" + str9 + "' != '" + "frame252" + "'", str9, "frame252");
+        assertNotNull(dimension10);
+        assertNull(point12);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
     }
 
     @Test
@@ -4690,10 +4690,10 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setMenuBar(menuBar7);
         java.awt.event.InputMethodListener inputMethodListener9 = null;
         createCourseUI0.removeInputMethodListener(inputMethodListener9);
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertNotNull(color6);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == false, "'" + boolean5 + "' != '" + false + "'");
+        assertNotNull(color6);
     }
 
     @Test
@@ -4708,10 +4708,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Color color7 = createCourseUI0.getBackground();
         javax.accessibility.AccessibleContext accessibleContext8 = createCourseUI0.getAccessibleContext();
         int int9 = createCourseUI0.getX();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 433 + "'", int9 == 433);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertTrue(int9 == 433, "'" + int9 + "' != '" + 433 + "'");
     }
 
     @Test
@@ -4730,13 +4730,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.setLayeredPane(jLayeredPane13);
-            org.junit.Assert.fail("Expected exception of type java.awt.IllegalComponentStateException; message: layeredPane cannot be set to null.");
+            fail("Expected exception of type java.awt.IllegalComponentStateException; message: layeredPane cannot be set to null.");
         } catch (java.awt.IllegalComponentStateException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
-        org.junit.Assert.assertNotNull(component12);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
+        assertNotNull(component12);
     }
 
     @Test
@@ -4756,11 +4756,11 @@ public class CreateCourseUIRegressionTest0 {
         java.util.ArrayList<java.awt.Image> imageList15 = new java.util.ArrayList<java.awt.Image>();
         boolean boolean16 = java.util.Collections.addAll((java.util.Collection<java.awt.Image>) imageList15, imageArray14);
         createCourseUI1.setIconImages((java.util.List<java.awt.Image>) imageList15);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame260" + "'", str9, "frame260");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNotNull(imageArray14);
-        org.junit.Assert.assertArrayEquals(imageArray14, new java.awt.Image[] {});
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertEquals("'" + str9 + "' != '" + "frame260" + "'", str9, "frame260");
+        assertNotNull(dimension10);
+        assertNotNull(imageArray14);
+        assertArrayEquals(imageArray14, new java.awt.Image[] {});
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -4774,12 +4774,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean6 = createCourseUI0.areFocusTraversalKeysSet(32);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: invalid focus traversal key identifier");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: invalid focus traversal key identifier");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNull(menuBar4);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNull(menuBar4);
     }
 
     @Test
@@ -4795,7 +4795,7 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.removeKeyListener(keyListener5);
         createCourseUI1.transferFocus();
         boolean boolean8 = createCourseUI1.isFocusableWindow();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
+        assertTrue(boolean8 == true, "'" + boolean8 + "' != '" + true + "'");
     }
 
     @Test
@@ -4825,14 +4825,14 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component30 = createCourseUI1.getComponentAt(point27);
         java.awt.GraphicsConfiguration graphicsConfiguration31 = createCourseUI1.getGraphicsConfiguration();
         createCourseUI1.setName("frame25");
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame261" + "'", str9, "frame261");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertEquals("'" + str23 + "' != '" + "frame262" + "'", str23, "frame262");
-        org.junit.Assert.assertNotNull(point27);
-        org.junit.Assert.assertNotNull(component28);
-        org.junit.Assert.assertNull(component29);
-        org.junit.Assert.assertNotNull(component30);
-        org.junit.Assert.assertNotNull(graphicsConfiguration31);
+        assertEquals("'" + str9 + "' != '" + "frame261" + "'", str9, "frame261");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertEquals("'" + str23 + "' != '" + "frame262" + "'", str23, "frame262");
+        assertNotNull(point27);
+        assertNotNull(component28);
+        assertNull(component29);
+        assertNotNull(component30);
+        assertNotNull(graphicsConfiguration31);
     }
 
     @Test
@@ -4847,12 +4847,12 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.WindowFocusListener[] windowFocusListenerArray5 = createCourseUI0.getWindowFocusListeners();
         java.awt.event.FocusListener focusListener6 = null;
         createCourseUI0.addFocusListener(focusListener6);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 1 + "'", int3 == 1);
-        org.junit.Assert.assertNull(graphics4);
-        org.junit.Assert.assertNotNull(windowFocusListenerArray5);
-        org.junit.Assert.assertArrayEquals(windowFocusListenerArray5, new java.awt.event.WindowFocusListener[] {});
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true, "'" + boolean2 + "' != '" + true + "'");
+        assertTrue(int3 == 1, "'" + int3 + "' != '" + 1 + "'");
+        assertNull(graphics4);
+        assertNotNull(windowFocusListenerArray5);
+        assertArrayEquals(windowFocusListenerArray5, new java.awt.event.WindowFocusListener[] {});
     }
 
     @Test
@@ -4871,12 +4871,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.list(printStream9);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintStream.println(Object)\" because \"out\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintStream.println(Object)\" because \"out\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(container6);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
+        assertNotNull(container6);
     }
 
     @Test
@@ -4889,9 +4889,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Graphics graphics3 = null;
         createCourseUI0.paintComponents(graphics3);
         java.awt.Image image5 = createCourseUI0.getIconImage();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertNull(image5);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true, "'" + boolean2 + "' != '" + true + "'");
+        assertNull(image5);
     }
 
     @Test
@@ -4902,9 +4902,9 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean1 = createCourseUI0.isFocused();
         boolean boolean2 = createCourseUI0.isPreferredSizeSet();
         java.awt.Color color3 = createCourseUI0.getForeground();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertNull(color3);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertNull(color3);
     }
 
     @Test
@@ -4925,8 +4925,8 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.HierarchyListener hierarchyListener16 = null;
         createCourseUI1.addHierarchyListener(hierarchyListener16);
         createCourseUI1.validate();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame263" + "'", str9, "frame263");
-        org.junit.Assert.assertNotNull(dimension10);
+        assertEquals("'" + str9 + "' != '" + "frame263" + "'", str9, "frame263");
+        assertNotNull(dimension10);
     }
 
     @Test
@@ -4963,17 +4963,17 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.LayoutManager layoutManager37 = createCourseUI20.getLayout();
         createCourseUI8.setLayout(layoutManager37);
         createCourseUI0.setLayout(layoutManager37);
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertNull(volatileImage7);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray18);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray18, new java.beans.PropertyChangeListener[] {});
-        org.junit.Assert.assertEquals("'" + str28 + "' != '" + "frame266" + "'", str28, "frame266");
-        org.junit.Assert.assertNotNull(dimension29);
-        org.junit.Assert.assertNotNull(layoutManager37);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension4);
+        assertNull(volatileImage7);
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(int16 == (-1), "'" + int16 + "' != '" + (-1) + "'");
+        assertNotNull(propertyChangeListenerArray18);
+        assertArrayEquals(propertyChangeListenerArray18, new java.beans.PropertyChangeListener[] {});
+        assertEquals("'" + str28 + "' != '" + "frame266" + "'", str28, "frame266");
+        assertNotNull(dimension29);
+        assertNotNull(layoutManager37);
     }
 
     @Test
@@ -4995,8 +4995,8 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean1 = createCourseUI0.isForegroundSet();
         createCourseUI0.setFocusable(false);
         boolean boolean4 = createCourseUI0.getIgnoreRepaint();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -5012,9 +5012,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.addMouseMotionListener(mouseMotionListener6);
         java.awt.MenuBar menuBar8 = null;
         createCourseUI0.setMenuBar(menuBar8);
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == false, "'" + boolean5 + "' != '" + false + "'");
     }
 
     @Test
@@ -5027,10 +5027,10 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean4 = createCourseUI0.keyUp(event2, (int) (byte) 0);
         java.awt.Toolkit toolkit5 = createCourseUI0.getToolkit();
         int int6 = createCourseUI0.getExtendedState();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(toolkit5);
-        org.junit.Assert.assertTrue("'" + int6 + "' != '" + 0 + "'", int6 == 0);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(toolkit5);
+        assertTrue(int6 == 0, "'" + int6 + "' != '" + 0 + "'");
     }
 
     @Test
@@ -5045,10 +5045,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension10 = createCourseUI1.minimumSize();
         java.awt.Point point12 = createCourseUI1.getMousePosition(false);
         boolean boolean13 = createCourseUI1.isFocusOwner();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame269" + "'", str9, "frame269");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(point12);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        assertEquals("'" + str9 + "' != '" + "frame269" + "'", str9, "frame269");
+        assertNotNull(dimension10);
+        assertNull(point12);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
     }
 
     @Test
@@ -5063,11 +5063,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.image.VolatileImage volatileImage7 = createCourseUI0.createVolatileImage((int) (short) 10, (int) (byte) -1);
         boolean boolean8 = createCourseUI0.isEnabled();
         java.awt.Graphics graphics9 = createCourseUI0.getGraphics();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertNull(volatileImage7);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
-        org.junit.Assert.assertNull(graphics9);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(dimension4);
+        assertNull(volatileImage7);
+        assertTrue(boolean8 == true, "'" + boolean8 + "' != '" + true + "'");
+        assertNull(graphics9);
     }
 
     @Test
@@ -5081,9 +5081,9 @@ public class CreateCourseUIRegressionTest0 {
         java.beans.PropertyChangeListener propertyChangeListener5 = null;
         createCourseUI0.addPropertyChangeListener("frame145", propertyChangeListener5);
         createCourseUI0.doLayout();
-        org.junit.Assert.assertNotNull(component2);
-        org.junit.Assert.assertNotNull(windowListenerArray3);
-        org.junit.Assert.assertArrayEquals(windowListenerArray3, new java.awt.event.WindowListener[] {});
+        assertNotNull(component2);
+        assertNotNull(windowListenerArray3);
+        assertArrayEquals(windowListenerArray3, new java.awt.event.WindowListener[] {});
     }
 
     @Test
@@ -5101,14 +5101,14 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Point point11 = createCourseUI0.getLocationOnScreen();
-            org.junit.Assert.fail("Expected exception of type java.awt.IllegalComponentStateException; message: component must be showing on the screen to determine its location");
+            fail("Expected exception of type java.awt.IllegalComponentStateException; message: component must be showing on the screen to determine its location");
         } catch (java.awt.IllegalComponentStateException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -5123,14 +5123,14 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Point point5 = component4.getLocationOnScreen();
-            org.junit.Assert.fail("Expected exception of type java.awt.IllegalComponentStateException; message: component must be showing on the screen to determine its location");
+            fail("Expected exception of type java.awt.IllegalComponentStateException; message: component must be showing on the screen to determine its location");
         } catch (java.awt.IllegalComponentStateException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(componentArray2);
-        org.junit.Assert.assertNull(image3);
-        org.junit.Assert.assertNotNull(component4);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(componentArray2);
+        assertNull(image3);
+        assertNotNull(component4);
     }
 
     @Test
@@ -5144,9 +5144,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension4 = createCourseUI0.getMinimumSize();
         java.awt.Color color5 = createCourseUI0.getBackground();
         createCourseUI0.setAutoRequestFocus(true);
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertNotNull(color5);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(dimension4);
+        assertNotNull(color5);
     }
 
     @Test
@@ -5160,9 +5160,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setName("");
         java.awt.Dimension dimension7 = createCourseUI0.minimumSize();
         createCourseUI0.firePropertyChange("frame66", 'a', 'a');
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(dimension7);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(dimension7);
     }
 
     @Test
@@ -5178,7 +5178,7 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.paintComponents(graphics7);
         java.awt.Graphics graphics9 = null;
         createCourseUI0.printAll(graphics9);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -5189,7 +5189,7 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean1 = createCourseUI0.isForegroundSet();
         createCourseUI0.setFocusable(false);
         createCourseUI0.firePropertyChange("frame66", (byte) 0, (byte) 10);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
     }
 
     @Test
@@ -5207,8 +5207,8 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.doLayout();
         java.awt.Graphics graphics14 = null;
         createCourseUI1.update(graphics14);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame276" + "'", str9, "frame276");
-        org.junit.Assert.assertNotNull(dimension10);
+        assertEquals("'" + str9 + "' != '" + "frame276" + "'", str9, "frame276");
+        assertNotNull(dimension10);
     }
 
     @Test
@@ -5229,14 +5229,14 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseListener[] mouseListenerArray14 = createCourseUI5.getMouseListeners();
         java.awt.Dimension dimension15 = createCourseUI5.minimumSize();
         createCourseUI0.resize(dimension15);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 1 + "'", int3 == 1);
-        org.junit.Assert.assertNull(graphics4);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray14);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray14, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(dimension15);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true, "'" + boolean2 + "' != '" + true + "'");
+        assertTrue(int3 == 1, "'" + int3 + "' != '" + 1 + "'");
+        assertNull(graphics4);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray14);
+        assertArrayEquals(mouseListenerArray14, new java.awt.event.MouseListener[] {});
+        assertNotNull(dimension15);
     }
 
     @Test
@@ -5261,17 +5261,17 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean20 = component12.prepareImage(image13, (java.awt.image.ImageObserver) createCourseUI14);
         java.awt.Point point21 = component12.getLocation();
         java.awt.Dimension dimension22 = component12.getSize();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertNotNull(component12);
-        org.junit.Assert.assertTrue("'" + float17 + "' != '" + 1.0f + "'", float17 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray18);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray18, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + float19 + "' != '" + 0.5f + "'", float19 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
-        org.junit.Assert.assertNotNull(point21);
-        org.junit.Assert.assertNotNull(dimension22);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertNotNull(component12);
+        assertTrue(float17 == 1.0f, "'" + float17 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray18);
+        assertArrayEquals(hierarchyListenerArray18, new java.awt.event.HierarchyListener[] {});
+        assertTrue(float19 == 0.5f, "'" + float19 + "' != '" + 0.5f + "'");
+        assertTrue(boolean20 == true, "'" + boolean20 + "' != '" + true + "'");
+        assertNotNull(point21);
+        assertNotNull(dimension22);
     }
 
     @Test
@@ -5288,8 +5288,8 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.toBack();
         java.awt.event.ContainerListener containerListener11 = null;
         createCourseUI0.addContainerListener(containerListener11);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
     }
 
     @Test
@@ -5305,10 +5305,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseListener[] mouseListenerArray9 = createCourseUI0.getMouseListeners();
         createCourseUI0.setResizable(true);
         boolean boolean12 = createCourseUI0.isLocationByPlatform();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -5322,8 +5322,8 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI3.setFocusableWindowState(false);
         java.awt.Point point6 = createCourseUI3.getLocation();
         java.awt.Component component7 = createCourseUI1.findComponentAt(point6);
-        org.junit.Assert.assertNotNull(point6);
-        org.junit.Assert.assertNull(component7);
+        assertNotNull(point6);
+        assertNull(component7);
     }
 
     @Test
@@ -5335,8 +5335,8 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Event event2 = null;
         boolean boolean4 = createCourseUI0.keyUp(event2, (int) (byte) 0);
         createCourseUI0.setFocusCycleRoot(false);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -5352,10 +5352,10 @@ public class CreateCourseUIRegressionTest0 {
         java.lang.String str7 = createCourseUI0.toString();
         createCourseUI0.firePropertyChange("frame98", ' ', 'a');
         java.awt.FocusTraversalPolicy focusTraversalPolicy12 = createCourseUI0.getFocusTraversalPolicy();
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(container6);
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str7, "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertNotNull(focusTraversalPolicy12);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
+        assertNotNull(container6);
+        assertEquals("'" + str7 + "' != '" + "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str7, "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertNotNull(focusTraversalPolicy12);
     }
 
     @Test
@@ -5381,13 +5381,13 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setLayout(layoutManager18);
         java.awt.event.MouseMotionListener mouseMotionListener21 = null;
         createCourseUI0.addMouseMotionListener(mouseMotionListener21);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(locale4);
-        org.junit.Assert.assertEquals(locale4.toString(), "en_US");
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(color17);
-        org.junit.Assert.assertNotNull(layoutManager18);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(locale4);
+        assertEquals(locale4.toString(), "en_US");
+        assertTrue(boolean5 == true, "'" + boolean5 + "' != '" + true + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(color17);
+        assertNotNull(layoutManager18);
     }
 
     @Test
@@ -5415,14 +5415,14 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.WindowStateListener windowStateListener26 = null;
         createCourseUI9.addWindowStateListener(windowStateListener26);
         createCourseUI9.setLocationByPlatform(false);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(toolkit5);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(component18);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 32 + "'", int19 == 32);
-        org.junit.Assert.assertTrue("'" + float23 + "' != '" + 1.0f + "'", float23 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension24);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(toolkit5);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(component18);
+        assertTrue(int19 == 32, "'" + int19 + "' != '" + 32 + "'");
+        assertTrue(float23 == 1.0f, "'" + float23 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension24);
     }
 
     @Test
@@ -5436,11 +5436,11 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean5 = createCourseUI0.isResizable();
         java.awt.Event event6 = null;
         boolean boolean9 = createCourseUI0.mouseUp(event6, 13, 4);
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray4);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray4);
+        assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
+        assertTrue(boolean5 == true, "'" + boolean5 + "' != '" + true + "'");
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
     }
 
     @Test
@@ -5460,10 +5460,10 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.addInputMethodListener(inputMethodListener11);
         java.awt.event.WindowFocusListener windowFocusListener13 = null;
         createCourseUI0.addWindowFocusListener(windowFocusListener13);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
-        org.junit.Assert.assertNotNull(windowStateListenerArray8);
-        org.junit.Assert.assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
+        assertNotNull(windowStateListenerArray8);
+        assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
     }
 
     @Test
@@ -5481,13 +5481,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.createBufferStrategy((int) (byte) 1, bufferCapabilities10);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: No capabilities specified");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: No capabilities specified");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 0 + "'", int8 == 0);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertTrue(int8 == 0, "'" + int8 + "' != '" + 0 + "'");
     }
 
     @Test
@@ -5498,9 +5498,9 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean1 = createCourseUI0.isForegroundSet();
         boolean boolean2 = createCourseUI0.isFocusTraversable();
         javax.swing.JMenuBar jMenuBar3 = createCourseUI0.getJMenuBar();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertNull(jMenuBar3);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true, "'" + boolean2 + "' != '" + true + "'");
+        assertNull(jMenuBar3);
     }
 
     @Test
@@ -5520,12 +5520,12 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean15 = createCourseUI1.isResizable();
         boolean boolean16 = createCourseUI1.isMinimumSizeSet();
         java.awt.Shape shape17 = createCourseUI1.getShape();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame283" + "'", str9, "frame283");
-        org.junit.Assert.assertNotNull(point13);
-        org.junit.Assert.assertNotNull(component14);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + true + "'", boolean15 == true);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNull(shape17);
+        assertEquals("'" + str9 + "' != '" + "frame283" + "'", str9, "frame283");
+        assertNotNull(point13);
+        assertNotNull(component14);
+        assertTrue(boolean15 == true, "'" + boolean15 + "' != '" + true + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNull(shape17);
     }
 
     @Test
@@ -5543,9 +5543,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.image.ColorModel colorModel10 = createCourseUI0.getColorModel();
         java.awt.Image image11 = null;
         createCourseUI0.setIconImage(image11);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "com.example.CreateCourseUI[frame284,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str7, "com.example.CreateCourseUI[frame284,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertNotNull(colorModel10);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertEquals("'" + str7 + "' != '" + "com.example.CreateCourseUI[frame284,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str7, "com.example.CreateCourseUI[frame284,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertNotNull(colorModel10);
     }
 
     @Test
@@ -5563,13 +5563,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.list(printWriter8, 184);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.print(String)\" because \"out\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.print(String)\" because \"out\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(componentArray2);
-        org.junit.Assert.assertNull(image3);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(componentArray2);
+        assertNull(image3);
     }
 
     @Test
@@ -5588,13 +5588,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.FontMetrics fontMetrics11 = createCourseUI0.getFontMetrics(font10);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.hashCode()\" because \"key\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"Object.hashCode()\" because \"key\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
     }
 
     @Test
@@ -5617,15 +5617,15 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean22 = createCourseUI1.prepareImage(image15, (int) '#', (int) (byte) 10, (java.awt.image.ImageObserver) createCourseUI18);
         java.awt.dnd.DropTarget dropTarget23 = createCourseUI18.getDropTarget();
         int int24 = createCourseUI18.getY();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame288" + "'", str9, "frame288");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNotNull(windowFocusListenerArray14);
-        org.junit.Assert.assertArrayEquals(windowFocusListenerArray14, new java.awt.event.WindowFocusListener[] {});
-        org.junit.Assert.assertTrue("'" + float21 + "' != '" + 1.0f + "'", float21 == 1.0f);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + true + "'", boolean22 == true);
-        org.junit.Assert.assertNull(dropTarget23);
-        org.junit.Assert.assertTrue("'" + int24 + "' != '" + 160 + "'", int24 == 160);
+        assertEquals("'" + str9 + "' != '" + "frame288" + "'", str9, "frame288");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNotNull(windowFocusListenerArray14);
+        assertArrayEquals(windowFocusListenerArray14, new java.awt.event.WindowFocusListener[] {});
+        assertTrue(float21 == 1.0f, "'" + float21 + "' != '" + 1.0f + "'");
+        assertTrue(boolean22 == true, "'" + boolean22 + "' != '" + true + "'");
+        assertNull(dropTarget23);
+        assertTrue(int24 == 160, "'" + int24 + "' != '" + 160 + "'");
     }
 
     @Test
@@ -5638,9 +5638,9 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean4 = createCourseUI0.keyUp(event2, (int) (byte) 0);
         java.awt.Toolkit toolkit5 = createCourseUI0.getToolkit();
         createCourseUI0.resize(0, 10);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(toolkit5);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(toolkit5);
     }
 
     @Test
@@ -5693,26 +5693,26 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Rectangle rectangle54 = createCourseUI12.getBounds(rectangle53);
         java.awt.Rectangle rectangle55 = createCourseUI0.getBounds(rectangle53);
         createCourseUI0.disable();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
-        org.junit.Assert.assertTrue("'" + float4 + "' != '" + 0.5f + "'", float4 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(color9);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-        org.junit.Assert.assertNotNull(color22);
-        org.junit.Assert.assertNotNull(layoutManager23);
-        org.junit.Assert.assertEquals("'" + str34 + "' != '" + "frame289" + "'", str34, "frame289");
-        org.junit.Assert.assertNotNull(point38);
-        org.junit.Assert.assertNotNull(component39);
-        org.junit.Assert.assertNotNull(rectangle41);
-        org.junit.Assert.assertTrue("'" + boolean47 + "' != '" + false + "'", boolean47 == false);
-        org.junit.Assert.assertNotNull(insets48);
-        org.junit.Assert.assertTrue("'" + boolean52 + "' != '" + false + "'", boolean52 == false);
-        org.junit.Assert.assertNotNull(rectangle53);
-        org.junit.Assert.assertNotNull(rectangle54);
-        org.junit.Assert.assertNotNull(rectangle55);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(int2 == 0, "'" + int2 + "' != '" + 0 + "'");
+        assertTrue(float4 == 0.5f, "'" + float4 + "' != '" + 0.5f + "'");
+        assertTrue(boolean7 == false, "'" + boolean7 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(color9);
+        assertTrue(boolean11 == false, "'" + boolean11 + "' != '" + false + "'");
+        assertTrue(boolean21 == false, "'" + boolean21 + "' != '" + false + "'");
+        assertNotNull(color22);
+        assertNotNull(layoutManager23);
+        assertEquals("'" + str34 + "' != '" + "frame289" + "'", str34, "frame289");
+        assertNotNull(point38);
+        assertNotNull(component39);
+        assertNotNull(rectangle41);
+        assertTrue(boolean47 == false, "'" + boolean47 + "' != '" + false + "'");
+        assertNotNull(insets48);
+        assertTrue(boolean52 == false, "'" + boolean52 + "' != '" + false + "'");
+        assertNotNull(rectangle53);
+        assertNotNull(rectangle54);
+        assertNotNull(rectangle55);
     }
 
     @Test
@@ -5724,7 +5724,7 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setLocationRelativeTo((java.awt.Component) createCourseUI1);
         boolean boolean3 = createCourseUI0.isFontSet();
         createCourseUI0.layout();
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
     }
 
     @Test
@@ -5743,13 +5743,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.setDefaultCloseOperation((int) '4');
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: defaultCloseOperation must be one of: DO_NOTHING_ON_CLOSE, HIDE_ON_CLOSE, DISPOSE_ON_CLOSE, or EXIT_ON_CLOSE");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: defaultCloseOperation must be one of: DO_NOTHING_ON_CLOSE, HIDE_ON_CLOSE, DISPOSE_ON_CLOSE, or EXIT_ON_CLOSE");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
     }
 
     @Test
@@ -5769,12 +5769,12 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI8.invalidate();
         boolean boolean15 = createCourseUI1.isAncestorOf((java.awt.Component) createCourseUI8);
         createCourseUI1.pack();
-        org.junit.Assert.assertNotNull(point3);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNotNull(locale12);
-        org.junit.Assert.assertEquals(locale12.toString(), "en_US");
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        assertNotNull(point3);
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
+        assertNotNull(locale12);
+        assertEquals(locale12.toString(), "en_US");
+        assertTrue(boolean13 == true, "'" + boolean13 + "' != '" + true + "'");
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
     }
 
     @Test
@@ -5793,9 +5793,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component14 = createCourseUI1.getComponentAt(point13);
         java.awt.ComponentOrientation componentOrientation15 = null;
         createCourseUI1.setComponentOrientation(componentOrientation15);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame292" + "'", str9, "frame292");
-        org.junit.Assert.assertNotNull(point13);
-        org.junit.Assert.assertNotNull(component14);
+        assertEquals("'" + str9 + "' != '" + "frame292" + "'", str9, "frame292");
+        assertNotNull(point13);
+        assertNotNull(component14);
     }
 
     @Test
@@ -5815,13 +5815,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.setCursor(433);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: illegal cursor type");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: illegal cursor type");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame293" + "'", str9, "frame293");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        assertEquals("'" + str9 + "' != '" + "frame293" + "'", str9, "frame293");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
     }
 
     @Test
@@ -5837,9 +5837,9 @@ public class CreateCourseUIRegressionTest0 {
         java.beans.PropertyChangeListener propertyChangeListener8 = null;
         createCourseUI0.removePropertyChangeListener(propertyChangeListener8);
         java.awt.im.InputMethodRequests inputMethodRequests10 = createCourseUI0.getInputMethodRequests();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "com.example.CreateCourseUI[frame294,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str7, "com.example.CreateCourseUI[frame294,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertNull(inputMethodRequests10);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertEquals("'" + str7 + "' != '" + "com.example.CreateCourseUI[frame294,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str7, "com.example.CreateCourseUI[frame294,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertNull(inputMethodRequests10);
     }
 
     @Test
@@ -5853,7 +5853,7 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.createBufferStrategy(160);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Component must have a valid peer");
+            fail("Expected exception of type java.lang.IllegalStateException; message: Component must have a valid peer");
         } catch (java.lang.IllegalStateException e) {
             // Expected exception.
         }
@@ -5873,9 +5873,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component12 = createCourseUI0.getGlassPane();
         component12.list();
         component12.firePropertyChange("frame266", (long) 13, (long) 32);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
-        org.junit.Assert.assertNotNull(component12);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
+        assertNotNull(component12);
     }
 
     @Test
@@ -5888,9 +5888,9 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean4 = createCourseUI0.keyUp(event2, (int) (byte) 0);
         int int5 = createCourseUI0.getHeight();
         createCourseUI0.setAlwaysOnTop(true);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 400 + "'", int5 == 400);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(int5 == 400, "'" + int5 + "' != '" + 400 + "'");
     }
 
     @Test
@@ -5907,9 +5907,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Insets insets11 = createCourseUI0.insets();
         java.awt.event.HierarchyListener hierarchyListener12 = null;
         createCourseUI0.removeHierarchyListener(hierarchyListener12);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
-        org.junit.Assert.assertNotNull(insets11);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
+        assertNotNull(insets11);
     }
 
     @Test
@@ -5927,11 +5927,11 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.createBufferStrategy((int) (byte) -1);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: Number of buffers must be at least 1");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: Number of buffers must be at least 1");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -5943,7 +5943,7 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setSize((-1), (int) (byte) -1);
         java.awt.event.InputMethodListener inputMethodListener5 = null;
         createCourseUI0.removeInputMethodListener(inputMethodListener5);
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "com.example.CreateCourseUI[frame299,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str1, "com.example.CreateCourseUI[frame299,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertEquals("'" + str1 + "' != '" + "com.example.CreateCourseUI[frame299,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str1, "com.example.CreateCourseUI[frame299,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
     }
 
     @Test
@@ -5962,11 +5962,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component14 = createCourseUI1.getComponentAt(point13);
         boolean boolean15 = createCourseUI1.isResizable();
         boolean boolean16 = createCourseUI1.hasFocus();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame302" + "'", str9, "frame302");
-        org.junit.Assert.assertNotNull(point13);
-        org.junit.Assert.assertNotNull(component14);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + true + "'", boolean15 == true);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertEquals("'" + str9 + "' != '" + "frame302" + "'", str9, "frame302");
+        assertNotNull(point13);
+        assertNotNull(component14);
+        assertTrue(boolean15 == true, "'" + boolean15 + "' != '" + true + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -5977,9 +5977,9 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean1 = createCourseUI0.isFocused();
         java.awt.Insets insets2 = createCourseUI0.getInsets();
         boolean boolean3 = createCourseUI0.hasFocus();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(insets2);
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(insets2);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
     }
 
     @Test
@@ -6006,16 +6006,16 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.list(printStream21);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintStream.println(Object)\" because \"out\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintStream.println(Object)\" because \"out\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame303" + "'", str9, "frame303");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
-        org.junit.Assert.assertNull(inputMethodRequests14);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + true + "'", boolean18 == true);
+        assertEquals("'" + str9 + "' != '" + "frame303" + "'", str9, "frame303");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == true, "'" + boolean13 + "' != '" + true + "'");
+        assertNull(inputMethodRequests14);
+        assertTrue(boolean17 == true, "'" + boolean17 + "' != '" + true + "'");
+        assertTrue(boolean18 == true, "'" + boolean18 + "' != '" + true + "'");
     }
 
     @Test
@@ -6050,19 +6050,19 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension36 = createCourseUI32.getMaximumSize();
         createCourseUI21.setMaximumSize(dimension36);
         createCourseUI0.resize(dimension36);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
-        org.junit.Assert.assertNotNull(windowStateListenerArray8);
-        org.junit.Assert.assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
-        org.junit.Assert.assertNotNull(inputContext11);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(toolkit17);
-        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
-        org.junit.Assert.assertNotNull(component30);
-        org.junit.Assert.assertTrue("'" + int31 + "' != '" + 32 + "'", int31 == 32);
-        org.junit.Assert.assertTrue("'" + float35 + "' != '" + 1.0f + "'", float35 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension36);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
+        assertNotNull(windowStateListenerArray8);
+        assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
+        assertNotNull(inputContext11);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(toolkit17);
+        assertTrue(boolean27 == false, "'" + boolean27 + "' != '" + false + "'");
+        assertNotNull(component30);
+        assertTrue(int31 == 32, "'" + int31 + "' != '" + 32 + "'");
+        assertTrue(float35 == 1.0f, "'" + float35 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension36);
     }
 
     @Test
@@ -6088,17 +6088,17 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension22 = createCourseUI13.minimumSize();
         createCourseUI6.setMaximumSize(dimension22);
         createCourseUI0.setSize(dimension22);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertNotNull(toolkit3);
-        org.junit.Assert.assertNotNull(imageList4);
-        org.junit.Assert.assertNotNull(mouseListenerArray5);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray5, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(toolkit11);
-        org.junit.Assert.assertEquals("'" + str21 + "' != '" + "frame304" + "'", str21, "frame304");
-        org.junit.Assert.assertNotNull(dimension22);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertNotNull(toolkit3);
+        assertNotNull(imageList4);
+        assertNotNull(mouseListenerArray5);
+        assertArrayEquals(mouseListenerArray5, new java.awt.event.MouseListener[] {});
+        assertTrue(boolean7 == false, "'" + boolean7 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(toolkit11);
+        assertEquals("'" + str21 + "' != '" + "frame304" + "'", str21, "frame304");
+        assertNotNull(dimension22);
     }
 
     @Test
@@ -6114,9 +6114,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.setCursor(1);
         java.awt.Component component13 = null;
         int int14 = createCourseUI1.getComponentZOrder(component13);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame305" + "'", str9, "frame305");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertTrue("'" + int14 + "' != '" + (-1) + "'", int14 == (-1));
+        assertEquals("'" + str9 + "' != '" + "frame305" + "'", str9, "frame305");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertTrue(int14 == (-1), "'" + int14 + "' != '" + (-1) + "'");
     }
 
     @Test
@@ -6135,14 +6135,14 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = createCourseUI0.handleEvent(event11);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"id\" because \"evt\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"id\" because \"evt\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
-        org.junit.Assert.assertNotNull(windowStateListenerArray8);
-        org.junit.Assert.assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
+        assertNotNull(windowStateListenerArray8);
+        assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
     }
 
     @Test
@@ -6156,8 +6156,8 @@ public class CreateCourseUIRegressionTest0 {
         java.lang.String str9 = createCourseUI1.getName();
         java.awt.Event event10 = null;
         boolean boolean13 = createCourseUI1.mouseMove(event10, 13, (int) (byte) -1);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame307" + "'", str9, "frame307");
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        assertEquals("'" + str9 + "' != '" + "frame307" + "'", str9, "frame307");
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
     }
 
     @Test
@@ -6183,15 +6183,15 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension24 = createCourseUI20.getMaximumSize();
         createCourseUI9.setMaximumSize(dimension24);
         int int26 = createCourseUI9.countComponents();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(toolkit5);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(component18);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 32 + "'", int19 == 32);
-        org.junit.Assert.assertTrue("'" + float23 + "' != '" + 1.0f + "'", float23 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension24);
-        org.junit.Assert.assertTrue("'" + int26 + "' != '" + 1 + "'", int26 == 1);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(toolkit5);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(component18);
+        assertTrue(int19 == 32, "'" + int19 + "' != '" + 32 + "'");
+        assertTrue(float23 == 1.0f, "'" + float23 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension24);
+        assertTrue(int26 == 1, "'" + int26 + "' != '" + 1 + "'");
     }
 
     @Test
@@ -6208,9 +6208,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Container container13 = createCourseUI1.getContentPane();
         java.awt.event.MouseWheelListener mouseWheelListener14 = null;
         createCourseUI1.removeMouseWheelListener(mouseWheelListener14);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame311" + "'", str9, "frame311");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertNotNull(container13);
+        assertEquals("'" + str9 + "' != '" + "frame311" + "'", str9, "frame311");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertNotNull(container13);
     }
 
     @Test
@@ -6252,27 +6252,27 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.add(component29, (java.lang.Object) component50, 433);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: illegal component position");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: illegal component position");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame312" + "'", str9, "frame312");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(point12);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNull(point15);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 1 + "'", int16 == 1);
-        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
-        org.junit.Assert.assertNotNull(color24);
-        org.junit.Assert.assertNotNull(accessibleContext25);
-        org.junit.Assert.assertNotNull(component29);
-        org.junit.Assert.assertNotNull(dimension30);
-        org.junit.Assert.assertEquals("'" + str40 + "' != '" + "frame313" + "'", str40, "frame313");
-        org.junit.Assert.assertNotNull(dimension41);
-        org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + false + "'", boolean44 == false);
-        org.junit.Assert.assertNotNull(windowFocusListenerArray45);
-        org.junit.Assert.assertArrayEquals(windowFocusListenerArray45, new java.awt.event.WindowFocusListener[] {});
-        org.junit.Assert.assertNotNull(component50);
+        assertEquals("'" + str9 + "' != '" + "frame312" + "'", str9, "frame312");
+        assertNotNull(dimension10);
+        assertNull(point12);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNull(point15);
+        assertTrue(int16 == 1, "'" + int16 + "' != '" + 1 + "'");
+        assertTrue(boolean23 == false, "'" + boolean23 + "' != '" + false + "'");
+        assertNotNull(color24);
+        assertNotNull(accessibleContext25);
+        assertNotNull(component29);
+        assertNotNull(dimension30);
+        assertEquals("'" + str40 + "' != '" + "frame313" + "'", str40, "frame313");
+        assertNotNull(dimension41);
+        assertTrue(boolean44 == false, "'" + boolean44 + "' != '" + false + "'");
+        assertNotNull(windowFocusListenerArray45);
+        assertArrayEquals(windowFocusListenerArray45, new java.awt.event.WindowFocusListener[] {});
+        assertNotNull(component50);
     }
 
     @Test
@@ -6285,8 +6285,8 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension4 = createCourseUI0.getMaximumSize();
         createCourseUI0.disable();
         createCourseUI0.setSize(160, 10);
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension4);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension4);
     }
 
     @Test
@@ -6301,9 +6301,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.firePropertyChange("frame64", '#', '4');
         java.awt.event.HierarchyBoundsListener[] hierarchyBoundsListenerArray12 = createCourseUI0.getHierarchyBoundsListeners();
         java.awt.LayoutManager layoutManager13 = createCourseUI0.getLayout();
-        org.junit.Assert.assertNotNull(hierarchyBoundsListenerArray12);
-        org.junit.Assert.assertArrayEquals(hierarchyBoundsListenerArray12, new java.awt.event.HierarchyBoundsListener[] {});
-        org.junit.Assert.assertNotNull(layoutManager13);
+        assertNotNull(hierarchyBoundsListenerArray12);
+        assertArrayEquals(hierarchyBoundsListenerArray12, new java.awt.event.HierarchyBoundsListener[] {});
+        assertNotNull(layoutManager13);
     }
 
     @Test
@@ -6323,13 +6323,13 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean16 = createCourseUI1.isLightweight();
         boolean boolean17 = createCourseUI1.isFocusCycleRoot();
         java.awt.event.WindowFocusListener[] windowFocusListenerArray18 = createCourseUI1.getWindowFocusListeners();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame315" + "'", str9, "frame315");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
-        org.junit.Assert.assertNotNull(windowFocusListenerArray18);
-        org.junit.Assert.assertArrayEquals(windowFocusListenerArray18, new java.awt.event.WindowFocusListener[] {});
+        assertEquals("'" + str9 + "' != '" + "frame315" + "'", str9, "frame315");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean17 == true, "'" + boolean17 + "' != '" + true + "'");
+        assertNotNull(windowFocusListenerArray18);
+        assertArrayEquals(windowFocusListenerArray18, new java.awt.event.WindowFocusListener[] {});
     }
 
     @Test
@@ -6340,7 +6340,7 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean1 = createCourseUI0.isForegroundSet();
         createCourseUI0.setFocusable(false);
         createCourseUI0.validate();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
     }
 
     @Test
@@ -6358,11 +6358,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.MenuBar menuBar11 = null;
         createCourseUI0.setMenuBar(menuBar11);
         java.awt.Graphics graphics13 = createCourseUI0.getGraphics();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNull(graphics13);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNull(graphics13);
     }
 
     @Test
@@ -6376,9 +6376,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.removeMouseListener(mouseListener3);
         float float5 = createCourseUI0.getAlignmentX();
         createCourseUI0.setSize(128, 5);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertTrue("'" + float5 + "' != '" + 0.5f + "'", float5 == 0.5f);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true, "'" + boolean2 + "' != '" + true + "'");
+        assertTrue(float5 == 0.5f, "'" + float5 + "' != '" + 0.5f + "'");
     }
 
     @Test
@@ -6397,11 +6397,11 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean12 = createCourseUI11.isForegroundSet();
         java.awt.Component[] componentArray13 = createCourseUI11.getComponents();
         boolean boolean14 = createCourseUI0.action(event10, (java.lang.Object) createCourseUI11);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(dimension9);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(componentArray13);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(dimension9);
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(componentArray13);
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -6417,7 +6417,7 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.removeKeyListener(keyListener5);
         createCourseUI1.transferFocus();
         java.awt.Dimension dimension8 = createCourseUI1.preferredSize();
-        org.junit.Assert.assertNotNull(dimension8);
+        assertNotNull(dimension8);
     }
 
     @Test
@@ -6438,16 +6438,16 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.createBufferStrategy(100);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Component must have a valid peer");
+            fail("Expected exception of type java.lang.IllegalStateException; message: Component must have a valid peer");
         } catch (java.lang.IllegalStateException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame318" + "'", str9, "frame318");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertNotNull(container13);
-        org.junit.Assert.assertNotNull(component14);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
-        org.junit.Assert.assertNotNull(imageList18);
+        assertEquals("'" + str9 + "' != '" + "frame318" + "'", str9, "frame318");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertNotNull(container13);
+        assertNotNull(component14);
+        assertTrue(boolean17 == true, "'" + boolean17 + "' != '" + true + "'");
+        assertNotNull(imageList18);
     }
 
     @Test
@@ -6463,11 +6463,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.MenuBar menuBar7 = null;
         createCourseUI0.setMenuBar(menuBar7);
         java.awt.Container container9 = createCourseUI0.getParent();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertNotNull(color6);
-        org.junit.Assert.assertNull(container9);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == false, "'" + boolean5 + "' != '" + false + "'");
+        assertNotNull(color6);
+        assertNull(container9);
     }
 
     @Test
@@ -6481,8 +6481,8 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Point point4 = createCourseUI1.location();
         java.awt.dnd.DropTarget dropTarget5 = null;
         createCourseUI1.setDropTarget(dropTarget5);
-        org.junit.Assert.assertNotNull(point3);
-        org.junit.Assert.assertNotNull(point4);
+        assertNotNull(point3);
+        assertNotNull(point4);
     }
 
     @Test
@@ -6492,7 +6492,7 @@ public class CreateCourseUIRegressionTest0 {
         com.example.CreateCourseUI createCourseUI0 = new com.example.CreateCourseUI();
         boolean boolean1 = createCourseUI0.isFocused();
         createCourseUI0.setFocusable(true);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
     }
 
     @Test
@@ -6507,13 +6507,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.ComponentOrientation componentOrientation6 = window5.getComponentOrientation();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+            fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(window5);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNull(window5);
     }
 
     @Test
@@ -6548,17 +6548,17 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI12.setLocation(point31);
         int int35 = createCourseUI0.checkImage(image9, 128, 7, (java.awt.image.ImageObserver) createCourseUI12);
         java.awt.event.HierarchyListener[] hierarchyListenerArray36 = createCourseUI0.getHierarchyListeners();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(focusTraversalPolicy8);
-        org.junit.Assert.assertTrue("'" + float13 + "' != '" + 0.5f + "'", float13 == 0.5f);
-        org.junit.Assert.assertEquals("'" + str27 + "' != '" + "frame320" + "'", str27, "frame320");
-        org.junit.Assert.assertNotNull(point31);
-        org.junit.Assert.assertNotNull(component32);
-        org.junit.Assert.assertNull(component33);
-        org.junit.Assert.assertTrue("'" + int35 + "' != '" + 32 + "'", int35 == 32);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray36);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray36, new java.awt.event.HierarchyListener[] {});
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(focusTraversalPolicy8);
+        assertTrue(float13 == 0.5f, "'" + float13 + "' != '" + 0.5f + "'");
+        assertEquals("'" + str27 + "' != '" + "frame320" + "'", str27, "frame320");
+        assertNotNull(point31);
+        assertNotNull(component32);
+        assertNull(component33);
+        assertTrue(int35 == 32, "'" + int35 + "' != '" + 32 + "'");
+        assertNotNull(hierarchyListenerArray36);
+        assertArrayEquals(hierarchyListenerArray36, new java.awt.event.HierarchyListener[] {});
     }
 
     @Test
@@ -6578,13 +6578,13 @@ public class CreateCourseUIRegressionTest0 {
         java.beans.PropertyChangeListener[] propertyChangeListenerArray11 = createCourseUI4.getPropertyChangeListeners();
         java.awt.event.WindowListener windowListener12 = null;
         createCourseUI4.removeWindowListener(windowListener12);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertNotNull(hierarchyBoundsListenerArray9);
-        org.junit.Assert.assertArrayEquals(hierarchyBoundsListenerArray9, new java.awt.event.HierarchyBoundsListener[] {});
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray11);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray11, new java.beans.PropertyChangeListener[] {});
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(int8 == (-1), "'" + int8 + "' != '" + (-1) + "'");
+        assertNotNull(hierarchyBoundsListenerArray9);
+        assertArrayEquals(hierarchyBoundsListenerArray9, new java.awt.event.HierarchyBoundsListener[] {});
+        assertNotNull(propertyChangeListenerArray11);
+        assertArrayEquals(propertyChangeListenerArray11, new java.beans.PropertyChangeListener[] {});
     }
 
     @Test
@@ -6597,10 +6597,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Image image3 = createCourseUI0.getIconImage();
         java.awt.Component component4 = createCourseUI0.getMostRecentFocusOwner();
         component4.repaint((long) (short) -1);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(componentArray2);
-        org.junit.Assert.assertNull(image3);
-        org.junit.Assert.assertNotNull(component4);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(componentArray2);
+        assertNull(image3);
+        assertNotNull(component4);
     }
 
     @Test
@@ -6626,15 +6626,15 @@ public class CreateCourseUIRegressionTest0 {
         int int23 = createCourseUI0.getBaseline((int) (byte) 1, 16);
         java.awt.Event event24 = null;
         boolean boolean27 = createCourseUI0.mouseDrag(event24, (int) 'a', 8);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component11);
-        org.junit.Assert.assertTrue("'" + float13 + "' != '" + 0.5f + "'", float13 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertNotNull(color18);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
-        org.junit.Assert.assertTrue("'" + int23 + "' != '" + (-1) + "'", int23 == (-1));
-        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component11);
+        assertTrue(float13 == 0.5f, "'" + float13 + "' != '" + 0.5f + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean17 == false, "'" + boolean17 + "' != '" + false + "'");
+        assertNotNull(color18);
+        assertTrue(boolean20 == true, "'" + boolean20 + "' != '" + true + "'");
+        assertTrue(int23 == (-1), "'" + int23 + "' != '" + (-1) + "'");
+        assertTrue(boolean27 == false, "'" + boolean27 + "' != '" + false + "'");
     }
 
     @Test
@@ -6652,10 +6652,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.ComponentListener componentListener14 = null;
         createCourseUI1.removeComponentListener(componentListener14);
         java.lang.String str16 = createCourseUI1.getWarningString();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame322" + "'", str9, "frame322");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNull(str16);
+        assertEquals("'" + str9 + "' != '" + "frame322" + "'", str9, "frame322");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNull(str16);
     }
 
     @Test
@@ -6678,11 +6678,11 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean21 = createCourseUI13.isLightweight();
         javax.swing.JMenuBar jMenuBar22 = createCourseUI13.getJMenuBar();
         int int23 = createCourseUI0.checkImage(image12, (java.awt.image.ImageObserver) jMenuBar22);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(rectangle7);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-        org.junit.Assert.assertNull(jMenuBar22);
-        org.junit.Assert.assertTrue("'" + int23 + "' != '" + 32 + "'", int23 == 32);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(rectangle7);
+        assertTrue(boolean21 == false, "'" + boolean21 + "' != '" + false + "'");
+        assertNull(jMenuBar22);
+        assertTrue(int23 == 32, "'" + int23 + "' != '" + 32 + "'");
     }
 
     @Test
@@ -6706,11 +6706,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseMotionListener mouseMotionListener19 = null;
         createCourseUI1.addMouseMotionListener(mouseMotionListener19);
         javax.swing.JRootPane jRootPane21 = createCourseUI1.getRootPane();
-        org.junit.Assert.assertEquals("'" + str12 + "' != '" + "frame326" + "'", str12, "frame326");
-        org.junit.Assert.assertNotNull(point16);
-        org.junit.Assert.assertNotNull(component17);
-        org.junit.Assert.assertNull(component18);
-        org.junit.Assert.assertNotNull(jRootPane21);
+        assertEquals("'" + str12 + "' != '" + "frame326" + "'", str12, "frame326");
+        assertNotNull(point16);
+        assertNotNull(component17);
+        assertNull(component18);
+        assertNotNull(jRootPane21);
     }
 
     @Test
@@ -6722,10 +6722,10 @@ public class CreateCourseUIRegressionTest0 {
         float float3 = createCourseUI0.getOpacity();
         java.awt.Dimension dimension4 = createCourseUI0.getMaximumSize();
         java.util.Locale locale5 = createCourseUI0.getLocale();
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertNotNull(locale5);
-        org.junit.Assert.assertEquals(locale5.toString(), "en_US");
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension4);
+        assertNotNull(locale5);
+        assertEquals(locale5.toString(), "en_US");
     }
 
     @Test
@@ -6745,12 +6745,12 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.enableInputMethods(false);
         javax.swing.JRootPane jRootPane18 = createCourseUI1.getRootPane();
         java.awt.im.InputMethodRequests inputMethodRequests19 = createCourseUI1.getInputMethodRequests();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame328" + "'", str9, "frame328");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(point12);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(jRootPane18);
-        org.junit.Assert.assertNull(inputMethodRequests19);
+        assertEquals("'" + str9 + "' != '" + "frame328" + "'", str9, "frame328");
+        assertNotNull(dimension10);
+        assertNull(point12);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(jRootPane18);
+        assertNull(inputMethodRequests19);
     }
 
     @Test
@@ -6774,14 +6774,14 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setBackground(color18);
         boolean boolean20 = createCourseUI0.isEnabled();
         boolean boolean21 = createCourseUI0.isMaximumSizeSet();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component11);
-        org.junit.Assert.assertTrue("'" + float13 + "' != '" + 0.5f + "'", float13 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertNotNull(color18);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component11);
+        assertTrue(float13 == 0.5f, "'" + float13 + "' != '" + 0.5f + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean17 == false, "'" + boolean17 + "' != '" + false + "'");
+        assertNotNull(color18);
+        assertTrue(boolean20 == true, "'" + boolean20 + "' != '" + true + "'");
+        assertTrue(boolean21 == false, "'" + boolean21 + "' != '" + false + "'");
     }
 
     @Test
@@ -6797,11 +6797,11 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.deliverEvent(event6);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"x\" because \"e\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"x\" because \"e\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + modalExclusionType5 + "' != '" + java.awt.Dialog.ModalExclusionType.NO_EXCLUDE + "'", modalExclusionType5.equals(java.awt.Dialog.ModalExclusionType.NO_EXCLUDE));
+        assertTrue(modalExclusionType5.equals(java.awt.Dialog.ModalExclusionType.NO_EXCLUDE), "'" + modalExclusionType5 + "' != '" + java.awt.Dialog.ModalExclusionType.NO_EXCLUDE + "'");
     }
 
     @Test
@@ -6819,11 +6819,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Event event12 = null;
         boolean boolean15 = createCourseUI0.mouseEnter(event12, (int) '4', (int) (byte) 10);
         java.awt.Dimension dimension16 = createCourseUI0.getPreferredSize();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(dimension16);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(dimension16);
     }
 
     @Test
@@ -6839,14 +6839,14 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.remove(400);
-            org.junit.Assert.fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Array index out of range: 400");
+            fail("Expected exception of type java.lang.ArrayIndexOutOfBoundsException; message: Array index out of range: 400");
         } catch (java.lang.ArrayIndexOutOfBoundsException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertNotNull(component6);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == true, "'" + boolean5 + "' != '" + true + "'");
+        assertNotNull(component6);
     }
 
     @Test
@@ -6860,10 +6860,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Shape shape5 = createCourseUI0.getShape();
         java.awt.Event event6 = null;
         boolean boolean9 = createCourseUI0.mouseMove(event6, 8, (int) (short) -1);
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertNull(shape5);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension4);
+        assertNull(shape5);
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
     }
 
     @Test
@@ -6887,16 +6887,16 @@ public class CreateCourseUIRegressionTest0 {
         float float19 = createCourseUI14.getAlignmentY();
         boolean boolean20 = component12.prepareImage(image13, (java.awt.image.ImageObserver) createCourseUI14);
         boolean boolean21 = createCourseUI14.isShowing();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertNotNull(component12);
-        org.junit.Assert.assertTrue("'" + float17 + "' != '" + 1.0f + "'", float17 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray18);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray18, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + float19 + "' != '" + 0.5f + "'", float19 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertNotNull(component12);
+        assertTrue(float17 == 1.0f, "'" + float17 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray18);
+        assertArrayEquals(hierarchyListenerArray18, new java.awt.event.HierarchyListener[] {});
+        assertTrue(float19 == 0.5f, "'" + float19 + "' != '" + 0.5f + "'");
+        assertTrue(boolean20 == true, "'" + boolean20 + "' != '" + true + "'");
+        assertTrue(boolean21 == false, "'" + boolean21 + "' != '" + false + "'");
     }
 
     @Test
@@ -6916,14 +6916,14 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Point point10 = createCourseUI7.location();
         java.awt.Component component11 = createCourseUI0.getComponentAt(point10);
         boolean boolean12 = createCourseUI0.isShowing();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 1 + "'", int3 == 1);
-        org.junit.Assert.assertNull(graphics4);
-        org.junit.Assert.assertNotNull(point9);
-        org.junit.Assert.assertNotNull(point10);
-        org.junit.Assert.assertNotNull(component11);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true, "'" + boolean2 + "' != '" + true + "'");
+        assertTrue(int3 == 1, "'" + int3 + "' != '" + 1 + "'");
+        assertNull(graphics4);
+        assertNotNull(point9);
+        assertNotNull(point10);
+        assertNotNull(component11);
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -6939,12 +6939,12 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Event event6 = null;
         boolean boolean8 = createCourseUI0.gotFocus(event6, (java.lang.Object) 7);
         boolean boolean9 = createCourseUI0.isResizable();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(mouseListenerArray4);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 1 + "'", int5 == 1);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + true + "'", boolean9 == true);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(mouseListenerArray4);
+        assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
+        assertTrue(int5 == 1, "'" + int5 + "' != '" + 1 + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean9 == true, "'" + boolean9 + "' != '" + true + "'");
     }
 
     @Test
@@ -6964,14 +6964,14 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Color color11 = createCourseUI6.getBackground();
         createCourseUI0.setBackground(color11);
         java.beans.PropertyChangeListener[] propertyChangeListenerArray14 = createCourseUI0.getPropertyChangeListeners("frame66");
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNull(menuBar4);
-        org.junit.Assert.assertNotNull(rectangle5);
-        org.junit.Assert.assertTrue("'" + float7 + "' != '" + 0.5f + "'", float7 == 0.5f);
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNotNull(color11);
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray14);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray14, new java.beans.PropertyChangeListener[] {});
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNull(menuBar4);
+        assertNotNull(rectangle5);
+        assertTrue(float7 == 0.5f, "'" + float7 + "' != '" + 0.5f + "'");
+        assertNotNull(dimension10);
+        assertNotNull(color11);
+        assertNotNull(propertyChangeListenerArray14);
+        assertArrayEquals(propertyChangeListenerArray14, new java.beans.PropertyChangeListener[] {});
     }
 
     @Test
@@ -7003,16 +7003,16 @@ public class CreateCourseUIRegressionTest0 {
         java.lang.String str33 = createCourseUI25.getName();
         boolean boolean34 = createCourseUI25.isEnabled();
         boolean boolean35 = createCourseUI0.gotFocus(event23, (java.lang.Object) boolean34);
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertNotNull(color6);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(component19);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertEquals("'" + str33 + "' != '" + "frame330" + "'", str33, "frame330");
-        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + true + "'", boolean34 == true);
-        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + false + "'", boolean35 == false);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == false, "'" + boolean5 + "' != '" + false + "'");
+        assertNotNull(color6);
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(component19);
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertEquals("'" + str33 + "' != '" + "frame330" + "'", str33, "frame330");
+        assertTrue(boolean34 == true, "'" + boolean34 + "' != '" + true + "'");
+        assertTrue(boolean35 == false, "'" + boolean35 + "' != '" + false + "'");
     }
 
     @Test
@@ -7024,10 +7024,10 @@ public class CreateCourseUIRegressionTest0 {
         float float3 = createCourseUI0.getOpacity();
         java.awt.event.HierarchyListener[] hierarchyListenerArray4 = createCourseUI0.getHierarchyListeners();
         java.awt.Component.BaselineResizeBehavior baselineResizeBehavior5 = createCourseUI0.getBaselineResizeBehavior();
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray4);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + baselineResizeBehavior5 + "' != '" + java.awt.Component.BaselineResizeBehavior.OTHER + "'", baselineResizeBehavior5.equals(java.awt.Component.BaselineResizeBehavior.OTHER));
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray4);
+        assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
+        assertTrue(baselineResizeBehavior5.equals(java.awt.Component.BaselineResizeBehavior.OTHER), "'" + baselineResizeBehavior5 + "' != '" + java.awt.Component.BaselineResizeBehavior.OTHER + "'");
     }
 
     @Test
@@ -7091,32 +7091,32 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Rectangle rectangle68 = createCourseUI26.getBounds(rectangle67);
         java.awt.Rectangle rectangle69 = createCourseUI14.getBounds(rectangle67);
         createCourseUI0.setMaximizedBounds(rectangle69);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame332,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame332,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 0 + "'", int16 == 0);
-        org.junit.Assert.assertTrue("'" + float18 + "' != '" + 0.5f + "'", float18 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(color23);
-        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
-        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + false + "'", boolean35 == false);
-        org.junit.Assert.assertNotNull(color36);
-        org.junit.Assert.assertNotNull(layoutManager37);
-        org.junit.Assert.assertEquals("'" + str48 + "' != '" + "frame333" + "'", str48, "frame333");
-        org.junit.Assert.assertNotNull(point52);
-        org.junit.Assert.assertNotNull(component53);
-        org.junit.Assert.assertNotNull(rectangle55);
-        org.junit.Assert.assertTrue("'" + boolean61 + "' != '" + false + "'", boolean61 == false);
-        org.junit.Assert.assertNotNull(insets62);
-        org.junit.Assert.assertTrue("'" + boolean66 + "' != '" + false + "'", boolean66 == false);
-        org.junit.Assert.assertNotNull(rectangle67);
-        org.junit.Assert.assertNotNull(rectangle68);
-        org.junit.Assert.assertNotNull(rectangle69);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame332,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame332,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertTrue(int16 == 0, "'" + int16 + "' != '" + 0 + "'");
+        assertTrue(float18 == 0.5f, "'" + float18 + "' != '" + 0.5f + "'");
+        assertTrue(boolean21 == false, "'" + boolean21 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(color23);
+        assertTrue(boolean25 == false, "'" + boolean25 + "' != '" + false + "'");
+        assertTrue(boolean35 == false, "'" + boolean35 + "' != '" + false + "'");
+        assertNotNull(color36);
+        assertNotNull(layoutManager37);
+        assertEquals("'" + str48 + "' != '" + "frame333" + "'", str48, "frame333");
+        assertNotNull(point52);
+        assertNotNull(component53);
+        assertNotNull(rectangle55);
+        assertTrue(boolean61 == false, "'" + boolean61 + "' != '" + false + "'");
+        assertNotNull(insets62);
+        assertTrue(boolean66 == false, "'" + boolean66 + "' != '" + false + "'");
+        assertNotNull(rectangle67);
+        assertNotNull(rectangle68);
+        assertNotNull(rectangle69);
     }
 
     @Test
@@ -7135,10 +7135,10 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.removeMouseWheelListener(mouseWheelListener11);
         java.awt.MenuBar menuBar13 = null;
         createCourseUI0.setMenuBar(menuBar13);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
-        org.junit.Assert.assertNotNull(windowStateListenerArray8);
-        org.junit.Assert.assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
+        assertNotNull(windowStateListenerArray8);
+        assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
     }
 
     @Test
@@ -7162,16 +7162,16 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension17 = createCourseUI9.getMinimumSize();
         createCourseUI0.setSize(dimension17);
         int int19 = createCourseUI0.countComponents();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertNull(volatileImage7);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
-        org.junit.Assert.assertTrue("'" + float12 + "' != '" + 1.0f + "'", float12 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray13);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray13, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + float14 + "' != '" + 0.5f + "'", float14 == 0.5f);
-        org.junit.Assert.assertNotNull(dimension17);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 1 + "'", int19 == 1);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(dimension4);
+        assertNull(volatileImage7);
+        assertTrue(boolean8 == true, "'" + boolean8 + "' != '" + true + "'");
+        assertTrue(float12 == 1.0f, "'" + float12 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray13);
+        assertArrayEquals(hierarchyListenerArray13, new java.awt.event.HierarchyListener[] {});
+        assertTrue(float14 == 0.5f, "'" + float14 + "' != '" + 0.5f + "'");
+        assertNotNull(dimension17);
+        assertTrue(int19 == 1, "'" + int19 + "' != '" + 1 + "'");
     }
 
     @Test
@@ -7194,12 +7194,12 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Graphics graphics18 = null;
         createCourseUI1.printAll(graphics18);
         boolean boolean20 = createCourseUI1.hasFocus();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame334" + "'", str9, "frame334");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
-        org.junit.Assert.assertNull(inputMethodRequests14);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertEquals("'" + str9 + "' != '" + "frame334" + "'", str9, "frame334");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == true, "'" + boolean13 + "' != '" + true + "'");
+        assertNull(inputMethodRequests14);
+        assertTrue(boolean17 == true, "'" + boolean17 + "' != '" + true + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -7231,13 +7231,13 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component32 = createCourseUI19.getComponentAt(point31);
         java.awt.Component component33 = createCourseUI16.findComponentAt(point31);
         java.awt.Component component34 = createCourseUI1.getComponentAt(point31);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame335" + "'", str9, "frame335");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertEquals("'" + str27 + "' != '" + "frame336" + "'", str27, "frame336");
-        org.junit.Assert.assertNotNull(point31);
-        org.junit.Assert.assertNotNull(component32);
-        org.junit.Assert.assertNull(component33);
-        org.junit.Assert.assertNotNull(component34);
+        assertEquals("'" + str9 + "' != '" + "frame335" + "'", str9, "frame335");
+        assertNotNull(dimension10);
+        assertEquals("'" + str27 + "' != '" + "frame336" + "'", str27, "frame336");
+        assertNotNull(point31);
+        assertNotNull(component32);
+        assertNull(component33);
+        assertNotNull(component34);
     }
 
     @Test
@@ -7279,20 +7279,20 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Rectangle rectangle42 = createCourseUI0.getBounds(rectangle41);
         java.awt.Component.BaselineResizeBehavior baselineResizeBehavior43 = createCourseUI0.getBaselineResizeBehavior();
         boolean boolean44 = createCourseUI0.isDisplayable();
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNotNull(color10);
-        org.junit.Assert.assertNotNull(layoutManager11);
-        org.junit.Assert.assertEquals("'" + str22 + "' != '" + "frame337" + "'", str22, "frame337");
-        org.junit.Assert.assertNotNull(point26);
-        org.junit.Assert.assertNotNull(component27);
-        org.junit.Assert.assertNotNull(rectangle29);
-        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + false + "'", boolean35 == false);
-        org.junit.Assert.assertNotNull(insets36);
-        org.junit.Assert.assertTrue("'" + boolean40 + "' != '" + false + "'", boolean40 == false);
-        org.junit.Assert.assertNotNull(rectangle41);
-        org.junit.Assert.assertNotNull(rectangle42);
-        org.junit.Assert.assertTrue("'" + baselineResizeBehavior43 + "' != '" + java.awt.Component.BaselineResizeBehavior.OTHER + "'", baselineResizeBehavior43.equals(java.awt.Component.BaselineResizeBehavior.OTHER));
-        org.junit.Assert.assertTrue("'" + boolean44 + "' != '" + false + "'", boolean44 == false);
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
+        assertNotNull(color10);
+        assertNotNull(layoutManager11);
+        assertEquals("'" + str22 + "' != '" + "frame337" + "'", str22, "frame337");
+        assertNotNull(point26);
+        assertNotNull(component27);
+        assertNotNull(rectangle29);
+        assertTrue(boolean35 == false, "'" + boolean35 + "' != '" + false + "'");
+        assertNotNull(insets36);
+        assertTrue(boolean40 == false, "'" + boolean40 + "' != '" + false + "'");
+        assertNotNull(rectangle41);
+        assertNotNull(rectangle42);
+        assertTrue(baselineResizeBehavior43.equals(java.awt.Component.BaselineResizeBehavior.OTHER), "'" + baselineResizeBehavior43 + "' != '" + java.awt.Component.BaselineResizeBehavior.OTHER + "'");
+        assertTrue(boolean44 == false, "'" + boolean44 + "' != '" + false + "'");
     }
 
     @Test
@@ -7312,12 +7312,12 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean13 = createCourseUI0.keyDown(event11, 433);
         java.awt.event.WindowFocusListener windowFocusListener14 = null;
         createCourseUI0.addWindowFocusListener(windowFocusListener14);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray10);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray10, new java.beans.PropertyChangeListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(int8 == (-1), "'" + int8 + "' != '" + (-1) + "'");
+        assertNotNull(propertyChangeListenerArray10);
+        assertArrayEquals(propertyChangeListenerArray10, new java.beans.PropertyChangeListener[] {});
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
     }
 
     @Test
@@ -7330,11 +7330,11 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.paintComponents(graphics2);
         java.awt.event.MouseListener[] mouseListenerArray4 = createCourseUI0.getMouseListeners();
         java.util.Locale locale5 = createCourseUI0.getLocale();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(mouseListenerArray4);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(locale5);
-        org.junit.Assert.assertEquals(locale5.toString(), "en_US");
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(mouseListenerArray4);
+        assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
+        assertNotNull(locale5);
+        assertEquals(locale5.toString(), "en_US");
     }
 
     @Test
@@ -7359,16 +7359,16 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean20 = component12.prepareImage(image13, (java.awt.image.ImageObserver) createCourseUI14);
         java.awt.Event event21 = null;
         boolean boolean24 = createCourseUI14.mouseDrag(event21, 4, 0);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertNotNull(component12);
-        org.junit.Assert.assertTrue("'" + float17 + "' != '" + 1.0f + "'", float17 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray18);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray18, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + float19 + "' != '" + 0.5f + "'", float19 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertNotNull(component12);
+        assertTrue(float17 == 1.0f, "'" + float17 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray18);
+        assertArrayEquals(hierarchyListenerArray18, new java.awt.event.HierarchyListener[] {});
+        assertTrue(float19 == 0.5f, "'" + float19 + "' != '" + 0.5f + "'");
+        assertTrue(boolean20 == true, "'" + boolean20 + "' != '" + true + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
     }
 
     @Test
@@ -7381,10 +7381,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Image image3 = createCourseUI0.getIconImage();
         createCourseUI0.setFocusTraversalPolicyProvider(false);
         boolean boolean8 = createCourseUI0.inside(5, (int) (short) -1);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(componentArray2);
-        org.junit.Assert.assertNull(image3);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(componentArray2);
+        assertNull(image3);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -7401,8 +7401,8 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component11 = createCourseUI0.locate((int) '4', (int) (byte) 0);
         java.awt.event.ComponentListener componentListener12 = null;
         component11.removeComponentListener(componentListener12);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component11);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component11);
     }
 
     @Test
@@ -7423,13 +7423,13 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component18 = createCourseUI9.getComponentAt((int) (short) 0, (int) (byte) 10);
         int int19 = createCourseUI0.checkImage(image6, 0, (-1), (java.awt.image.ImageObserver) createCourseUI9);
         int int20 = createCourseUI0.getCursorType();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(toolkit5);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(component18);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 32 + "'", int19 == 32);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + 0 + "'", int20 == 0);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(toolkit5);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(component18);
+        assertTrue(int19 == 32, "'" + int19 + "' != '" + 32 + "'");
+        assertTrue(int20 == 0, "'" + int20 + "' != '" + 0 + "'");
     }
 
     @Test
@@ -7457,15 +7457,15 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.WindowStateListener windowStateListener26 = null;
         createCourseUI9.addWindowStateListener(windowStateListener26);
         int int28 = createCourseUI9.getDefaultCloseOperation();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(toolkit5);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(component18);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 32 + "'", int19 == 32);
-        org.junit.Assert.assertTrue("'" + float23 + "' != '" + 1.0f + "'", float23 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension24);
-        org.junit.Assert.assertTrue("'" + int28 + "' != '" + 3 + "'", int28 == 3);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(toolkit5);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(component18);
+        assertTrue(int19 == 32, "'" + int19 + "' != '" + 32 + "'");
+        assertTrue(float23 == 1.0f, "'" + float23 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension24);
+        assertTrue(int28 == 3, "'" + int28 + "' != '" + 3 + "'");
     }
 
     @Test
@@ -7491,17 +7491,17 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.dispatchEvent(aWTEvent22);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.awt.AWTEvent.getID()\" because \"e\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.awt.AWTEvent.getID()\" because \"e\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(componentArray17);
-        org.junit.Assert.assertNull(image18);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + true + "'", boolean21 == true);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(componentArray17);
+        assertNull(image18);
+        assertTrue(boolean21 == true, "'" + boolean21 + "' != '" + true + "'");
     }
 
     @Test
@@ -7528,12 +7528,12 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setLocation(point19);
         java.awt.Image image23 = null;
         boolean boolean29 = createCourseUI0.imageUpdate(image23, 500, (int) (byte) 10, 8, 9, 3);
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertEquals("'" + str15 + "' != '" + "frame338" + "'", str15, "frame338");
-        org.junit.Assert.assertNotNull(point19);
-        org.junit.Assert.assertNotNull(component20);
-        org.junit.Assert.assertNull(component21);
-        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + false + "'", boolean29 == false);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertEquals("'" + str15 + "' != '" + "frame338" + "'", str15, "frame338");
+        assertNotNull(point19);
+        assertNotNull(component20);
+        assertNull(component21);
+        assertTrue(boolean29 == false, "'" + boolean29 + "' != '" + false + "'");
     }
 
     @Test
@@ -7549,8 +7549,8 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setComponentOrientation(componentOrientation7);
         createCourseUI0.move(7, 7);
         java.awt.Font font12 = createCourseUI0.getFont();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(font12);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(font12);
     }
 
     @Test
@@ -7565,11 +7565,11 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.dispatchEvent(aWTEvent4);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.awt.AWTEvent.getID()\" because \"e\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.awt.AWTEvent.getID()\" because \"e\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
     }
 
     @Test
@@ -7585,12 +7585,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.list(printWriter5, 32);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.print(String)\" because \"out\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.io.PrintWriter.print(String)\" because \"out\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(componentArray2);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(componentArray2);
     }
 
     @Test
@@ -7622,18 +7622,18 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean30 = createCourseUI6.handleEvent(event29);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"id\" because \"evt\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"id\" because \"evt\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(toolkit11);
-        org.junit.Assert.assertEquals("'" + str21 + "' != '" + "frame339" + "'", str21, "frame339");
-        org.junit.Assert.assertNotNull(dimension22);
-        org.junit.Assert.assertTrue("'" + int26 + "' != '" + 32 + "'", int26 == 32);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(int2 == 0, "'" + int2 + "' != '" + 0 + "'");
+        assertTrue(boolean7 == false, "'" + boolean7 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(toolkit11);
+        assertEquals("'" + str21 + "' != '" + "frame339" + "'", str21, "frame339");
+        assertNotNull(dimension22);
+        assertTrue(int26 == 32, "'" + int26 + "' != '" + 32 + "'");
     }
 
     @Test
@@ -7645,10 +7645,10 @@ public class CreateCourseUIRegressionTest0 {
         float float3 = createCourseUI0.getOpacity();
         java.awt.event.HierarchyListener[] hierarchyListenerArray4 = createCourseUI0.getHierarchyListeners();
         int int5 = createCourseUI0.getComponentCount();
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray4);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 1 + "'", int5 == 1);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray4);
+        assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
+        assertTrue(int5 == 1, "'" + int5 + "' != '" + 1 + "'");
     }
 
     @Test
@@ -7681,16 +7681,16 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI10.setDropTarget(dropTarget34);
         createCourseUI0.remove((java.awt.Component) createCourseUI10);
         createCourseUI10.enable();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertEquals("'" + str18 + "' != '" + "frame342" + "'", str18, "frame342");
-        org.junit.Assert.assertNotNull(dimension19);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(windowFocusListenerArray23);
-        org.junit.Assert.assertArrayEquals(windowFocusListenerArray23, new java.awt.event.WindowFocusListener[] {});
-        org.junit.Assert.assertTrue("'" + float30 + "' != '" + 1.0f + "'", float30 == 1.0f);
-        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + true + "'", boolean31 == true);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertEquals("'" + str18 + "' != '" + "frame342" + "'", str18, "frame342");
+        assertNotNull(dimension19);
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(windowFocusListenerArray23);
+        assertArrayEquals(windowFocusListenerArray23, new java.awt.event.WindowFocusListener[] {});
+        assertTrue(float30 == 1.0f, "'" + float30 + "' != '" + 1.0f + "'");
+        assertTrue(boolean31 == true, "'" + boolean31 + "' != '" + true + "'");
     }
 
     @Test
@@ -7713,15 +7713,15 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean18 = createCourseUI1.getFocusableWindowState();
         java.awt.Point point19 = createCourseUI1.getMousePosition();
         java.awt.event.WindowListener[] windowListenerArray20 = createCourseUI1.getWindowListeners();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame344" + "'", str9, "frame344");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
-        org.junit.Assert.assertNull(inputMethodRequests14);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + true + "'", boolean18 == true);
-        org.junit.Assert.assertNull(point19);
-        org.junit.Assert.assertNotNull(windowListenerArray20);
-        org.junit.Assert.assertArrayEquals(windowListenerArray20, new java.awt.event.WindowListener[] {});
+        assertEquals("'" + str9 + "' != '" + "frame344" + "'", str9, "frame344");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == true, "'" + boolean13 + "' != '" + true + "'");
+        assertNull(inputMethodRequests14);
+        assertTrue(boolean17 == true, "'" + boolean17 + "' != '" + true + "'");
+        assertTrue(boolean18 == true, "'" + boolean18 + "' != '" + true + "'");
+        assertNull(point19);
+        assertNotNull(windowListenerArray20);
+        assertArrayEquals(windowListenerArray20, new java.awt.event.WindowListener[] {});
     }
 
     @Test
@@ -7734,8 +7734,8 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.removeHierarchyBoundsListener(hierarchyBoundsListener2);
         createCourseUI0.firePropertyChange("frame3", (-1L), (long) '4');
         java.beans.PropertyChangeListener[] propertyChangeListenerArray9 = createCourseUI0.getPropertyChangeListeners("frame120");
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray9);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray9, new java.beans.PropertyChangeListener[] {});
+        assertNotNull(propertyChangeListenerArray9);
+        assertArrayEquals(propertyChangeListenerArray9, new java.beans.PropertyChangeListener[] {});
     }
 
     @Test
@@ -7747,7 +7747,7 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component2 = createCourseUI0.getGlassPane();
         java.awt.event.MouseMotionListener mouseMotionListener3 = null;
         component2.removeMouseMotionListener(mouseMotionListener3);
-        org.junit.Assert.assertNotNull(component2);
+        assertNotNull(component2);
     }
 
     @Test
@@ -7763,14 +7763,14 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean7 = createCourseUI0.areFocusTraversalKeysSet(5);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: invalid focus traversal key identifier");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: invalid focus traversal key identifier");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(mouseListenerArray4);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 1 + "'", int5 == 1);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(mouseListenerArray4);
+        assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
+        assertTrue(int5 == 1, "'" + int5 + "' != '" + 1 + "'");
     }
 
     @Test
@@ -7783,9 +7783,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Point point3 = createCourseUI1.getLocation();
         createCourseUI1.firePropertyChange("frame23", (short) 1, (short) (byte) -1);
         java.util.Locale locale8 = createCourseUI1.getLocale();
-        org.junit.Assert.assertNotNull(point3);
-        org.junit.Assert.assertNotNull(locale8);
-        org.junit.Assert.assertEquals(locale8.toString(), "en_US");
+        assertNotNull(point3);
+        assertNotNull(locale8);
+        assertEquals(locale8.toString(), "en_US");
     }
 
     @Test
@@ -7806,11 +7806,11 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean14 = createCourseUI0.isPreferredSizeSet();
         java.awt.event.MouseListener mouseListener15 = null;
         createCourseUI0.removeMouseListener(mouseListener15);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame347,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame347,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame347,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame347,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -7838,14 +7838,14 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.WindowStateListener windowStateListener26 = null;
         createCourseUI9.addWindowStateListener(windowStateListener26);
         createCourseUI9.nextFocus();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(toolkit5);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(component18);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 32 + "'", int19 == 32);
-        org.junit.Assert.assertTrue("'" + float23 + "' != '" + 1.0f + "'", float23 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension24);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(toolkit5);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(component18);
+        assertTrue(int19 == 32, "'" + int19 + "' != '" + 32 + "'");
+        assertTrue(float23 == 1.0f, "'" + float23 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension24);
     }
 
     @Test
@@ -7860,9 +7860,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.WindowListener windowListener6 = null;
         createCourseUI0.removeWindowListener(windowListener6);
         createCourseUI0.transferFocus();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNull(window5);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNull(window5);
     }
 
     @Test
@@ -7896,20 +7896,20 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.util.Set<java.awt.AWTKeyStroke> aWTKeyStrokeSet31 = createCourseUI0.getFocusTraversalKeys(9);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: invalid focus traversal key identifier");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: invalid focus traversal key identifier");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(container6);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray21);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray21, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(dimension22);
-        org.junit.Assert.assertNotNull(point26);
-        org.junit.Assert.assertNotNull(component27);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + true + "'", boolean28 == true);
-        org.junit.Assert.assertTrue("'" + int29 + "' != '" + 32 + "'", int29 == 32);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
+        assertNotNull(container6);
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray21);
+        assertArrayEquals(mouseListenerArray21, new java.awt.event.MouseListener[] {});
+        assertNotNull(dimension22);
+        assertNotNull(point26);
+        assertNotNull(component27);
+        assertTrue(boolean28 == true, "'" + boolean28 + "' != '" + true + "'");
+        assertTrue(int29 == 32, "'" + int29 + "' != '" + 32 + "'");
     }
 
     @Test
@@ -7937,11 +7937,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dialog.ModalExclusionType modalExclusionType23 = createCourseUI19.getModalExclusionType();
         createCourseUI6.setModalExclusionType(modalExclusionType23);
         createCourseUI0.setModalExclusionType(modalExclusionType23);
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(point15);
-        org.junit.Assert.assertTrue("'" + modalExclusionType23 + "' != '" + java.awt.Dialog.ModalExclusionType.NO_EXCLUDE + "'", modalExclusionType23.equals(java.awt.Dialog.ModalExclusionType.NO_EXCLUDE));
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(point15);
+        assertTrue(modalExclusionType23.equals(java.awt.Dialog.ModalExclusionType.NO_EXCLUDE), "'" + modalExclusionType23 + "' != '" + java.awt.Dialog.ModalExclusionType.NO_EXCLUDE + "'");
     }
 
     @Test
@@ -7970,16 +7970,16 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Color color23 = createCourseUI18.getBackground();
         createCourseUI12.setBackground(color23);
         createCourseUI0.setForeground(color23);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + float15 + "' != '" + 1.0f + "'", float15 == 1.0f);
-        org.junit.Assert.assertNull(menuBar16);
-        org.junit.Assert.assertNotNull(rectangle17);
-        org.junit.Assert.assertTrue("'" + float19 + "' != '" + 0.5f + "'", float19 == 0.5f);
-        org.junit.Assert.assertNotNull(dimension22);
-        org.junit.Assert.assertNotNull(color23);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertNotNull(dimension10);
+        assertTrue(float15 == 1.0f, "'" + float15 + "' != '" + 1.0f + "'");
+        assertNull(menuBar16);
+        assertNotNull(rectangle17);
+        assertTrue(float19 == 0.5f, "'" + float19 + "' != '" + 0.5f + "'");
+        assertNotNull(dimension22);
+        assertNotNull(color23);
     }
 
     @Test
@@ -7998,14 +7998,14 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = createCourseUI0.postEvent(event11);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"id\" because \"evt\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"id\" because \"evt\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
-        org.junit.Assert.assertNotNull(windowStateListenerArray8);
-        org.junit.Assert.assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
+        assertNotNull(windowStateListenerArray8);
+        assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
     }
 
     @Test
@@ -8026,12 +8026,12 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean16 = createCourseUI1.isMinimumSizeSet();
         java.awt.Event event17 = null;
         boolean boolean20 = createCourseUI1.mouseDown(event17, 6, (int) (short) 1);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame351" + "'", str9, "frame351");
-        org.junit.Assert.assertNotNull(point13);
-        org.junit.Assert.assertNotNull(component14);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + true + "'", boolean15 == true);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertEquals("'" + str9 + "' != '" + "frame351" + "'", str9, "frame351");
+        assertNotNull(point13);
+        assertNotNull(component14);
+        assertTrue(boolean15 == true, "'" + boolean15 + "' != '" + true + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -8050,11 +8050,11 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.addInputMethodListener(inputMethodListener10);
         createCourseUI0.setState((int) (byte) -1);
         java.awt.image.VolatileImage volatileImage16 = createCourseUI0.createVolatileImage(11, (int) (short) 1);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame352,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame352,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertNull(volatileImage16);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame352,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame352,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertNull(volatileImage16);
     }
 
     @Test
@@ -8074,11 +8074,11 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.enableInputMethods(false);
         javax.swing.JRootPane jRootPane18 = createCourseUI1.getRootPane();
         jRootPane18.transferFocusUpCycle();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame353" + "'", str9, "frame353");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(point12);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(jRootPane18);
+        assertEquals("'" + str9 + "' != '" + "frame353" + "'", str9, "frame353");
+        assertNotNull(dimension10);
+        assertNull(point12);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(jRootPane18);
     }
 
     @Test
@@ -8110,17 +8110,17 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.ComponentOrientation componentOrientation29 = null;
         createCourseUI12.setComponentOrientation(componentOrientation29);
         createCourseUI0.remove((java.awt.Component) createCourseUI12);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 1 + "'", int3 == 1);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNotNull(locale10);
-        org.junit.Assert.assertEquals(locale10.toString(), "en_US");
-        org.junit.Assert.assertEquals("'" + str20 + "' != '" + "frame354" + "'", str20, "frame354");
-        org.junit.Assert.assertNotNull(dimension21);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + true + "'", boolean24 == true);
-        org.junit.Assert.assertNull(inputMethodRequests25);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + true + "'", boolean28 == true);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true, "'" + boolean2 + "' != '" + true + "'");
+        assertTrue(int3 == 1, "'" + int3 + "' != '" + 1 + "'");
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
+        assertNotNull(locale10);
+        assertEquals(locale10.toString(), "en_US");
+        assertEquals("'" + str20 + "' != '" + "frame354" + "'", str20, "frame354");
+        assertNotNull(dimension21);
+        assertTrue(boolean24 == true, "'" + boolean24 + "' != '" + true + "'");
+        assertNull(inputMethodRequests25);
+        assertTrue(boolean28 == true, "'" + boolean28 + "' != '" + true + "'");
     }
 
     @Test
@@ -8134,10 +8134,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseListener[] mouseListenerArray4 = createCourseUI0.getMouseListeners();
         createCourseUI0.pack();
         boolean boolean6 = createCourseUI0.isBackgroundSet();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(mouseListenerArray4);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(mouseListenerArray4);
+        assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
+        assertTrue(boolean6 == true, "'" + boolean6 + "' != '" + true + "'");
     }
 
     @Test
@@ -8160,11 +8160,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.LayoutManager layoutManager18 = createCourseUI1.getLayout();
         java.awt.image.ColorModel colorModel19 = createCourseUI1.getColorModel();
         javax.swing.TransferHandler transferHandler20 = createCourseUI1.getTransferHandler();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame355" + "'", str9, "frame355");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNotNull(layoutManager18);
-        org.junit.Assert.assertNotNull(colorModel19);
-        org.junit.Assert.assertNull(transferHandler20);
+        assertEquals("'" + str9 + "' != '" + "frame355" + "'", str9, "frame355");
+        assertNotNull(dimension10);
+        assertNotNull(layoutManager18);
+        assertNotNull(colorModel19);
+        assertNull(transferHandler20);
     }
 
     @Test
@@ -8177,11 +8177,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.HierarchyListener[] hierarchyListenerArray4 = createCourseUI0.getHierarchyListeners();
         java.awt.Point point6 = createCourseUI0.getMousePosition(false);
         java.awt.Component component9 = createCourseUI0.getComponentAt(12, 8);
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray4);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertNull(point6);
-        org.junit.Assert.assertNotNull(component9);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray4);
+        assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
+        assertNull(point6);
+        assertNotNull(component9);
     }
 
     @Test
@@ -8203,12 +8203,12 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component15 = createCourseUI0.getComponentAt(point14);
         java.awt.event.HierarchyListener hierarchyListener16 = null;
         createCourseUI0.removeHierarchyListener(hierarchyListener16);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNotNull(point14);
-        org.junit.Assert.assertNotNull(component15);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertNotNull(dimension10);
+        assertNotNull(point14);
+        assertNotNull(component15);
     }
 
     @Test
@@ -8238,14 +8238,14 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setLocation(point26);
         java.awt.FocusTraversalPolicy focusTraversalPolicy29 = createCourseUI0.getFocusTraversalPolicy();
         boolean boolean30 = createCourseUI0.isResizable();
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNotNull(color10);
-        org.junit.Assert.assertNotNull(layoutManager11);
-        org.junit.Assert.assertEquals("'" + str22 + "' != '" + "frame359" + "'", str22, "frame359");
-        org.junit.Assert.assertNotNull(point26);
-        org.junit.Assert.assertNotNull(component27);
-        org.junit.Assert.assertNotNull(focusTraversalPolicy29);
-        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + true + "'", boolean30 == true);
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
+        assertNotNull(color10);
+        assertNotNull(layoutManager11);
+        assertEquals("'" + str22 + "' != '" + "frame359" + "'", str22, "frame359");
+        assertNotNull(point26);
+        assertNotNull(component27);
+        assertNotNull(focusTraversalPolicy29);
+        assertTrue(boolean30 == true, "'" + boolean30 + "' != '" + true + "'");
     }
 
     @Test
@@ -8266,13 +8266,13 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component11 = createCourseUI0.getComponentAt(point10);
         component11.revalidate();
         component11.repaint((long) '#');
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 1 + "'", int3 == 1);
-        org.junit.Assert.assertNull(graphics4);
-        org.junit.Assert.assertNotNull(point9);
-        org.junit.Assert.assertNotNull(point10);
-        org.junit.Assert.assertNotNull(component11);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true, "'" + boolean2 + "' != '" + true + "'");
+        assertTrue(int3 == 1, "'" + int3 + "' != '" + 1 + "'");
+        assertNull(graphics4);
+        assertNotNull(point9);
+        assertNotNull(point10);
+        assertNotNull(component11);
     }
 
     @Test
@@ -8288,9 +8288,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setComponentOrientation(componentOrientation7);
         java.awt.Component component11 = createCourseUI0.locate((int) '4', (int) (byte) 0);
         java.awt.Container container12 = createCourseUI0.getParent();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component11);
-        org.junit.Assert.assertNull(container12);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component11);
+        assertNull(container12);
     }
 
     @Test
@@ -8309,10 +8309,10 @@ public class CreateCourseUIRegressionTest0 {
         int int15 = createCourseUI1.getY();
         createCourseUI1.removeNotify();
         createCourseUI1.show(false);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame360" + "'", str9, "frame360");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(point12);
-        org.junit.Assert.assertTrue("'" + int15 + "' != '" + 160 + "'", int15 == 160);
+        assertEquals("'" + str9 + "' != '" + "frame360" + "'", str9, "frame360");
+        assertNotNull(dimension10);
+        assertNull(point12);
+        assertTrue(int15 == 160, "'" + int15 + "' != '" + 160 + "'");
     }
 
     @Test
@@ -8330,11 +8330,11 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.addContainerListener(containerListener9);
         java.awt.Container container11 = createCourseUI0.getFocusCycleRootAncestor();
         java.awt.MenuBar menuBar12 = createCourseUI0.getMenuBar();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(focusTraversalPolicy8);
-        org.junit.Assert.assertNull(container11);
-        org.junit.Assert.assertNull(menuBar12);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(focusTraversalPolicy8);
+        assertNull(container11);
+        assertNull(menuBar12);
     }
 
     @Test
@@ -8383,20 +8383,20 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension52 = createCourseUI44.getMinimumSize();
         createCourseUI0.setMinimumSize(dimension52);
         createCourseUI0.setFocusable(false);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNotNull(color10);
-        org.junit.Assert.assertNotNull(layoutManager11);
-        org.junit.Assert.assertEquals("'" + str22 + "' != '" + "frame362" + "'", str22, "frame362");
-        org.junit.Assert.assertNotNull(point26);
-        org.junit.Assert.assertNotNull(component27);
-        org.junit.Assert.assertNotNull(rectangle29);
-        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + false + "'", boolean35 == false);
-        org.junit.Assert.assertNotNull(insets36);
-        org.junit.Assert.assertTrue("'" + boolean40 + "' != '" + false + "'", boolean40 == false);
-        org.junit.Assert.assertNotNull(rectangle41);
-        org.junit.Assert.assertNotNull(rectangle42);
-        org.junit.Assert.assertNull(str43);
-        org.junit.Assert.assertNotNull(dimension52);
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
+        assertNotNull(color10);
+        assertNotNull(layoutManager11);
+        assertEquals("'" + str22 + "' != '" + "frame362" + "'", str22, "frame362");
+        assertNotNull(point26);
+        assertNotNull(component27);
+        assertNotNull(rectangle29);
+        assertTrue(boolean35 == false, "'" + boolean35 + "' != '" + false + "'");
+        assertNotNull(insets36);
+        assertTrue(boolean40 == false, "'" + boolean40 + "' != '" + false + "'");
+        assertNotNull(rectangle41);
+        assertNotNull(rectangle42);
+        assertNull(str43);
+        assertNotNull(dimension52);
     }
 
     @Test
@@ -8436,18 +8436,18 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean43 = createCourseUI0.handleEvent(event42);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"id\" because \"evt\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"id\" because \"evt\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNotNull(color14);
-        org.junit.Assert.assertNotNull(layoutManager15);
-        org.junit.Assert.assertEquals("'" + str26 + "' != '" + "frame364" + "'", str26, "frame364");
-        org.junit.Assert.assertNotNull(point30);
-        org.junit.Assert.assertNotNull(component31);
-        org.junit.Assert.assertNotNull(rectangle33);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNotNull(color14);
+        assertNotNull(layoutManager15);
+        assertEquals("'" + str26 + "' != '" + "frame364" + "'", str26, "frame364");
+        assertNotNull(point30);
+        assertNotNull(component31);
+        assertNotNull(rectangle33);
     }
 
     @Test
@@ -8482,15 +8482,15 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.add(component7, (java.lang.Object) createCourseUI8);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"parent\" because \"comp\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"parent\" because \"comp\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "com.example.CreateCourseUI[frame365,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str1, "com.example.CreateCourseUI[frame365,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 500 + "'", int2 == 500);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertNotNull(container14);
-        org.junit.Assert.assertEquals("'" + str15 + "' != '" + "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str15, "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertEquals("'" + str1 + "' != '" + "com.example.CreateCourseUI[frame365,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str1, "com.example.CreateCourseUI[frame365,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertTrue(int2 == 500, "'" + int2 + "' != '" + 500 + "'");
+        assertTrue(boolean11 == false, "'" + boolean11 + "' != '" + false + "'");
+        assertNotNull(container14);
+        assertEquals("'" + str15 + "' != '" + "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str15, "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
     }
 
     @Test
@@ -8511,9 +8511,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.HierarchyListener hierarchyListener16 = null;
         createCourseUI1.addHierarchyListener(hierarchyListener16);
         boolean boolean18 = createCourseUI1.isShowing();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame366" + "'", str9, "frame366");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertEquals("'" + str9 + "' != '" + "frame366" + "'", str9, "frame366");
+        assertNotNull(dimension10);
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -8530,12 +8530,12 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.addWindowFocusListener(windowFocusListener9);
         float float11 = createCourseUI0.getOpacity();
         java.awt.Component component14 = createCourseUI0.getComponentAt((int) (byte) 10, 0);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
-        org.junit.Assert.assertNull(image8);
-        org.junit.Assert.assertTrue("'" + float11 + "' != '" + 1.0f + "'", float11 == 1.0f);
-        org.junit.Assert.assertNotNull(component14);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean7 == true, "'" + boolean7 + "' != '" + true + "'");
+        assertNull(image8);
+        assertTrue(float11 == 1.0f, "'" + float11 + "' != '" + 1.0f + "'");
+        assertNotNull(component14);
     }
 
     @Test
@@ -8561,16 +8561,16 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Image image22 = null;
         boolean boolean28 = createCourseUI0.imageUpdate(image22, (int) (byte) 0, (int) (short) 10, (int) (byte) 0, (int) '4', 433);
         int int29 = createCourseUI0.getDefaultCloseOperation();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(point7);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(insets15);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertNotNull(rectangle20);
-        org.junit.Assert.assertTrue("'" + int21 + "' != '" + 32 + "'", int21 == 32);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + true + "'", boolean28 == true);
-        org.junit.Assert.assertTrue("'" + int29 + "' != '" + 3 + "'", int29 == 3);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(point7);
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(insets15);
+        assertTrue(boolean19 == false, "'" + boolean19 + "' != '" + false + "'");
+        assertNotNull(rectangle20);
+        assertTrue(int21 == 32, "'" + int21 + "' != '" + 32 + "'");
+        assertTrue(boolean28 == true, "'" + boolean28 + "' != '" + true + "'");
+        assertTrue(int29 == 3, "'" + int29 + "' != '" + 3 + "'");
     }
 
     @Test
@@ -8610,22 +8610,22 @@ public class CreateCourseUIRegressionTest0 {
         java.util.Locale locale43 = createCourseUI33.getLocale();
         createCourseUI19.setLocale(locale43);
         createCourseUI1.setLocale(locale43);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame367" + "'", str9, "frame367");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
-        org.junit.Assert.assertNull(inputMethodRequests14);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertEquals("'" + str27 + "' != '" + "frame368" + "'", str27, "frame368");
-        org.junit.Assert.assertNotNull(dimension28);
-        org.junit.Assert.assertNull(point30);
-        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + false + "'", boolean31 == false);
-        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
-        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + false + "'", boolean34 == false);
-        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + true + "'", boolean35 == true);
-        org.junit.Assert.assertTrue("'" + int36 + "' != '" + 1 + "'", int36 == 1);
-        org.junit.Assert.assertTrue("'" + boolean42 + "' != '" + false + "'", boolean42 == false);
-        org.junit.Assert.assertNotNull(locale43);
-        org.junit.Assert.assertEquals(locale43.toString(), "en_US");
+        assertEquals("'" + str9 + "' != '" + "frame367" + "'", str9, "frame367");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == true, "'" + boolean13 + "' != '" + true + "'");
+        assertNull(inputMethodRequests14);
+        assertTrue(boolean17 == false, "'" + boolean17 + "' != '" + false + "'");
+        assertEquals("'" + str27 + "' != '" + "frame368" + "'", str27, "frame368");
+        assertNotNull(dimension28);
+        assertNull(point30);
+        assertTrue(boolean31 == false, "'" + boolean31 + "' != '" + false + "'");
+        assertTrue(boolean32 == false, "'" + boolean32 + "' != '" + false + "'");
+        assertTrue(boolean34 == false, "'" + boolean34 + "' != '" + false + "'");
+        assertTrue(boolean35 == true, "'" + boolean35 + "' != '" + true + "'");
+        assertTrue(int36 == 1, "'" + int36 + "' != '" + 1 + "'");
+        assertTrue(boolean42 == false, "'" + boolean42 + "' != '" + false + "'");
+        assertNotNull(locale43);
+        assertEquals(locale43.toString(), "en_US");
     }
 
     @Test
@@ -8659,16 +8659,16 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.remove((java.awt.Component) createCourseUI10);
         java.awt.event.WindowFocusListener windowFocusListener37 = null;
         createCourseUI10.removeWindowFocusListener(windowFocusListener37);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertEquals("'" + str18 + "' != '" + "frame371" + "'", str18, "frame371");
-        org.junit.Assert.assertNotNull(dimension19);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(windowFocusListenerArray23);
-        org.junit.Assert.assertArrayEquals(windowFocusListenerArray23, new java.awt.event.WindowFocusListener[] {});
-        org.junit.Assert.assertTrue("'" + float30 + "' != '" + 1.0f + "'", float30 == 1.0f);
-        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + true + "'", boolean31 == true);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertEquals("'" + str18 + "' != '" + "frame371" + "'", str18, "frame371");
+        assertNotNull(dimension19);
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(windowFocusListenerArray23);
+        assertArrayEquals(windowFocusListenerArray23, new java.awt.event.WindowFocusListener[] {});
+        assertTrue(float30 == 1.0f, "'" + float30 + "' != '" + 1.0f + "'");
+        assertTrue(boolean31 == true, "'" + boolean31 + "' != '" + true + "'");
     }
 
     @Test
@@ -8686,13 +8686,13 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean15 = createCourseUI1.mouseUp(event12, (int) (byte) 1, 184);
         java.lang.String str16 = createCourseUI1.toString();
         java.awt.event.MouseMotionListener[] mouseMotionListenerArray17 = createCourseUI1.getMouseMotionListeners();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame372" + "'", str9, "frame372");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + 0 + "'", int11 == 0);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertEquals("'" + str16 + "' != '" + "com.example.CreateCourseUI[frame372,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str16, "com.example.CreateCourseUI[frame372,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertNotNull(mouseMotionListenerArray17);
-        org.junit.Assert.assertArrayEquals(mouseMotionListenerArray17, new java.awt.event.MouseMotionListener[] {});
+        assertEquals("'" + str9 + "' != '" + "frame372" + "'", str9, "frame372");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertTrue(int11 == 0, "'" + int11 + "' != '" + 0 + "'");
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertEquals("'" + str16 + "' != '" + "com.example.CreateCourseUI[frame372,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str16, "com.example.CreateCourseUI[frame372,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertNotNull(mouseMotionListenerArray17);
+        assertArrayEquals(mouseMotionListenerArray17, new java.awt.event.MouseMotionListener[] {});
     }
 
     @Test
@@ -8719,12 +8719,12 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean23 = createCourseUI12.requestFocusInWindow(cause22);
         createCourseUI1.remove((java.awt.Component) createCourseUI12);
         java.awt.Dimension dimension25 = createCourseUI1.getMaximumSize();
-        org.junit.Assert.assertNotNull(inputContext7);
-        org.junit.Assert.assertNull(rectangle10);
-        org.junit.Assert.assertEquals("'" + str20 + "' != '" + "frame373" + "'", str20, "frame373");
-        org.junit.Assert.assertNotNull(dimension21);
-        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + false + "'", boolean23 == false);
-        org.junit.Assert.assertNotNull(dimension25);
+        assertNotNull(inputContext7);
+        assertNull(rectangle10);
+        assertEquals("'" + str20 + "' != '" + "frame373" + "'", str20, "frame373");
+        assertNotNull(dimension21);
+        assertTrue(boolean23 == false, "'" + boolean23 + "' != '" + false + "'");
+        assertNotNull(dimension25);
     }
 
     @Test
@@ -8743,14 +8743,14 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI4.hide();
         java.beans.PropertyChangeListener[] propertyChangeListenerArray11 = createCourseUI4.getPropertyChangeListeners();
         boolean boolean12 = createCourseUI4.isBackgroundSet();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertNotNull(hierarchyBoundsListenerArray9);
-        org.junit.Assert.assertArrayEquals(hierarchyBoundsListenerArray9, new java.awt.event.HierarchyBoundsListener[] {});
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray11);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray11, new java.beans.PropertyChangeListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + true + "'", boolean12 == true);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(int8 == (-1), "'" + int8 + "' != '" + (-1) + "'");
+        assertNotNull(hierarchyBoundsListenerArray9);
+        assertArrayEquals(hierarchyBoundsListenerArray9, new java.awt.event.HierarchyBoundsListener[] {});
+        assertNotNull(propertyChangeListenerArray11);
+        assertArrayEquals(propertyChangeListenerArray11, new java.beans.PropertyChangeListener[] {});
+        assertTrue(boolean12 == true, "'" + boolean12 + "' != '" + true + "'");
     }
 
     @Test
@@ -8767,8 +8767,8 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setSize(3, 64);
         java.awt.event.InputMethodListener inputMethodListener11 = null;
         createCourseUI0.addInputMethodListener(inputMethodListener11);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + true + "'", boolean6 == true);
-        org.junit.Assert.assertNotNull(obj7);
+        assertTrue(boolean6 == true, "'" + boolean6 + "' != '" + true + "'");
+        assertNotNull(obj7);
     }
 
     @Test
@@ -8800,17 +8800,17 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension31 = createCourseUI19.getMinimumSize();
         createCourseUI1.resize(dimension31);
         java.awt.Component[] componentArray33 = createCourseUI1.getComponents();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame375" + "'", str9, "frame375");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(point12);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(jRootPane18);
-        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
-        org.junit.Assert.assertNotNull(color26);
-        org.junit.Assert.assertNotNull(accessibleContext27);
-        org.junit.Assert.assertEquals("'" + str28 + "' != '" + "com.example.CreateCourseUI[frame376,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str28, "com.example.CreateCourseUI[frame376,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertNotNull(dimension31);
-        org.junit.Assert.assertNotNull(componentArray33);
+        assertEquals("'" + str9 + "' != '" + "frame375" + "'", str9, "frame375");
+        assertNotNull(dimension10);
+        assertNull(point12);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(jRootPane18);
+        assertTrue(boolean25 == false, "'" + boolean25 + "' != '" + false + "'");
+        assertNotNull(color26);
+        assertNotNull(accessibleContext27);
+        assertEquals("'" + str28 + "' != '" + "com.example.CreateCourseUI[frame376,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str28, "com.example.CreateCourseUI[frame376,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertNotNull(dimension31);
+        assertNotNull(componentArray33);
     }
 
     @Test
@@ -8828,10 +8828,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component12 = createCourseUI0.getComponentAt((int) ' ', 4);
         createCourseUI0.setFocusTraversalPolicyProvider(true);
         createCourseUI0.setFocusTraversalPolicyProvider(false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertNotNull(component12);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertNotNull(component12);
     }
 
     @Test
@@ -8859,18 +8859,18 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI1.add((java.awt.Component) createCourseUI17, (java.lang.Object) "frame337", (int) (short) -1);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame377" + "'", str9, "frame377");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(point12);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNull(point15);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 1 + "'", int16 == 1);
-        org.junit.Assert.assertTrue("'" + boolean23 + "' != '" + true + "'", boolean23 == true);
-        org.junit.Assert.assertNotNull(obj24);
+        assertEquals("'" + str9 + "' != '" + "frame377" + "'", str9, "frame377");
+        assertNotNull(dimension10);
+        assertNull(point12);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNull(point15);
+        assertTrue(int16 == 1, "'" + int16 + "' != '" + 1 + "'");
+        assertTrue(boolean23 == true, "'" + boolean23 + "' != '" + true + "'");
+        assertNotNull(obj24);
     }
 
     @Test
@@ -8918,20 +8918,20 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component52 = createCourseUI0.add("com.example.CreateCourseUI[frame33,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]", (java.awt.Component) createCourseUI3);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + false + "'", boolean29 == false);
-        org.junit.Assert.assertNotNull(color30);
-        org.junit.Assert.assertNotNull(layoutManager31);
-        org.junit.Assert.assertEquals("'" + str42 + "' != '" + "frame380" + "'", str42, "frame380");
-        org.junit.Assert.assertNotNull(point46);
-        org.junit.Assert.assertNotNull(component47);
-        org.junit.Assert.assertNotNull(rectangle49);
-        org.junit.Assert.assertNotNull(rectangle51);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
+        assertTrue(boolean29 == false, "'" + boolean29 + "' != '" + false + "'");
+        assertNotNull(color30);
+        assertNotNull(layoutManager31);
+        assertEquals("'" + str42 + "' != '" + "frame380" + "'", str42, "frame380");
+        assertNotNull(point46);
+        assertNotNull(component47);
+        assertNotNull(rectangle49);
+        assertNotNull(rectangle51);
     }
 
     @Test
@@ -8944,9 +8944,9 @@ public class CreateCourseUIRegressionTest0 {
         java.lang.Object obj3 = new java.lang.Object();
         boolean boolean4 = createCourseUI0.lostFocus(event2, obj3);
         boolean boolean5 = createCourseUI0.isBackgroundSet();
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "com.example.CreateCourseUI[frame381,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str1, "com.example.CreateCourseUI[frame381,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
+        assertEquals("'" + str1 + "' != '" + "com.example.CreateCourseUI[frame381,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str1, "com.example.CreateCourseUI[frame381,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == true, "'" + boolean5 + "' != '" + true + "'");
     }
 
     @Test
@@ -8960,9 +8960,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.FocusEvent.Cause cause5 = null;
         createCourseUI0.requestFocus(cause5);
         boolean boolean7 = createCourseUI0.isFocusTraversalPolicySet();
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(dimension4);
+        assertTrue(boolean7 == true, "'" + boolean7 + "' != '" + true + "'");
     }
 
     @Test
@@ -8975,8 +8975,8 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Event event3 = null;
         boolean boolean6 = createCourseUI0.mouseUp(event3, (int) '#', 12);
         javax.swing.JRootPane jRootPane7 = createCourseUI0.getRootPane();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(jRootPane7);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(jRootPane7);
     }
 
     @Test
@@ -8997,12 +8997,12 @@ public class CreateCourseUIRegressionTest0 {
         java.beans.PropertyChangeListener[] propertyChangeListenerArray15 = createCourseUI0.getPropertyChangeListeners("frame88");
         java.awt.Event event16 = null;
         boolean boolean18 = createCourseUI0.keyDown(event16, 13);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNotNull(color10);
-        org.junit.Assert.assertNotNull(layoutManager11);
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray15);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray15, new java.beans.PropertyChangeListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
+        assertNotNull(color10);
+        assertNotNull(layoutManager11);
+        assertNotNull(propertyChangeListenerArray15);
+        assertArrayEquals(propertyChangeListenerArray15, new java.beans.PropertyChangeListener[] {});
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -9020,13 +9020,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.FontMetrics fontMetrics13 = createCourseUI1.getFontMetrics(font12);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+            fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame385" + "'", str9, "frame385");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertNull(str11);
+        assertEquals("'" + str9 + "' != '" + "frame385" + "'", str9, "frame385");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertNull(str11);
     }
 
     @Test
@@ -9052,10 +9052,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Graphics graphics4 = createCourseUI0.getGraphics();
         createCourseUI0.addNotify();
         createCourseUI0.setTitle("frame202");
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 1 + "'", int3 == 1);
-        org.junit.Assert.assertNull(graphics4);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true, "'" + boolean2 + "' != '" + true + "'");
+        assertTrue(int3 == 1, "'" + int3 + "' != '" + 1 + "'");
+        assertNull(graphics4);
     }
 
     @Test
@@ -9072,12 +9072,12 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean13 = createCourseUI1.gotFocus(event11, (java.lang.Object) 9);
         java.awt.event.WindowFocusListener[] windowFocusListenerArray14 = createCourseUI1.getWindowFocusListeners();
         java.awt.Toolkit toolkit15 = createCourseUI1.getToolkit();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame388" + "'", str9, "frame388");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNotNull(windowFocusListenerArray14);
-        org.junit.Assert.assertArrayEquals(windowFocusListenerArray14, new java.awt.event.WindowFocusListener[] {});
-        org.junit.Assert.assertNotNull(toolkit15);
+        assertEquals("'" + str9 + "' != '" + "frame388" + "'", str9, "frame388");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNotNull(windowFocusListenerArray14);
+        assertArrayEquals(windowFocusListenerArray14, new java.awt.event.WindowFocusListener[] {});
+        assertNotNull(toolkit15);
     }
 
     @Test
@@ -9113,15 +9113,15 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.transferFocus();
         java.beans.PropertyChangeListener propertyChangeListener40 = null;
         createCourseUI1.addPropertyChangeListener(propertyChangeListener40);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame390" + "'", str9, "frame390");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertEquals("'" + str27 + "' != '" + "frame391" + "'", str27, "frame391");
-        org.junit.Assert.assertNotNull(dimension28);
-        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + true + "'", boolean31 == true);
-        org.junit.Assert.assertNull(inputMethodRequests32);
-        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + true + "'", boolean35 == true);
-        org.junit.Assert.assertTrue("'" + int36 + "' != '" + 32 + "'", int36 == 32);
+        assertEquals("'" + str9 + "' != '" + "frame390" + "'", str9, "frame390");
+        assertNotNull(dimension10);
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertEquals("'" + str27 + "' != '" + "frame391" + "'", str27, "frame391");
+        assertNotNull(dimension28);
+        assertTrue(boolean31 == true, "'" + boolean31 + "' != '" + true + "'");
+        assertNull(inputMethodRequests32);
+        assertTrue(boolean35 == true, "'" + boolean35 + "' != '" + true + "'");
+        assertTrue(int36 == 32, "'" + int36 + "' != '" + 32 + "'");
     }
 
     @Test
@@ -9140,15 +9140,15 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.createBufferStrategy((int) '#');
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalStateException; message: Component must have a valid peer");
+            fail("Expected exception of type java.lang.IllegalStateException; message: Component must have a valid peer");
         } catch (java.lang.IllegalStateException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean11 == true, "'" + boolean11 + "' != '" + true + "'");
     }
 
     @Test
@@ -9170,11 +9170,11 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean17 = createCourseUI1.isResizable();
         java.awt.event.InputMethodListener inputMethodListener18 = null;
         createCourseUI1.addInputMethodListener(inputMethodListener18);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame393" + "'", str9, "frame393");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + true + "'", boolean13 == true);
-        org.junit.Assert.assertNull(inputMethodRequests14);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
+        assertEquals("'" + str9 + "' != '" + "frame393" + "'", str9, "frame393");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == true, "'" + boolean13 + "' != '" + true + "'");
+        assertNull(inputMethodRequests14);
+        assertTrue(boolean17 == true, "'" + boolean17 + "' != '" + true + "'");
     }
 
     @Test
@@ -9189,11 +9189,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.image.VolatileImage volatileImage7 = createCourseUI0.createVolatileImage((int) (short) 10, (int) (byte) -1);
         boolean boolean8 = createCourseUI0.isEnabled();
         java.awt.Dimension dimension9 = createCourseUI0.getMaximumSize();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(dimension4);
-        org.junit.Assert.assertNull(volatileImage7);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
-        org.junit.Assert.assertNotNull(dimension9);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(dimension4);
+        assertNull(volatileImage7);
+        assertTrue(boolean8 == true, "'" + boolean8 + "' != '" + true + "'");
+        assertNotNull(dimension9);
     }
 
     @Test
@@ -9208,10 +9208,10 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean10 = createCourseUI1.isEnabled();
         java.awt.im.InputContext inputContext11 = createCourseUI1.getInputContext();
         javax.swing.JRootPane jRootPane12 = createCourseUI1.getRootPane();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame394" + "'", str9, "frame394");
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
-        org.junit.Assert.assertNotNull(inputContext11);
-        org.junit.Assert.assertNotNull(jRootPane12);
+        assertEquals("'" + str9 + "' != '" + "frame394" + "'", str9, "frame394");
+        assertTrue(boolean10 == true, "'" + boolean10 + "' != '" + true + "'");
+        assertNotNull(inputContext11);
+        assertNotNull(jRootPane12);
     }
 
     @Test
@@ -9227,11 +9227,11 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setTitle("frame54");
         boolean boolean9 = createCourseUI0.isDoubleBuffered();
         createCourseUI0.revalidate();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertNotNull(color6);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == false, "'" + boolean5 + "' != '" + false + "'");
+        assertNotNull(color6);
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
     }
 
     @Test
@@ -9248,10 +9248,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component[] componentArray12 = createCourseUI1.getComponents();
         java.awt.Image image13 = null;
         createCourseUI1.setIconImage(image13);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame395" + "'", str9, "frame395");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertNull(str11);
-        org.junit.Assert.assertNotNull(componentArray12);
+        assertEquals("'" + str9 + "' != '" + "frame395" + "'", str9, "frame395");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertNull(str11);
+        assertNotNull(componentArray12);
     }
 
     @Test
@@ -9265,10 +9265,10 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean5 = createCourseUI0.isAutoRequestFocus();
         createCourseUI0.list();
         boolean boolean7 = createCourseUI0.isFocusCycleRoot();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == true, "'" + boolean5 + "' != '" + true + "'");
+        assertTrue(boolean7 == true, "'" + boolean7 + "' != '" + true + "'");
     }
 
     @Test
@@ -9293,12 +9293,12 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Font font20 = null;
         createCourseUI0.setFont(font20);
         createCourseUI0.setEnabled(true);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component11);
-        org.junit.Assert.assertTrue("'" + float13 + "' != '" + 0.5f + "'", float13 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertNotNull(color18);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component11);
+        assertTrue(float13 == 0.5f, "'" + float13 + "' != '" + 0.5f + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean17 == false, "'" + boolean17 + "' != '" + false + "'");
+        assertNotNull(color18);
     }
 
     @Test
@@ -9316,9 +9316,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.setResizable(false);
         java.awt.Rectangle rectangle10 = createCourseUI1.getMaximizedBounds();
         java.lang.Object obj11 = createCourseUI1.getTreeLock();
-        org.junit.Assert.assertNotNull(inputContext7);
-        org.junit.Assert.assertNull(rectangle10);
-        org.junit.Assert.assertNotNull(obj11);
+        assertNotNull(inputContext7);
+        assertNull(rectangle10);
+        assertNotNull(obj11);
     }
 
     @Test
@@ -9336,13 +9336,13 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean11 = createCourseUI0.isValidateRoot();
         boolean boolean12 = createCourseUI0.isFocusTraversable();
         boolean boolean13 = createCourseUI0.isVisible();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + true + "'", boolean12 == true);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean11 == true, "'" + boolean11 + "' != '" + true + "'");
+        assertTrue(boolean12 == true, "'" + boolean12 + "' != '" + true + "'");
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
     }
 
     @Test
@@ -9382,18 +9382,18 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseWheelListener mouseWheelListener43 = null;
         createCourseUI10.addMouseWheelListener(mouseWheelListener43);
         createCourseUI0.remove((java.awt.Component) createCourseUI10);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
-        org.junit.Assert.assertNull(image8);
-        org.junit.Assert.assertEquals("'" + str18 + "' != '" + "frame398" + "'", str18, "frame398");
-        org.junit.Assert.assertNotNull(dimension19);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + true + "'", boolean22 == true);
-        org.junit.Assert.assertNull(inputMethodRequests23);
-        org.junit.Assert.assertNull(bufferStrategy26);
-        org.junit.Assert.assertEquals("'" + str36 + "' != '" + "frame399" + "'", str36, "frame399");
-        org.junit.Assert.assertNotNull(point40);
-        org.junit.Assert.assertNotNull(component41);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean7 == true, "'" + boolean7 + "' != '" + true + "'");
+        assertNull(image8);
+        assertEquals("'" + str18 + "' != '" + "frame398" + "'", str18, "frame398");
+        assertNotNull(dimension19);
+        assertTrue(boolean22 == true, "'" + boolean22 + "' != '" + true + "'");
+        assertNull(inputMethodRequests23);
+        assertNull(bufferStrategy26);
+        assertEquals("'" + str36 + "' != '" + "frame399" + "'", str36, "frame399");
+        assertNotNull(point40);
+        assertNotNull(component41);
     }
 
     @Test
@@ -9408,10 +9408,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Container container6 = createCourseUI0.getContentPane();
         java.lang.String str7 = createCourseUI0.toString();
         java.awt.Component component8 = createCourseUI0.getFocusOwner();
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(container6);
-        org.junit.Assert.assertEquals("'" + str7 + "' != '" + "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str7, "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertNull(component8);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
+        assertNotNull(container6);
+        assertEquals("'" + str7 + "' != '" + "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str7, "com.example.CreateCourseUI[,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertNull(component8);
     }
 
     @Test
@@ -9434,10 +9434,10 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean18 = createCourseUI1.isFontSet();
         java.awt.Rectangle rectangle19 = createCourseUI1.getBounds();
         createCourseUI1.setVisible(true);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame400" + "'", str9, "frame400");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(rectangle19);
+        assertEquals("'" + str9 + "' != '" + "frame400" + "'", str9, "frame400");
+        assertNotNull(dimension10);
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(rectangle19);
     }
 
     @Test
@@ -9472,11 +9472,11 @@ public class CreateCourseUIRegressionTest0 {
         java.util.List<java.awt.Image> imageList15 = createCourseUI7.getIconImages();
         createCourseUI0.setIconImages(imageList15);
         createCourseUI0.requestFocus();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + float8 + "' != '" + 0.5f + "'", float8 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertNotNull(dimension14);
-        org.junit.Assert.assertNotNull(imageList15);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(float8 == 0.5f, "'" + float8 + "' != '" + 0.5f + "'");
+        assertTrue(boolean11 == false, "'" + boolean11 + "' != '" + false + "'");
+        assertNotNull(dimension14);
+        assertNotNull(imageList15);
     }
 
     @Test
@@ -9493,12 +9493,12 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean13 = createCourseUI1.gotFocus(event11, (java.lang.Object) 9);
         java.awt.Container container14 = createCourseUI1.getParent();
         java.awt.event.FocusListener[] focusListenerArray15 = createCourseUI1.getFocusListeners();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame401" + "'", str9, "frame401");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNull(container14);
-        org.junit.Assert.assertNotNull(focusListenerArray15);
-        org.junit.Assert.assertArrayEquals(focusListenerArray15, new java.awt.event.FocusListener[] {});
+        assertEquals("'" + str9 + "' != '" + "frame401" + "'", str9, "frame401");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNull(container14);
+        assertNotNull(focusListenerArray15);
+        assertArrayEquals(focusListenerArray15, new java.awt.event.FocusListener[] {});
     }
 
     @Test
@@ -9527,14 +9527,14 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component31 = createCourseUI0.add((java.awt.Component) createCourseUI13);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertNull(point3);
-        org.junit.Assert.assertEquals("'" + str21 + "' != '" + "frame402" + "'", str21, "frame402");
-        org.junit.Assert.assertNotNull(dimension22);
-        org.junit.Assert.assertNotNull(dimension30);
+        assertNull(point3);
+        assertEquals("'" + str21 + "' != '" + "frame402" + "'", str21, "frame402");
+        assertNotNull(dimension22);
+        assertNotNull(dimension30);
     }
 
     @Test
@@ -9552,13 +9552,13 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component12 = createCourseUI0.getComponentAt((int) ' ', 4);
         java.beans.PropertyChangeListener[] propertyChangeListenerArray14 = createCourseUI0.getPropertyChangeListeners("frame16");
         boolean boolean15 = createCourseUI0.isEnabled();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertNotNull(component12);
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray14);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray14, new java.beans.PropertyChangeListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + true + "'", boolean15 == true);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertNotNull(component12);
+        assertNotNull(propertyChangeListenerArray14);
+        assertArrayEquals(propertyChangeListenerArray14, new java.beans.PropertyChangeListener[] {});
+        assertTrue(boolean15 == true, "'" + boolean15 + "' != '" + true + "'");
     }
 
     @Test
@@ -9579,13 +9579,13 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component18 = createCourseUI9.getComponentAt((int) (short) 0, (int) (byte) 10);
         int int19 = createCourseUI0.checkImage(image6, 0, (-1), (java.awt.image.ImageObserver) createCourseUI9);
         int int20 = createCourseUI0.getY();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(toolkit5);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(component18);
-        org.junit.Assert.assertTrue("'" + int19 + "' != '" + 32 + "'", int19 == 32);
-        org.junit.Assert.assertTrue("'" + int20 + "' != '" + 160 + "'", int20 == 160);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(toolkit5);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(component18);
+        assertTrue(int19 == 32, "'" + int19 + "' != '" + 32 + "'");
+        assertTrue(int20 == 160, "'" + int20 + "' != '" + 160 + "'");
     }
 
     @Test
@@ -9602,12 +9602,12 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.addWindowFocusListener(windowFocusListener9);
         float float11 = createCourseUI0.getOpacity();
         boolean boolean12 = createCourseUI0.isFocusTraversalPolicySet();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + true + "'", boolean7 == true);
-        org.junit.Assert.assertNull(image8);
-        org.junit.Assert.assertTrue("'" + float11 + "' != '" + 1.0f + "'", float11 == 1.0f);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + true + "'", boolean12 == true);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean7 == true, "'" + boolean7 + "' != '" + true + "'");
+        assertNull(image8);
+        assertTrue(float11 == 1.0f, "'" + float11 + "' != '" + 1.0f + "'");
+        assertTrue(boolean12 == true, "'" + boolean12 + "' != '" + true + "'");
     }
 
     @Test
@@ -9635,19 +9635,19 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Dimension dimension23 = createCourseUI0.minimumSize();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.awt.ComponentOrientation.isLeftToRight()\" because the return value of \"java.awt.Container.getComponentOrientation()\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"java.awt.ComponentOrientation.isLeftToRight()\" because the return value of \"java.awt.Container.getComponentOrientation()\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component11);
-        org.junit.Assert.assertTrue("'" + float13 + "' != '" + 0.5f + "'", float13 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertNotNull(color18);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
-        org.junit.Assert.assertNull(inputMethodRequests21);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component11);
+        assertTrue(float13 == 0.5f, "'" + float13 + "' != '" + 0.5f + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean17 == false, "'" + boolean17 + "' != '" + false + "'");
+        assertNotNull(color18);
+        assertTrue(boolean20 == true, "'" + boolean20 + "' != '" + true + "'");
+        assertNull(inputMethodRequests21);
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
     }
 
     @Test
@@ -9661,8 +9661,8 @@ public class CreateCourseUIRegressionTest0 {
         java.lang.String str9 = createCourseUI1.getName();
         boolean boolean10 = createCourseUI1.isEnabled();
         createCourseUI1.firePropertyChange("frame31", (byte) 10, (byte) -1);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame403" + "'", str9, "frame403");
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        assertEquals("'" + str9 + "' != '" + "frame403" + "'", str9, "frame403");
+        assertTrue(boolean10 == true, "'" + boolean10 + "' != '" + true + "'");
     }
 
     @Test
@@ -9697,15 +9697,15 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean38 = createCourseUI22.contains((int) 'a', (int) (short) 0);
         java.util.List<java.awt.Image> imageList39 = createCourseUI22.getIconImages();
         createCourseUI1.setIconImages(imageList39);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame404" + "'", str9, "frame404");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNotNull(layoutManager18);
-        org.junit.Assert.assertEquals("'" + str30 + "' != '" + "frame405" + "'", str30, "frame405");
-        org.junit.Assert.assertEquals("'" + str31 + "' != '" + "Create Course" + "'", str31, "Create Course");
-        org.junit.Assert.assertNotNull(container34);
-        org.junit.Assert.assertNotNull(component35);
-        org.junit.Assert.assertTrue("'" + boolean38 + "' != '" + true + "'", boolean38 == true);
-        org.junit.Assert.assertNotNull(imageList39);
+        assertEquals("'" + str9 + "' != '" + "frame404" + "'", str9, "frame404");
+        assertNotNull(dimension10);
+        assertNotNull(layoutManager18);
+        assertEquals("'" + str30 + "' != '" + "frame405" + "'", str30, "frame405");
+        assertEquals("'" + str31 + "' != '" + "Create Course" + "'", str31, "Create Course");
+        assertNotNull(container34);
+        assertNotNull(component35);
+        assertTrue(boolean38 == true, "'" + boolean38 + "' != '" + true + "'");
+        assertNotNull(imageList39);
     }
 
     @Test
@@ -9724,13 +9724,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean13 = createCourseUI0.areFocusTraversalKeysSet(4);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: invalid focus traversal key identifier");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: invalid focus traversal key identifier");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(insets4);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
+        assertNotNull(insets4);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -9764,19 +9764,19 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI16.addContainerListener(containerListener30);
         java.awt.Component component34 = createCourseUI16.getComponentAt((int) (byte) 1, (int) (byte) 0);
         boolean boolean35 = createCourseUI7.lostFocus(event14, (java.lang.Object) (byte) 0);
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray4);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 0 + "'", int9 == 0);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
-        org.junit.Assert.assertEquals("'" + str24 + "' != '" + "frame406" + "'", str24, "frame406");
-        org.junit.Assert.assertNotNull(dimension25);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
-        org.junit.Assert.assertNotNull(windowFocusListenerArray29);
-        org.junit.Assert.assertArrayEquals(windowFocusListenerArray29, new java.awt.event.WindowFocusListener[] {});
-        org.junit.Assert.assertNotNull(component34);
-        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + false + "'", boolean35 == false);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray4);
+        assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
+        assertTrue(boolean5 == true, "'" + boolean5 + "' != '" + true + "'");
+        assertTrue(int9 == 0, "'" + int9 + "' != '" + 0 + "'");
+        assertTrue(boolean10 == true, "'" + boolean10 + "' != '" + true + "'");
+        assertEquals("'" + str24 + "' != '" + "frame406" + "'", str24, "frame406");
+        assertNotNull(dimension25);
+        assertTrue(boolean28 == false, "'" + boolean28 + "' != '" + false + "'");
+        assertNotNull(windowFocusListenerArray29);
+        assertArrayEquals(windowFocusListenerArray29, new java.awt.event.WindowFocusListener[] {});
+        assertNotNull(component34);
+        assertTrue(boolean35 == false, "'" + boolean35 + "' != '" + false + "'");
     }
 
     @Test
@@ -9790,8 +9790,8 @@ public class CreateCourseUIRegressionTest0 {
         java.lang.String str9 = createCourseUI1.getName();
         java.lang.String str10 = createCourseUI1.getTitle();
         createCourseUI1.resize(160, (int) (byte) 0);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame407" + "'", str9, "frame407");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertEquals("'" + str9 + "' != '" + "frame407" + "'", str9, "frame407");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
     }
 
     @Test
@@ -9808,12 +9808,12 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean10 = createCourseUI0.mouseUp(event7, (int) (short) 10, (int) (short) 0);
         java.awt.Event event11 = null;
         boolean boolean14 = createCourseUI0.mouseDrag(event11, 3, 3);
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + false + "'", boolean5 == false);
-        org.junit.Assert.assertNotNull(color6);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean5 == false, "'" + boolean5 + "' != '" + false + "'");
+        assertNotNull(color6);
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -9833,15 +9833,15 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean13 = createCourseUI0.isVisible();
         boolean boolean15 = createCourseUI0.areFocusTraversalKeysSet(0);
         java.awt.event.HierarchyBoundsListener[] hierarchyBoundsListenerArray16 = createCourseUI0.getHierarchyBoundsListeners();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame408,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame408,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(hierarchyBoundsListenerArray16);
-        org.junit.Assert.assertArrayEquals(hierarchyBoundsListenerArray16, new java.awt.event.HierarchyBoundsListener[] {});
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame408,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame408,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(hierarchyBoundsListenerArray16);
+        assertArrayEquals(hierarchyBoundsListenerArray16, new java.awt.event.HierarchyBoundsListener[] {});
     }
 
     @Test
@@ -9861,11 +9861,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component15 = createCourseUI1.getMostRecentFocusOwner();
         java.awt.Component.BaselineResizeBehavior baselineResizeBehavior16 = createCourseUI1.getBaselineResizeBehavior();
         boolean boolean17 = createCourseUI1.isShowing();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame409" + "'", str9, "frame409");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNotNull(component15);
-        org.junit.Assert.assertTrue("'" + baselineResizeBehavior16 + "' != '" + java.awt.Component.BaselineResizeBehavior.OTHER + "'", baselineResizeBehavior16.equals(java.awt.Component.BaselineResizeBehavior.OTHER));
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
+        assertEquals("'" + str9 + "' != '" + "frame409" + "'", str9, "frame409");
+        assertNotNull(dimension10);
+        assertNotNull(component15);
+        assertTrue(baselineResizeBehavior16.equals(java.awt.Component.BaselineResizeBehavior.OTHER), "'" + baselineResizeBehavior16 + "' != '" + java.awt.Component.BaselineResizeBehavior.OTHER + "'");
+        assertTrue(boolean17 == false, "'" + boolean17 + "' != '" + false + "'");
     }
 
     @Test
@@ -9886,13 +9886,13 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI7.requestFocus();
         createCourseUI0.setLocationRelativeTo((java.awt.Component) createCourseUI7);
         boolean boolean14 = createCourseUI0.isValid();
-        org.junit.Assert.assertTrue("'" + float3 + "' != '" + 1.0f + "'", float3 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray4);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean5 + "' != '" + true + "'", boolean5 == true);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 0 + "'", int9 == 0);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(float3 == 1.0f, "'" + float3 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray4);
+        assertArrayEquals(hierarchyListenerArray4, new java.awt.event.HierarchyListener[] {});
+        assertTrue(boolean5 == true, "'" + boolean5 + "' != '" + true + "'");
+        assertTrue(int9 == 0, "'" + int9 + "' != '" + 0 + "'");
+        assertTrue(boolean10 == true, "'" + boolean10 + "' != '" + true + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -9904,7 +9904,7 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setLocationRelativeTo((java.awt.Component) createCourseUI1);
         createCourseUI1.setAlwaysOnTop(false);
         java.awt.Image image5 = createCourseUI1.getIconImage();
-        org.junit.Assert.assertNull(image5);
+        assertNull(image5);
     }
 
     @Test
@@ -9930,16 +9930,16 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseListener[] mouseListenerArray26 = createCourseUI17.getMouseListeners();
         java.awt.Dimension dimension27 = createCourseUI17.minimumSize();
         createCourseUI1.setMaximumSize(dimension27);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame410" + "'", str9, "frame410");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(point12);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNull(point15);
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + 1 + "'", int16 == 1);
-        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray26);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray26, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(dimension27);
+        assertEquals("'" + str9 + "' != '" + "frame410" + "'", str9, "frame410");
+        assertNotNull(dimension10);
+        assertNull(point12);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNull(point15);
+        assertTrue(int16 == 1, "'" + int16 + "' != '" + 1 + "'");
+        assertTrue(boolean25 == false, "'" + boolean25 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray26);
+        assertArrayEquals(mouseListenerArray26, new java.awt.event.MouseListener[] {});
+        assertNotNull(dimension27);
     }
 
     @Test
@@ -9968,17 +9968,17 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Point point24 = createCourseUI22.getLocation();
         java.awt.Component component25 = createCourseUI10.getComponentAt(point24);
         java.awt.Component component26 = createCourseUI0.getComponentAt(point24);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + int9 + "' != '" + 184 + "'", int9 == 184);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray19);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray19, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(dimension20);
-        org.junit.Assert.assertNotNull(point24);
-        org.junit.Assert.assertNotNull(component25);
-        org.junit.Assert.assertNotNull(component26);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(int9 == 184, "'" + int9 + "' != '" + 184 + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray19);
+        assertArrayEquals(mouseListenerArray19, new java.awt.event.MouseListener[] {});
+        assertNotNull(dimension20);
+        assertNotNull(point24);
+        assertNotNull(component25);
+        assertNotNull(component26);
     }
 
     @Test
@@ -10004,13 +10004,13 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI13.setMenuBar(menuBar20);
         boolean boolean22 = createCourseUI0.isAncestorOf((java.awt.Component) createCourseUI13);
         createCourseUI13.firePropertyChange("com.example.CreateCourseUI[frame168,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]", (double) 'a', (double) 184);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(volatileImage12);
-        org.junit.Assert.assertTrue("'" + float14 + "' != '" + 0.5f + "'", float14 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(color19);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(volatileImage12);
+        assertTrue(float14 == 0.5f, "'" + float14 + "' != '" + 0.5f + "'");
+        assertTrue(boolean17 == false, "'" + boolean17 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(color19);
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
     }
 
     @Test
@@ -10029,11 +10029,11 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.printAll(graphics14);
         createCourseUI1.setLocation((-1), (int) '#');
         java.awt.Dimension dimension19 = createCourseUI1.size();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame413" + "'", str9, "frame413");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertNotNull(focusListenerArray13);
-        org.junit.Assert.assertArrayEquals(focusListenerArray13, new java.awt.event.FocusListener[] {});
-        org.junit.Assert.assertNotNull(dimension19);
+        assertEquals("'" + str9 + "' != '" + "frame413" + "'", str9, "frame413");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertNotNull(focusListenerArray13);
+        assertArrayEquals(focusListenerArray13, new java.awt.event.FocusListener[] {});
+        assertNotNull(dimension19);
     }
 
     @Test
@@ -10047,9 +10047,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.firePropertyChange("frame23", (short) 1, (short) (byte) -1);
         float float8 = createCourseUI1.getAlignmentY();
         java.awt.Point point9 = createCourseUI1.getMousePosition();
-        org.junit.Assert.assertNotNull(point3);
-        org.junit.Assert.assertTrue("'" + float8 + "' != '" + 0.5f + "'", float8 == 0.5f);
-        org.junit.Assert.assertNull(point9);
+        assertNotNull(point3);
+        assertTrue(float8 == 0.5f, "'" + float8 + "' != '" + 0.5f + "'");
+        assertNull(point9);
     }
 
     @Test
@@ -10067,9 +10067,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.setResizable(false);
         java.lang.String str10 = createCourseUI1.getTitle();
         boolean boolean11 = createCourseUI1.requestFocusInWindow();
-        org.junit.Assert.assertNotNull(inputContext7);
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        assertNotNull(inputContext7);
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertTrue(boolean11 == false, "'" + boolean11 + "' != '" + false + "'");
     }
 
     @Test
@@ -10081,7 +10081,7 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setLocationRelativeTo((java.awt.Component) createCourseUI1);
         createCourseUI1.setAlwaysOnTop(false);
         java.awt.Graphics graphics5 = createCourseUI1.getGraphics();
-        org.junit.Assert.assertNull(graphics5);
+        assertNull(graphics5);
     }
 
     @Test
@@ -10099,11 +10099,11 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean9 = createCourseUI5.action(event7, (java.lang.Object) (byte) 1);
         boolean boolean10 = createCourseUI5.isFocusOwner();
         int int11 = createCourseUI1.getComponentZOrder((java.awt.Component) createCourseUI5);
-        org.junit.Assert.assertNotNull(component4);
-        org.junit.Assert.assertTrue("'" + float6 + "' != '" + 0.5f + "'", float6 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + int11 + "' != '" + (-1) + "'", int11 == (-1));
+        assertNotNull(component4);
+        assertTrue(float6 == 0.5f, "'" + float6 + "' != '" + 0.5f + "'");
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(int11 == (-1), "'" + int11 + "' != '" + (-1) + "'");
     }
 
     @Test
@@ -10123,11 +10123,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseListener mouseListener16 = null;
         createCourseUI0.removeMouseListener(mouseListener16);
         boolean boolean18 = createCourseUI0.isDoubleBuffered();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -10143,11 +10143,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseListener[] mouseListenerArray9 = createCourseUI0.getMouseListeners();
         java.awt.Rectangle rectangle10 = createCourseUI0.getMaximizedBounds();
         boolean boolean11 = createCourseUI0.isFocusableWindow();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNull(rectangle10);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + true + "'", boolean11 == true);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertNull(rectangle10);
+        assertTrue(boolean11 == true, "'" + boolean11 + "' != '" + true + "'");
     }
 
     @Test
@@ -10163,11 +10163,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseListener[] mouseListenerArray9 = createCourseUI0.getMouseListeners();
         java.awt.Dimension dimension10 = createCourseUI0.minimumSize();
         boolean boolean11 = createCourseUI0.requestFocusInWindow();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertNotNull(dimension10);
+        assertTrue(boolean11 == false, "'" + boolean11 + "' != '" + false + "'");
     }
 
     @Test
@@ -10183,12 +10183,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.event.HierarchyBoundsListener[] hierarchyBoundsListenerArray8 = jMenuBar7.getHierarchyBoundsListeners();
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: null");
+            fail("Expected exception of type java.lang.NullPointerException; message: null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
     }
 
     @Test
@@ -10201,9 +10201,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Toolkit toolkit3 = createCourseUI0.getToolkit();
         java.awt.Cursor cursor4 = null;
         createCourseUI0.setCursor(cursor4);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertNotNull(toolkit3);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertNotNull(toolkit3);
     }
 
     @Test
@@ -10229,11 +10229,11 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI13.addNotify();
         java.awt.Color color24 = createCourseUI13.getBackground();
         createCourseUI1.setBackground(color24);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame416" + "'", str9, "frame416");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + true + "'", boolean19 == true);
-        org.junit.Assert.assertNotNull(obj20);
-        org.junit.Assert.assertNotNull(color24);
+        assertEquals("'" + str9 + "' != '" + "frame416" + "'", str9, "frame416");
+        assertNotNull(dimension10);
+        assertTrue(boolean19 == true, "'" + boolean19 + "' != '" + true + "'");
+        assertNotNull(obj20);
+        assertNotNull(color24);
     }
 
     @Test
@@ -10257,12 +10257,12 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             createCourseUI0.add((java.awt.Component) createCourseUI9, (java.lang.Object) "frame3");
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
     }
 
     @Test
@@ -10280,8 +10280,8 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setTransferHandler(transferHandler10);
         java.awt.MenuComponent menuComponent12 = null;
         createCourseUI0.remove(menuComponent12);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(point9);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(point9);
     }
 
     @Test
@@ -10303,14 +10303,14 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component[] componentArray13 = createCourseUI11.getComponents();
         java.awt.ComponentOrientation componentOrientation14 = createCourseUI11.getComponentOrientation();
         createCourseUI4.setComponentOrientation(componentOrientation14);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertNotNull(hierarchyBoundsListenerArray9);
-        org.junit.Assert.assertArrayEquals(hierarchyBoundsListenerArray9, new java.awt.event.HierarchyBoundsListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(componentArray13);
-        org.junit.Assert.assertNotNull(componentOrientation14);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(int8 == (-1), "'" + int8 + "' != '" + (-1) + "'");
+        assertNotNull(hierarchyBoundsListenerArray9);
+        assertArrayEquals(hierarchyBoundsListenerArray9, new java.awt.event.HierarchyBoundsListener[] {});
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(componentArray13);
+        assertNotNull(componentOrientation14);
     }
 
     @Test
@@ -10327,9 +10327,9 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean12 = createCourseUI1.requestFocusInWindow(cause11);
         java.awt.event.WindowStateListener windowStateListener13 = null;
         createCourseUI1.addWindowStateListener(windowStateListener13);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame419" + "'", str9, "frame419");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertEquals("'" + str9 + "' != '" + "frame419" + "'", str9, "frame419");
+        assertNotNull(dimension10);
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -10361,17 +10361,17 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension31 = createCourseUI19.getMinimumSize();
         createCourseUI1.resize(dimension31);
         java.awt.Component component35 = createCourseUI1.getComponentAt(128, 1);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame420" + "'", str9, "frame420");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(point12);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(jRootPane18);
-        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
-        org.junit.Assert.assertNotNull(color26);
-        org.junit.Assert.assertNotNull(accessibleContext27);
-        org.junit.Assert.assertEquals("'" + str28 + "' != '" + "com.example.CreateCourseUI[frame421,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str28, "com.example.CreateCourseUI[frame421,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertNotNull(dimension31);
-        org.junit.Assert.assertNotNull(component35);
+        assertEquals("'" + str9 + "' != '" + "frame420" + "'", str9, "frame420");
+        assertNotNull(dimension10);
+        assertNull(point12);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(jRootPane18);
+        assertTrue(boolean25 == false, "'" + boolean25 + "' != '" + false + "'");
+        assertNotNull(color26);
+        assertNotNull(accessibleContext27);
+        assertEquals("'" + str28 + "' != '" + "com.example.CreateCourseUI[frame421,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str28, "com.example.CreateCourseUI[frame421,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertNotNull(dimension31);
+        assertNotNull(component35);
     }
 
     @Test
@@ -10406,18 +10406,18 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Point point36 = createCourseUI8.getLocation(point34);
         boolean boolean37 = createCourseUI0.contains(point34);
         createCourseUI0.reshape(400, 433, (int) '4', (int) '4');
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertEquals("'" + str16 + "' != '" + "frame422" + "'", str16, "frame422");
-        org.junit.Assert.assertEquals("'" + str17 + "' != '" + "Create Course" + "'", str17, "Create Course");
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray29);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray29, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(dimension30);
-        org.junit.Assert.assertNotNull(point34);
-        org.junit.Assert.assertNotNull(component35);
-        org.junit.Assert.assertNotNull(point36);
-        org.junit.Assert.assertTrue("'" + boolean37 + "' != '" + true + "'", boolean37 == true);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertEquals("'" + str16 + "' != '" + "frame422" + "'", str16, "frame422");
+        assertEquals("'" + str17 + "' != '" + "Create Course" + "'", str17, "Create Course");
+        assertTrue(boolean28 == false, "'" + boolean28 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray29);
+        assertArrayEquals(mouseListenerArray29, new java.awt.event.MouseListener[] {});
+        assertNotNull(dimension30);
+        assertNotNull(point34);
+        assertNotNull(component35);
+        assertNotNull(point36);
+        assertTrue(boolean37 == true, "'" + boolean37 + "' != '" + true + "'");
     }
 
     @Test
@@ -10430,9 +10430,9 @@ public class CreateCourseUIRegressionTest0 {
         int int3 = createCourseUI1.getExtendedState();
         boolean boolean4 = createCourseUI1.isAutoRequestFocus();
         int int5 = createCourseUI1.getCursorType();
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 0 + "'", int3 == 0);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + true + "'", boolean4 == true);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 0 + "'", int5 == 0);
+        assertTrue(int3 == 0, "'" + int3 + "' != '" + 0 + "'");
+        assertTrue(boolean4 == true, "'" + boolean4 + "' != '" + true + "'");
+        assertTrue(int5 == 0, "'" + int5 + "' != '" + 0 + "'");
     }
 
     @Test
@@ -10449,11 +10449,11 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Rectangle rectangle10 = createCourseUI0.getBounds();
         createCourseUI0.toBack();
         java.awt.LayoutManager layoutManager12 = createCourseUI0.getLayout();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(rectangle10);
-        org.junit.Assert.assertNotNull(layoutManager12);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertNotNull(rectangle10);
+        assertNotNull(layoutManager12);
     }
 
     @Test
@@ -10468,9 +10468,9 @@ public class CreateCourseUIRegressionTest0 {
         java.lang.String str10 = createCourseUI1.getTitle();
         java.awt.Container container11 = createCourseUI1.getFocusCycleRootAncestor();
         createCourseUI1.show(false);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame425" + "'", str9, "frame425");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertNull(container11);
+        assertEquals("'" + str9 + "' != '" + "frame425" + "'", str9, "frame425");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertNull(container11);
     }
 
     @Test
@@ -10484,8 +10484,8 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean4 = createCourseUI0.lostFocus(event2, obj3);
         createCourseUI0.toFront();
         createCourseUI0.disable();
-        org.junit.Assert.assertEquals("'" + str1 + "' != '" + "com.example.CreateCourseUI[frame426,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str1, "com.example.CreateCourseUI[frame426,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertEquals("'" + str1 + "' != '" + "com.example.CreateCourseUI[frame426,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str1, "com.example.CreateCourseUI[frame426,433,160,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -10509,13 +10509,13 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Dimension dimension21 = createCourseUI13.getMinimumSize();
         createCourseUI0.setMaximumSize(dimension21);
         createCourseUI0.removeAll();
-        org.junit.Assert.assertNotNull(hierarchyBoundsListenerArray12);
-        org.junit.Assert.assertArrayEquals(hierarchyBoundsListenerArray12, new java.awt.event.HierarchyBoundsListener[] {});
-        org.junit.Assert.assertTrue("'" + float16 + "' != '" + 1.0f + "'", float16 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray17);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray17, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + float18 + "' != '" + 0.5f + "'", float18 == 0.5f);
-        org.junit.Assert.assertNotNull(dimension21);
+        assertNotNull(hierarchyBoundsListenerArray12);
+        assertArrayEquals(hierarchyBoundsListenerArray12, new java.awt.event.HierarchyBoundsListener[] {});
+        assertTrue(float16 == 1.0f, "'" + float16 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray17);
+        assertArrayEquals(hierarchyListenerArray17, new java.awt.event.HierarchyListener[] {});
+        assertTrue(float18 == 0.5f, "'" + float18 + "' != '" + 0.5f + "'");
+        assertNotNull(dimension21);
     }
 
     @Test
@@ -10573,29 +10573,29 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Rectangle rectangle60 = createCourseUI18.getBounds(rectangle59);
         java.awt.Rectangle rectangle61 = createCourseUI6.getBounds(rectangle59);
         createCourseUI0.setBounds(rectangle61);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 1 + "'", int3 == 1);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + 0 + "'", int8 == 0);
-        org.junit.Assert.assertTrue("'" + float10 + "' != '" + 0.5f + "'", float10 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(color15);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertTrue("'" + boolean27 + "' != '" + false + "'", boolean27 == false);
-        org.junit.Assert.assertNotNull(color28);
-        org.junit.Assert.assertNotNull(layoutManager29);
-        org.junit.Assert.assertEquals("'" + str40 + "' != '" + "frame428" + "'", str40, "frame428");
-        org.junit.Assert.assertNotNull(point44);
-        org.junit.Assert.assertNotNull(component45);
-        org.junit.Assert.assertNotNull(rectangle47);
-        org.junit.Assert.assertTrue("'" + boolean53 + "' != '" + false + "'", boolean53 == false);
-        org.junit.Assert.assertNotNull(insets54);
-        org.junit.Assert.assertTrue("'" + boolean58 + "' != '" + false + "'", boolean58 == false);
-        org.junit.Assert.assertNotNull(rectangle59);
-        org.junit.Assert.assertNotNull(rectangle60);
-        org.junit.Assert.assertNotNull(rectangle61);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true, "'" + boolean2 + "' != '" + true + "'");
+        assertTrue(int3 == 1, "'" + int3 + "' != '" + 1 + "'");
+        assertTrue(boolean7 == false, "'" + boolean7 + "' != '" + false + "'");
+        assertTrue(int8 == 0, "'" + int8 + "' != '" + 0 + "'");
+        assertTrue(float10 == 0.5f, "'" + float10 + "' != '" + 0.5f + "'");
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(color15);
+        assertTrue(boolean17 == false, "'" + boolean17 + "' != '" + false + "'");
+        assertTrue(boolean27 == false, "'" + boolean27 + "' != '" + false + "'");
+        assertNotNull(color28);
+        assertNotNull(layoutManager29);
+        assertEquals("'" + str40 + "' != '" + "frame428" + "'", str40, "frame428");
+        assertNotNull(point44);
+        assertNotNull(component45);
+        assertNotNull(rectangle47);
+        assertTrue(boolean53 == false, "'" + boolean53 + "' != '" + false + "'");
+        assertNotNull(insets54);
+        assertTrue(boolean58 == false, "'" + boolean58 + "' != '" + false + "'");
+        assertNotNull(rectangle59);
+        assertNotNull(rectangle60);
+        assertNotNull(rectangle61);
     }
 
     @Test
@@ -10614,10 +10614,10 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean15 = createCourseUI1.isMinimumSizeSet();
         createCourseUI1.enableInputMethods(false);
         createCourseUI1.show(false);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame429" + "'", str9, "frame429");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(point12);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
+        assertEquals("'" + str9 + "' != '" + "frame429" + "'", str9, "frame429");
+        assertNotNull(dimension10);
+        assertNull(point12);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
     }
 
     @Test
@@ -10632,12 +10632,12 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.pack();
         java.beans.PropertyChangeListener[] propertyChangeListenerArray7 = createCourseUI0.getPropertyChangeListeners("frame11");
         boolean boolean8 = createCourseUI0.isLightweight();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(mouseListenerArray4);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray7);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray7, new java.beans.PropertyChangeListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(mouseListenerArray4);
+        assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
+        assertNotNull(propertyChangeListenerArray7);
+        assertArrayEquals(propertyChangeListenerArray7, new java.beans.PropertyChangeListener[] {});
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -10653,9 +10653,9 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setVisible(true);
         createCourseUI0.layout();
         int int10 = createCourseUI0.getExtendedState();
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(container6);
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 0 + "'", int10 == 0);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
+        assertNotNull(container6);
+        assertTrue(int10 == 0, "'" + int10 + "' != '" + 0 + "'");
     }
 
     @Test
@@ -10669,8 +10669,8 @@ public class CreateCourseUIRegressionTest0 {
         java.lang.String str9 = createCourseUI1.getName();
         boolean boolean10 = createCourseUI1.isEnabled();
         createCourseUI1.dispose();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame430" + "'", str9, "frame430");
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + true + "'", boolean10 == true);
+        assertEquals("'" + str9 + "' != '" + "frame430" + "'", str9, "frame430");
+        assertTrue(boolean10 == true, "'" + boolean10 + "' != '" + true + "'");
     }
 
     @Test
@@ -10689,10 +10689,10 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.removeMouseWheelListener(mouseWheelListener11);
         java.awt.Graphics graphics13 = null;
         createCourseUI0.paintAll(graphics13);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
-        org.junit.Assert.assertNotNull(windowStateListenerArray8);
-        org.junit.Assert.assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
+        assertNotNull(windowStateListenerArray8);
+        assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
     }
 
     @Test
@@ -10721,16 +10721,16 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Component component28 = createCourseUI13.getComponentAt(point27);
         java.awt.Point point29 = createCourseUI1.getLocation(point27);
         java.awt.Dialog.ModalExclusionType modalExclusionType30 = createCourseUI1.getModalExclusionType();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame431" + "'", str9, "frame431");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray22);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray22, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(dimension23);
-        org.junit.Assert.assertNotNull(point27);
-        org.junit.Assert.assertNotNull(component28);
-        org.junit.Assert.assertNotNull(point29);
-        org.junit.Assert.assertTrue("'" + modalExclusionType30 + "' != '" + java.awt.Dialog.ModalExclusionType.NO_EXCLUDE + "'", modalExclusionType30.equals(java.awt.Dialog.ModalExclusionType.NO_EXCLUDE));
+        assertEquals("'" + str9 + "' != '" + "frame431" + "'", str9, "frame431");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertTrue(boolean21 == false, "'" + boolean21 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray22);
+        assertArrayEquals(mouseListenerArray22, new java.awt.event.MouseListener[] {});
+        assertNotNull(dimension23);
+        assertNotNull(point27);
+        assertNotNull(component28);
+        assertNotNull(point29);
+        assertTrue(modalExclusionType30.equals(java.awt.Dialog.ModalExclusionType.NO_EXCLUDE), "'" + modalExclusionType30 + "' != '" + java.awt.Dialog.ModalExclusionType.NO_EXCLUDE + "'");
     }
 
     @Test
@@ -10756,15 +10756,15 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean22 = createCourseUI0.action(event20, (java.lang.Object) 11);
         createCourseUI0.validate();
         java.awt.Dialog.ModalExclusionType modalExclusionType24 = createCourseUI0.getModalExclusionType();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNotNull(point14);
-        org.junit.Assert.assertNotNull(component15);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + modalExclusionType24 + "' != '" + java.awt.Dialog.ModalExclusionType.NO_EXCLUDE + "'", modalExclusionType24.equals(java.awt.Dialog.ModalExclusionType.NO_EXCLUDE));
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertNotNull(dimension10);
+        assertNotNull(point14);
+        assertNotNull(component15);
+        assertTrue(boolean19 == false, "'" + boolean19 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(modalExclusionType24.equals(java.awt.Dialog.ModalExclusionType.NO_EXCLUDE), "'" + modalExclusionType24 + "' != '" + java.awt.Dialog.ModalExclusionType.NO_EXCLUDE + "'");
     }
 
     @Test
@@ -10790,15 +10790,15 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean21 = createCourseUI8.isUndecorated();
         java.awt.Point point22 = createCourseUI8.location();
         createCourseUI0.setLocation(point22);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertNotNull(componentArray2);
-        org.junit.Assert.assertNull(image3);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(color15);
-        org.junit.Assert.assertNotNull(accessibleContext16);
-        org.junit.Assert.assertNotNull(component20);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + false + "'", boolean21 == false);
-        org.junit.Assert.assertNotNull(point22);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertNotNull(componentArray2);
+        assertNull(image3);
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(color15);
+        assertNotNull(accessibleContext16);
+        assertNotNull(component20);
+        assertTrue(boolean21 == false, "'" + boolean21 + "' != '" + false + "'");
+        assertNotNull(point22);
     }
 
     @Test
@@ -10821,10 +10821,10 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean18 = createCourseUI10.mouseUp(event15, (int) (byte) 1, (int) '4');
         java.awt.Rectangle rectangle19 = createCourseUI10.getBounds();
         createCourseUI0.setBounds(rectangle19);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
-        org.junit.Assert.assertNotNull(insets14);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(rectangle19);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
+        assertNotNull(insets14);
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(rectangle19);
     }
 
     @Test
@@ -10848,12 +10848,12 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Window.Type type18 = createCourseUI6.getType();
         createCourseUI3.setType(type18);
         createCourseUI0.setType(type18);
-        org.junit.Assert.assertNotNull(focusTraversalPolicy2);
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 1 + "'", int5 == 1);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(component15);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + type18 + "' != '" + java.awt.Window.Type.NORMAL + "'", type18.equals(java.awt.Window.Type.NORMAL));
+        assertNotNull(focusTraversalPolicy2);
+        assertTrue(int5 == 1, "'" + int5 + "' != '" + 1 + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(component15);
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(type18.equals(java.awt.Window.Type.NORMAL), "'" + type18 + "' != '" + java.awt.Window.Type.NORMAL + "'");
     }
 
     @Test
@@ -10888,15 +10888,15 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.setMenuBar(menuBar37);
         createCourseUI1.transferFocus();
         createCourseUI1.repaint(64, (int) (byte) -1, 0, 3);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame437" + "'", str9, "frame437");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertEquals("'" + str27 + "' != '" + "frame438" + "'", str27, "frame438");
-        org.junit.Assert.assertNotNull(dimension28);
-        org.junit.Assert.assertTrue("'" + boolean31 + "' != '" + true + "'", boolean31 == true);
-        org.junit.Assert.assertNull(inputMethodRequests32);
-        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + true + "'", boolean35 == true);
-        org.junit.Assert.assertTrue("'" + int36 + "' != '" + 32 + "'", int36 == 32);
+        assertEquals("'" + str9 + "' != '" + "frame437" + "'", str9, "frame437");
+        assertNotNull(dimension10);
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertEquals("'" + str27 + "' != '" + "frame438" + "'", str27, "frame438");
+        assertNotNull(dimension28);
+        assertTrue(boolean31 == true, "'" + boolean31 + "' != '" + true + "'");
+        assertNull(inputMethodRequests32);
+        assertTrue(boolean35 == true, "'" + boolean35 + "' != '" + true + "'");
+        assertTrue(int36 == 32, "'" + int36 + "' != '" + 32 + "'");
     }
 
     @Test
@@ -10911,11 +10911,11 @@ public class CreateCourseUIRegressionTest0 {
         int int5 = createCourseUI0.getComponentCount();
         boolean boolean6 = createCourseUI0.isLightweight();
         createCourseUI0.transferFocusDownCycle();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(mouseListenerArray4);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 1 + "'", int5 == 1);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(mouseListenerArray4);
+        assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
+        assertTrue(int5 == 1, "'" + int5 + "' != '" + 1 + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -10936,10 +10936,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.InputMethodListener inputMethodListener16 = null;
         createCourseUI1.removeInputMethodListener(inputMethodListener16);
         java.beans.PropertyChangeListener[] propertyChangeListenerArray19 = createCourseUI1.getPropertyChangeListeners("frame276");
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame439" + "'", str9, "frame439");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray19);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray19, new java.beans.PropertyChangeListener[] {});
+        assertEquals("'" + str9 + "' != '" + "frame439" + "'", str9, "frame439");
+        assertNotNull(dimension10);
+        assertNotNull(propertyChangeListenerArray19);
+        assertArrayEquals(propertyChangeListenerArray19, new java.beans.PropertyChangeListener[] {});
     }
 
     @Test
@@ -10980,15 +10980,15 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Point point44 = createCourseUI42.getLocation();
         java.awt.Component component45 = createCourseUI32.getComponentAt(point44);
         boolean boolean46 = createCourseUI1.contains(point44);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame440" + "'", str9, "frame440");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertTrue("'" + int22 + "' != '" + (-1) + "'", int22 == (-1));
-        org.junit.Assert.assertTrue("'" + modalExclusionType29 + "' != '" + java.awt.Dialog.ModalExclusionType.NO_EXCLUDE + "'", modalExclusionType29.equals(java.awt.Dialog.ModalExclusionType.NO_EXCLUDE));
-        org.junit.Assert.assertEquals("'" + str40 + "' != '" + "frame441" + "'", str40, "frame441");
-        org.junit.Assert.assertNotNull(point44);
-        org.junit.Assert.assertNotNull(component45);
-        org.junit.Assert.assertTrue("'" + boolean46 + "' != '" + true + "'", boolean46 == true);
+        assertEquals("'" + str9 + "' != '" + "frame440" + "'", str9, "frame440");
+        assertNotNull(dimension10);
+        assertTrue(boolean19 == false, "'" + boolean19 + "' != '" + false + "'");
+        assertTrue(int22 == (-1), "'" + int22 + "' != '" + (-1) + "'");
+        assertTrue(modalExclusionType29.equals(java.awt.Dialog.ModalExclusionType.NO_EXCLUDE), "'" + modalExclusionType29 + "' != '" + java.awt.Dialog.ModalExclusionType.NO_EXCLUDE + "'");
+        assertEquals("'" + str40 + "' != '" + "frame441" + "'", str40, "frame441");
+        assertNotNull(point44);
+        assertNotNull(component45);
+        assertTrue(boolean46 == true, "'" + boolean46 + "' != '" + true + "'");
     }
 
     @Test
@@ -11013,15 +11013,15 @@ public class CreateCourseUIRegressionTest0 {
         int int21 = createCourseUI0.checkImage(image8, (int) (short) -1, (int) (short) 100, (java.awt.image.ImageObserver) createCourseUI11);
         java.awt.Event event22 = null;
         boolean boolean24 = createCourseUI0.gotFocus(event22, (java.lang.Object) "frame375");
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(point7);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(insets15);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertNotNull(rectangle20);
-        org.junit.Assert.assertTrue("'" + int21 + "' != '" + 32 + "'", int21 == 32);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(point7);
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(insets15);
+        assertTrue(boolean19 == false, "'" + boolean19 + "' != '" + false + "'");
+        assertNotNull(rectangle20);
+        assertTrue(int21 == 32, "'" + int21 + "' != '" + 32 + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
     }
 
     @Test
@@ -11069,24 +11069,24 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Cursor cursor59 = null;
         createCourseUI1.setCursor(cursor59);
         boolean boolean61 = createCourseUI1.hasFocus();
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame442" + "'", str9, "frame442");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertNotNull(container13);
-        org.junit.Assert.assertNotNull(component14);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + true + "'", boolean17 == true);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertNotNull(component29);
-        org.junit.Assert.assertTrue("'" + float31 + "' != '" + 0.5f + "'", float31 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + false + "'", boolean34 == false);
-        org.junit.Assert.assertTrue("'" + boolean35 + "' != '" + false + "'", boolean35 == false);
-        org.junit.Assert.assertNotNull(color36);
-        org.junit.Assert.assertTrue("'" + boolean38 + "' != '" + true + "'", boolean38 == true);
-        org.junit.Assert.assertEquals("'" + str51 + "' != '" + "frame443" + "'", str51, "frame443");
-        org.junit.Assert.assertNotNull(dimension52);
-        org.junit.Assert.assertTrue("'" + boolean55 + "' != '" + false + "'", boolean55 == false);
-        org.junit.Assert.assertNotNull(component56);
-        org.junit.Assert.assertTrue("'" + boolean57 + "' != '" + true + "'", boolean57 == true);
-        org.junit.Assert.assertTrue("'" + boolean61 + "' != '" + false + "'", boolean61 == false);
+        assertEquals("'" + str9 + "' != '" + "frame442" + "'", str9, "frame442");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertNotNull(container13);
+        assertNotNull(component14);
+        assertTrue(boolean17 == true, "'" + boolean17 + "' != '" + true + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertNotNull(component29);
+        assertTrue(float31 == 0.5f, "'" + float31 + "' != '" + 0.5f + "'");
+        assertTrue(boolean34 == false, "'" + boolean34 + "' != '" + false + "'");
+        assertTrue(boolean35 == false, "'" + boolean35 + "' != '" + false + "'");
+        assertNotNull(color36);
+        assertTrue(boolean38 == true, "'" + boolean38 + "' != '" + true + "'");
+        assertEquals("'" + str51 + "' != '" + "frame443" + "'", str51, "frame443");
+        assertNotNull(dimension52);
+        assertTrue(boolean55 == false, "'" + boolean55 + "' != '" + false + "'");
+        assertNotNull(component56);
+        assertTrue(boolean57 == true, "'" + boolean57 + "' != '" + true + "'");
+        assertTrue(boolean61 == false, "'" + boolean61 + "' != '" + false + "'");
     }
 
     @Test
@@ -11110,16 +11110,16 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean19 = createCourseUI0.mouseUp(event16, 11, 5);
         java.awt.event.WindowFocusListener[] windowFocusListenerArray20 = createCourseUI0.getWindowFocusListeners();
         int int21 = createCourseUI0.getWidth();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNotNull(point14);
-        org.junit.Assert.assertNotNull(component15);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertNotNull(windowFocusListenerArray20);
-        org.junit.Assert.assertArrayEquals(windowFocusListenerArray20, new java.awt.event.WindowFocusListener[] {});
-        org.junit.Assert.assertTrue("'" + int21 + "' != '" + 500 + "'", int21 == 500);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertNotNull(dimension10);
+        assertNotNull(point14);
+        assertNotNull(component15);
+        assertTrue(boolean19 == false, "'" + boolean19 + "' != '" + false + "'");
+        assertNotNull(windowFocusListenerArray20);
+        assertArrayEquals(windowFocusListenerArray20, new java.awt.event.WindowFocusListener[] {});
+        assertTrue(int21 == 500, "'" + int21 + "' != '" + 500 + "'");
     }
 
     @Test
@@ -11133,10 +11133,10 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseListener[] mouseListenerArray4 = createCourseUI0.getMouseListeners();
         createCourseUI0.pack();
         boolean boolean6 = createCourseUI0.isVisible();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(mouseListenerArray4);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(mouseListenerArray4);
+        assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -11151,12 +11151,12 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.addNotify();
         createCourseUI0.firePropertyChange("frame184", (long) 5, (long) '#');
         java.beans.PropertyChangeListener[] propertyChangeListenerArray10 = createCourseUI0.getPropertyChangeListeners();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + true + "'", boolean2 == true);
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 1 + "'", int3 == 1);
-        org.junit.Assert.assertNull(graphics4);
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray10);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray10, new java.beans.PropertyChangeListener[] {});
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == true, "'" + boolean2 + "' != '" + true + "'");
+        assertTrue(int3 == 1, "'" + int3 + "' != '" + 1 + "'");
+        assertNull(graphics4);
+        assertNotNull(propertyChangeListenerArray10);
+        assertArrayEquals(propertyChangeListenerArray10, new java.beans.PropertyChangeListener[] {});
     }
 
     @Test
@@ -11177,11 +11177,11 @@ public class CreateCourseUIRegressionTest0 {
         java.beans.PropertyChangeListener[] propertyChangeListenerArray15 = createCourseUI0.getPropertyChangeListeners("frame88");
         createCourseUI0.validate();
         createCourseUI0.requestFocus();
-        org.junit.Assert.assertTrue("'" + boolean9 + "' != '" + false + "'", boolean9 == false);
-        org.junit.Assert.assertNotNull(color10);
-        org.junit.Assert.assertNotNull(layoutManager11);
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray15);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray15, new java.beans.PropertyChangeListener[] {});
+        assertTrue(boolean9 == false, "'" + boolean9 + "' != '" + false + "'");
+        assertNotNull(color10);
+        assertNotNull(layoutManager11);
+        assertNotNull(propertyChangeListenerArray15);
+        assertArrayEquals(propertyChangeListenerArray15, new java.beans.PropertyChangeListener[] {});
     }
 
     @Test
@@ -11205,16 +11205,16 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Rectangle rectangle20 = createCourseUI11.getBounds();
         int int21 = createCourseUI0.checkImage(image8, (int) (short) -1, (int) (short) 100, (java.awt.image.ImageObserver) createCourseUI11);
         java.awt.event.KeyListener[] keyListenerArray22 = createCourseUI0.getKeyListeners();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(point7);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(insets15);
-        org.junit.Assert.assertTrue("'" + boolean19 + "' != '" + false + "'", boolean19 == false);
-        org.junit.Assert.assertNotNull(rectangle20);
-        org.junit.Assert.assertTrue("'" + int21 + "' != '" + 32 + "'", int21 == 32);
-        org.junit.Assert.assertNotNull(keyListenerArray22);
-        org.junit.Assert.assertArrayEquals(keyListenerArray22, new java.awt.event.KeyListener[] {});
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(point7);
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(insets15);
+        assertTrue(boolean19 == false, "'" + boolean19 + "' != '" + false + "'");
+        assertNotNull(rectangle20);
+        assertTrue(int21 == 32, "'" + int21 + "' != '" + 32 + "'");
+        assertNotNull(keyListenerArray22);
+        assertArrayEquals(keyListenerArray22, new java.awt.event.KeyListener[] {});
     }
 
     @Test
@@ -11242,19 +11242,19 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             java.awt.Component component30 = createCourseUI1.add((java.awt.Component) createCourseUI16);
-            org.junit.Assert.fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
+            fail("Expected exception of type java.lang.IllegalArgumentException; message: adding a window to a container");
         } catch (java.lang.IllegalArgumentException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame445" + "'", str9, "frame445");
-        org.junit.Assert.assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
-        org.junit.Assert.assertNotNull(container13);
-        org.junit.Assert.assertNotNull(component14);
-        org.junit.Assert.assertEquals("'" + str24 + "' != '" + "frame446" + "'", str24, "frame446");
-        org.junit.Assert.assertNotNull(dimension25);
-        org.junit.Assert.assertNull(point27);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
-        org.junit.Assert.assertTrue("'" + boolean29 + "' != '" + false + "'", boolean29 == false);
+        assertEquals("'" + str9 + "' != '" + "frame445" + "'", str9, "frame445");
+        assertEquals("'" + str10 + "' != '" + "Create Course" + "'", str10, "Create Course");
+        assertNotNull(container13);
+        assertNotNull(component14);
+        assertEquals("'" + str24 + "' != '" + "frame446" + "'", str24, "frame446");
+        assertNotNull(dimension25);
+        assertNull(point27);
+        assertTrue(boolean28 == false, "'" + boolean28 + "' != '" + false + "'");
+        assertTrue(boolean29 == false, "'" + boolean29 + "' != '" + false + "'");
     }
 
     @Test
@@ -11273,10 +11273,10 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setJMenuBar(jMenuBar11);
         java.awt.event.WindowFocusListener windowFocusListener13 = null;
         createCourseUI0.removeWindowFocusListener(windowFocusListener13);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNull(jMenuBar7);
-        org.junit.Assert.assertNotNull(windowStateListenerArray8);
-        org.junit.Assert.assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNull(jMenuBar7);
+        assertNotNull(windowStateListenerArray8);
+        assertArrayEquals(windowStateListenerArray8, new java.awt.event.WindowStateListener[] {});
     }
 
     @Test
@@ -11316,15 +11316,15 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Rectangle rectangle42 = createCourseUI13.getBounds();
         createCourseUI5.setMaximizedBounds(rectangle42);
         createCourseUI0.setBounds(rectangle42);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(color23);
-        org.junit.Assert.assertNotNull(layoutManager24);
-        org.junit.Assert.assertEquals("'" + str35 + "' != '" + "frame448" + "'", str35, "frame448");
-        org.junit.Assert.assertNotNull(point39);
-        org.junit.Assert.assertNotNull(component40);
-        org.junit.Assert.assertNotNull(rectangle42);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(color23);
+        assertNotNull(layoutManager24);
+        assertEquals("'" + str35 + "' != '" + "frame448" + "'", str35, "frame448");
+        assertNotNull(point39);
+        assertNotNull(component40);
+        assertNotNull(rectangle42);
     }
 
     @Test
@@ -11357,17 +11357,17 @@ public class CreateCourseUIRegressionTest0 {
         int int29 = createCourseUI0.checkImage(image9, (int) '#', (int) '4', (java.awt.image.ImageObserver) component27);
         createCourseUI0.disable();
         java.awt.Point point32 = createCourseUI0.getMousePosition(true);
-        org.junit.Assert.assertTrue("'" + boolean3 + "' != '" + false + "'", boolean3 == false);
-        org.junit.Assert.assertNotNull(container6);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray21);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray21, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(dimension22);
-        org.junit.Assert.assertNotNull(point26);
-        org.junit.Assert.assertNotNull(component27);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + true + "'", boolean28 == true);
-        org.junit.Assert.assertTrue("'" + int29 + "' != '" + 32 + "'", int29 == 32);
-        org.junit.Assert.assertNull(point32);
+        assertTrue(boolean3 == false, "'" + boolean3 + "' != '" + false + "'");
+        assertNotNull(container6);
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray21);
+        assertArrayEquals(mouseListenerArray21, new java.awt.event.MouseListener[] {});
+        assertNotNull(dimension22);
+        assertNotNull(point26);
+        assertNotNull(component27);
+        assertTrue(boolean28 == true, "'" + boolean28 + "' != '" + true + "'");
+        assertTrue(int29 == 32, "'" + int29 + "' != '" + 32 + "'");
+        assertNull(point32);
     }
 
     @Test
@@ -11383,11 +11383,11 @@ public class CreateCourseUIRegressionTest0 {
         java.beans.PropertyChangeListener[] propertyChangeListenerArray7 = createCourseUI0.getPropertyChangeListeners("frame11");
         createCourseUI0.list();
         createCourseUI0.disable();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(mouseListenerArray4);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray7);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray7, new java.beans.PropertyChangeListener[] {});
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(mouseListenerArray4);
+        assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
+        assertNotNull(propertyChangeListenerArray7);
+        assertArrayEquals(propertyChangeListenerArray7, new java.beans.PropertyChangeListener[] {});
     }
 
     @Test
@@ -11407,10 +11407,10 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setState((int) (byte) -1);
         createCourseUI0.repaint();
         createCourseUI0.doLayout();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame451,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame451,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertEquals("'" + str9 + "' != '" + "com.example.CreateCourseUI[frame451,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str9, "com.example.CreateCourseUI[frame451,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
     }
 
     @Test
@@ -11425,11 +11425,11 @@ public class CreateCourseUIRegressionTest0 {
         int int5 = createCourseUI0.getComponentCount();
         createCourseUI0.firePropertyChange("frame153", (long) 12, (long) ' ');
         java.awt.Rectangle rectangle10 = createCourseUI0.getMaximizedBounds();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertNotNull(mouseListenerArray4);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertTrue("'" + int5 + "' != '" + 1 + "'", int5 == 1);
-        org.junit.Assert.assertNull(rectangle10);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertNotNull(mouseListenerArray4);
+        assertArrayEquals(mouseListenerArray4, new java.awt.event.MouseListener[] {});
+        assertTrue(int5 == 1, "'" + int5 + "' != '" + 1 + "'");
+        assertNull(rectangle10);
     }
 
     @Test
@@ -11444,10 +11444,10 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean8 = createCourseUI0.isLightweight();
         java.awt.event.MouseListener[] mouseListenerArray9 = createCourseUI0.getMouseListeners();
         int int10 = createCourseUI0.getDefaultCloseOperation();
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(mouseListenerArray9);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertTrue("'" + int10 + "' != '" + 3 + "'", int10 == 3);
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(mouseListenerArray9);
+        assertArrayEquals(mouseListenerArray9, new java.awt.event.MouseListener[] {});
+        assertTrue(int10 == 3, "'" + int10 + "' != '" + 3 + "'");
     }
 
     @Test
@@ -11472,15 +11472,15 @@ public class CreateCourseUIRegressionTest0 {
         boolean boolean20 = createCourseUI0.isEnabled();
         boolean boolean21 = createCourseUI0.isFocusCycleRoot();
         javax.swing.TransferHandler transferHandler22 = createCourseUI0.getTransferHandler();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component11);
-        org.junit.Assert.assertTrue("'" + float13 + "' != '" + 0.5f + "'", float13 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertNotNull(color18);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
-        org.junit.Assert.assertTrue("'" + boolean21 + "' != '" + true + "'", boolean21 == true);
-        org.junit.Assert.assertNull(transferHandler22);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component11);
+        assertTrue(float13 == 0.5f, "'" + float13 + "' != '" + 0.5f + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean17 == false, "'" + boolean17 + "' != '" + false + "'");
+        assertNotNull(color18);
+        assertTrue(boolean20 == true, "'" + boolean20 + "' != '" + true + "'");
+        assertTrue(boolean21 == true, "'" + boolean21 + "' != '" + true + "'");
+        assertNull(transferHandler22);
     }
 
     @Test
@@ -11501,12 +11501,12 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.event.MouseListener[] mouseListenerArray14 = createCourseUI10.getMouseListeners();
         createCourseUI10.pack();
         int int16 = createCourseUI0.getComponentZOrder((java.awt.Component) createCourseUI10);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(dimension9);
-        org.junit.Assert.assertTrue("'" + float11 + "' != '" + 0.5f + "'", float11 == 0.5f);
-        org.junit.Assert.assertNotNull(mouseListenerArray14);
-        org.junit.Assert.assertArrayEquals(mouseListenerArray14, new java.awt.event.MouseListener[] {});
-        org.junit.Assert.assertTrue("'" + int16 + "' != '" + (-1) + "'", int16 == (-1));
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(dimension9);
+        assertTrue(float11 == 0.5f, "'" + float11 + "' != '" + 0.5f + "'");
+        assertNotNull(mouseListenerArray14);
+        assertArrayEquals(mouseListenerArray14, new java.awt.event.MouseListener[] {});
+        assertTrue(int16 == (-1), "'" + int16 + "' != '" + (-1) + "'");
     }
 
     @Test
@@ -11520,9 +11520,9 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Event event4 = null;
         boolean boolean7 = createCourseUI0.mouseMove(event4, (int) ' ', (int) (short) 0);
         boolean boolean8 = createCourseUI0.isValidateRoot();
-        org.junit.Assert.assertTrue("'" + float1 + "' != '" + 0.5f + "'", float1 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + true + "'", boolean8 == true);
+        assertTrue(float1 == 0.5f, "'" + float1 + "' != '" + 0.5f + "'");
+        assertTrue(boolean7 == false, "'" + boolean7 + "' != '" + false + "'");
+        assertTrue(boolean8 == true, "'" + boolean8 + "' != '" + true + "'");
     }
 
     @Test
@@ -11543,13 +11543,13 @@ public class CreateCourseUIRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean17 = createCourseUI1.postEvent(event16);
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"id\" because \"evt\" is null");
+            fail("Expected exception of type java.lang.NullPointerException; message: Cannot read field \"id\" because \"evt\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame454" + "'", str9, "frame454");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertTrue("'" + boolean13 + "' != '" + false + "'", boolean13 == false);
+        assertEquals("'" + str9 + "' != '" + "frame454" + "'", str9, "frame454");
+        assertNotNull(dimension10);
+        assertTrue(boolean13 == false, "'" + boolean13 + "' != '" + false + "'");
     }
 
     @Test
@@ -11568,14 +11568,14 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI0.setBackground(color9);
         boolean boolean11 = createCourseUI0.isFocusTraversalPolicyProvider();
         java.awt.Insets insets12 = createCourseUI0.insets();
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + int2 + "' != '" + 0 + "'", int2 == 0);
-        org.junit.Assert.assertTrue("'" + float4 + "' != '" + 0.5f + "'", float4 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean7 + "' != '" + false + "'", boolean7 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(color9);
-        org.junit.Assert.assertTrue("'" + boolean11 + "' != '" + false + "'", boolean11 == false);
-        org.junit.Assert.assertNotNull(insets12);
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(int2 == 0, "'" + int2 + "' != '" + 0 + "'");
+        assertTrue(float4 == 0.5f, "'" + float4 + "' != '" + 0.5f + "'");
+        assertTrue(boolean7 == false, "'" + boolean7 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(color9);
+        assertTrue(boolean11 == false, "'" + boolean11 + "' != '" + false + "'");
+        assertNotNull(insets12);
     }
 
     @Test
@@ -11585,7 +11585,7 @@ public class CreateCourseUIRegressionTest0 {
         com.example.CreateCourseUI createCourseUI0 = new com.example.CreateCourseUI();
         createCourseUI0.setVisible(true);
         int int3 = createCourseUI0.getWidth();
-        org.junit.Assert.assertTrue("'" + int3 + "' != '" + 500 + "'", int3 == 500);
+        assertTrue(int3 == 500, "'" + int3 + "' != '" + 500 + "'");
     }
 
     @Test
@@ -11619,19 +11619,19 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.LayoutManager layoutManager32 = createCourseUI24.getLayout();
         createCourseUI21.setLayout(layoutManager32);
         boolean boolean34 = createCourseUI14.isFocusCycleRoot((java.awt.Container) createCourseUI21);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(color7);
-        org.junit.Assert.assertNotNull(accessibleContext8);
-        org.junit.Assert.assertNotNull(component12);
-        org.junit.Assert.assertTrue("'" + float17 + "' != '" + 1.0f + "'", float17 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray18);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray18, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + float19 + "' != '" + 0.5f + "'", float19 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + true + "'", boolean20 == true);
-        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
-        org.junit.Assert.assertNotNull(color31);
-        org.junit.Assert.assertNotNull(layoutManager32);
-        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + false + "'", boolean34 == false);
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(color7);
+        assertNotNull(accessibleContext8);
+        assertNotNull(component12);
+        assertTrue(float17 == 1.0f, "'" + float17 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray18);
+        assertArrayEquals(hierarchyListenerArray18, new java.awt.event.HierarchyListener[] {});
+        assertTrue(float19 == 0.5f, "'" + float19 + "' != '" + 0.5f + "'");
+        assertTrue(boolean20 == true, "'" + boolean20 + "' != '" + true + "'");
+        assertTrue(boolean30 == false, "'" + boolean30 + "' != '" + false + "'");
+        assertNotNull(color31);
+        assertNotNull(layoutManager32);
+        assertTrue(boolean34 == false, "'" + boolean34 + "' != '" + false + "'");
     }
 
     @Test
@@ -11664,16 +11664,16 @@ public class CreateCourseUIRegressionTest0 {
         createCourseUI1.resize(dimension31);
         java.awt.event.FocusListener focusListener33 = null;
         createCourseUI1.removeFocusListener(focusListener33);
-        org.junit.Assert.assertEquals("'" + str9 + "' != '" + "frame455" + "'", str9, "frame455");
-        org.junit.Assert.assertNotNull(dimension10);
-        org.junit.Assert.assertNull(point12);
-        org.junit.Assert.assertTrue("'" + boolean15 + "' != '" + false + "'", boolean15 == false);
-        org.junit.Assert.assertNotNull(jRootPane18);
-        org.junit.Assert.assertTrue("'" + boolean25 + "' != '" + false + "'", boolean25 == false);
-        org.junit.Assert.assertNotNull(color26);
-        org.junit.Assert.assertNotNull(accessibleContext27);
-        org.junit.Assert.assertEquals("'" + str28 + "' != '" + "com.example.CreateCourseUI[frame456,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str28, "com.example.CreateCourseUI[frame456,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
-        org.junit.Assert.assertNotNull(dimension31);
+        assertEquals("'" + str9 + "' != '" + "frame455" + "'", str9, "frame455");
+        assertNotNull(dimension10);
+        assertNull(point12);
+        assertTrue(boolean15 == false, "'" + boolean15 + "' != '" + false + "'");
+        assertNotNull(jRootPane18);
+        assertTrue(boolean25 == false, "'" + boolean25 + "' != '" + false + "'");
+        assertNotNull(color26);
+        assertNotNull(accessibleContext27);
+        assertEquals("'" + str28 + "' != '" + "com.example.CreateCourseUI[frame456,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]" + "'", str28, "com.example.CreateCourseUI[frame456,433,184,500x400,invalid,hidden,layout=java.awt.BorderLayout,title=Create Course,resizable,normal,defaultCloseOperation=EXIT_ON_CLOSE,rootPane=javax.swing.JRootPane[,0,0,0x0,invalid,layout=javax.swing.JRootPane$RootLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=16777673,maximumSize=,minimumSize=,preferredSize=],rootPaneCheckingEnabled=true]");
+        assertNotNull(dimension31);
     }
 
     @Test
@@ -11705,18 +11705,18 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Window.Type type26 = createCourseUI21.getType();
         createCourseUI13.setType(type26);
         createCourseUI0.setType(type26);
-        org.junit.Assert.assertTrue("'" + boolean1 + "' != '" + false + "'", boolean1 == false);
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + int8 + "' != '" + (-1) + "'", int8 == (-1));
-        org.junit.Assert.assertNotNull(propertyChangeListenerArray10);
-        org.junit.Assert.assertArrayEquals(propertyChangeListenerArray10, new java.beans.PropertyChangeListener[] {});
-        org.junit.Assert.assertTrue("'" + float14 + "' != '" + 0.5f + "'", float14 == 0.5f);
-        org.junit.Assert.assertTrue("'" + boolean17 + "' != '" + false + "'", boolean17 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + float24 + "' != '" + 1.0f + "'", float24 == 1.0f);
-        org.junit.Assert.assertNotNull(hierarchyListenerArray25);
-        org.junit.Assert.assertArrayEquals(hierarchyListenerArray25, new java.awt.event.HierarchyListener[] {});
-        org.junit.Assert.assertTrue("'" + type26 + "' != '" + java.awt.Window.Type.NORMAL + "'", type26.equals(java.awt.Window.Type.NORMAL));
+        assertTrue(boolean1 == false, "'" + boolean1 + "' != '" + false + "'");
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(int8 == (-1), "'" + int8 + "' != '" + (-1) + "'");
+        assertNotNull(propertyChangeListenerArray10);
+        assertArrayEquals(propertyChangeListenerArray10, new java.beans.PropertyChangeListener[] {});
+        assertTrue(float14 == 0.5f, "'" + float14 + "' != '" + 0.5f + "'");
+        assertTrue(boolean17 == false, "'" + boolean17 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(float24 == 1.0f, "'" + float24 + "' != '" + 1.0f + "'");
+        assertNotNull(hierarchyListenerArray25);
+        assertArrayEquals(hierarchyListenerArray25, new java.awt.event.HierarchyListener[] {});
+        assertTrue(type26.equals(java.awt.Window.Type.NORMAL), "'" + type26 + "' != '" + java.awt.Window.Type.NORMAL + "'");
     }
 
     @Test
@@ -11733,12 +11733,12 @@ public class CreateCourseUIRegressionTest0 {
         java.awt.Insets insets11 = createCourseUI0.insets();
         boolean boolean12 = createCourseUI0.isBackgroundSet();
         java.awt.event.WindowFocusListener[] windowFocusListenerArray13 = createCourseUI0.getWindowFocusListeners();
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(component9);
-        org.junit.Assert.assertNotNull(insets11);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + true + "'", boolean12 == true);
-        org.junit.Assert.assertNotNull(windowFocusListenerArray13);
-        org.junit.Assert.assertArrayEquals(windowFocusListenerArray13, new java.awt.event.WindowFocusListener[] {});
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(component9);
+        assertNotNull(insets11);
+        assertTrue(boolean12 == true, "'" + boolean12 + "' != '" + true + "'");
+        assertNotNull(windowFocusListenerArray13);
+        assertArrayEquals(windowFocusListenerArray13, new java.awt.event.WindowFocusListener[] {});
     }
 }
 

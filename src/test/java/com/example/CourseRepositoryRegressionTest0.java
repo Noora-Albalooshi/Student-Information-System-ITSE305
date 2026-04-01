@@ -1,8 +1,8 @@
-import org.junit.FixMethodOrder;
-import org.junit.Test;
-import org.junit.runners.MethodSorters;
+package com.example;
 
-@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
 public class CourseRepositoryRegressionTest0 {
 
     public static boolean debug = false;
@@ -13,7 +13,8 @@ public class CourseRepositoryRegressionTest0 {
         }
         for (int i = 0; i < expectedArray.length; i++) {
             if (expectedArray[i] != actualArray[i]) {
-                throw new AssertionError("Arrays differ at index " + i + ": " + expectedArray[i] + " != " + actualArray[i]);
+                throw new AssertionError(
+                        "Arrays differ at index " + i + ": " + expectedArray[i] + " != " + actualArray[i]);
             }
         }
     }
@@ -24,7 +25,7 @@ public class CourseRepositoryRegressionTest0 {
             System.out.format("%n%s%n", "CourseRepositoryRegressionTest0.test0001");
         com.example.CourseRepository courseRepository0 = new com.example.CourseRepository();
         java.lang.Class<?> wildcardClass1 = courseRepository0.getClass();
-        org.junit.Assert.assertNotNull(wildcardClass1);
+        assertNotNull(wildcardClass1);
     }
 
     @Test
@@ -35,7 +36,7 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course1 = null;
         courseRepository0.addCourse(course1);
         java.lang.Class<?> wildcardClass3 = courseRepository0.getClass();
-        org.junit.Assert.assertNotNull(wildcardClass3);
+        assertNotNull(wildcardClass3);
     }
 
     @Test
@@ -44,7 +45,7 @@ public class CourseRepositoryRegressionTest0 {
             System.out.format("%n%s%n", "CourseRepositoryRegressionTest0.test0003");
         java.lang.Object obj0 = new java.lang.Object();
         java.lang.Class<?> wildcardClass1 = obj0.getClass();
-        org.junit.Assert.assertNotNull(wildcardClass1);
+        assertNotNull(wildcardClass1);
     }
 
     @Test
@@ -54,8 +55,8 @@ public class CourseRepositoryRegressionTest0 {
         com.example.CourseRepository courseRepository0 = new com.example.CourseRepository();
         boolean boolean2 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass3 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertNotNull(wildcardClass3);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertNotNull(wildcardClass3);
     }
 
     @Test
@@ -69,11 +70,12 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean6 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
     }
 
     @Test
@@ -85,8 +87,8 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course3 = null;
         courseRepository0.addCourse(course3);
         java.lang.Class<?> wildcardClass5 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertNotNull(wildcardClass5);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertNotNull(wildcardClass5);
     }
 
     @Test
@@ -97,9 +99,9 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean2 = courseRepository0.existsById("");
         boolean boolean4 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass5 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass5);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass5);
     }
 
     @Test
@@ -112,7 +114,8 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean4 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -131,11 +134,12 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean8 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
     }
 
     @Test
@@ -150,7 +154,8 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean6 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -171,11 +176,12 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean10 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
     }
 
     @Test
@@ -188,9 +194,9 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course5 = null;
         courseRepository0.addCourse(course5);
         java.lang.Class<?> wildcardClass7 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass7);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass7);
     }
 
     @Test
@@ -207,7 +213,8 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean8 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -226,8 +233,8 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course7 = null;
         courseRepository0.addCourse(course7);
         java.lang.Class<?> wildcardClass9 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertNotNull(wildcardClass9);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertNotNull(wildcardClass9);
     }
 
     @Test
@@ -240,11 +247,11 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean6 = courseRepository0.existsById("hi!");
         boolean boolean8 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass9 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass9);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass9);
     }
 
     @Test
@@ -259,12 +266,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean8 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -278,10 +286,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course7 = null;
         courseRepository0.addCourse(course7);
         java.lang.Class<?> wildcardClass9 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass9);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass9);
     }
 
     @Test
@@ -295,8 +303,8 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course5 = null;
         courseRepository0.addCourse(course5);
         java.lang.Class<?> wildcardClass7 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertNotNull(wildcardClass7);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertNotNull(wildcardClass7);
     }
 
     @Test
@@ -312,11 +320,12 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean8 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
     }
 
     @Test
@@ -326,8 +335,8 @@ public class CourseRepositoryRegressionTest0 {
         com.example.CourseRepository courseRepository0 = new com.example.CourseRepository();
         boolean boolean2 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass3 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertNotNull(wildcardClass3);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertNotNull(wildcardClass3);
     }
 
     @Test
@@ -342,7 +351,7 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course5 = null;
         courseRepository0.addCourse(course5);
         java.lang.Class<?> wildcardClass7 = courseRepository0.getClass();
-        org.junit.Assert.assertNotNull(wildcardClass7);
+        assertNotNull(wildcardClass7);
     }
 
     @Test
@@ -357,7 +366,8 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean6 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -375,12 +385,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean8 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -394,11 +405,12 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean6 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
     }
 
     @Test
@@ -412,10 +424,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course7 = null;
         courseRepository0.addCourse(course7);
         java.lang.Class<?> wildcardClass9 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass9);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass9);
     }
 
     @Test
@@ -430,12 +442,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean8 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -451,13 +464,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean10 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -477,13 +491,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -500,12 +515,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean10 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -523,10 +539,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course11 = null;
         courseRepository0.addCourse(course11);
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -538,10 +554,10 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean4 = courseRepository0.existsById("hi!");
         boolean boolean6 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass7 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass7);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass7);
     }
 
     @Test
@@ -559,15 +575,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -580,11 +597,11 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean6 = courseRepository0.existsById("");
         boolean boolean8 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass9 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass9);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass9);
     }
 
     @Test
@@ -599,9 +616,9 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course7 = null;
         courseRepository0.addCourse(course7);
         java.lang.Class<?> wildcardClass9 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass9);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass9);
     }
 
     @Test
@@ -623,10 +640,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -641,12 +658,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean8 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -665,12 +683,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -684,12 +703,12 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean8 = courseRepository0.existsById("");
         boolean boolean10 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -703,12 +722,12 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean8 = courseRepository0.existsById("hi!");
         boolean boolean10 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -724,13 +743,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean10 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -742,8 +762,8 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course3 = null;
         courseRepository0.addCourse(course3);
         java.lang.Class<?> wildcardClass5 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertNotNull(wildcardClass5);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertNotNull(wildcardClass5);
     }
 
     @Test
@@ -761,13 +781,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -782,13 +803,13 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean10 = courseRepository0.existsById("hi!");
         boolean boolean12 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -803,11 +824,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course9 = null;
         courseRepository0.addCourse(course9);
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -822,13 +843,13 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean10 = courseRepository0.existsById("");
         boolean boolean12 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -848,10 +869,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -864,9 +885,9 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course5 = null;
         courseRepository0.addCourse(course5);
         java.lang.Class<?> wildcardClass7 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass7);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass7);
     }
 
     @Test
@@ -890,13 +911,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -913,14 +935,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -938,10 +961,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course11 = null;
         courseRepository0.addCourse(course11);
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -965,13 +988,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -995,13 +1019,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -1018,7 +1043,7 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course7 = null;
         courseRepository0.addCourse(course7);
         java.lang.Class<?> wildcardClass9 = courseRepository0.getClass();
-        org.junit.Assert.assertNotNull(wildcardClass9);
+        assertNotNull(wildcardClass9);
     }
 
     @Test
@@ -1033,13 +1058,13 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean10 = courseRepository0.existsById("");
         boolean boolean12 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -1052,7 +1077,8 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean4 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1072,11 +1098,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course11 = null;
         courseRepository0.addCourse(course11);
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -1092,13 +1118,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean10 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -1114,12 +1141,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course11 = null;
         courseRepository0.addCourse(course11);
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -1135,13 +1162,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean10 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -1157,10 +1185,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course9 = null;
         courseRepository0.addCourse(course9);
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -1177,12 +1205,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean10 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -1196,12 +1225,12 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean8 = courseRepository0.existsById("");
         boolean boolean10 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -1216,13 +1245,13 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean10 = courseRepository0.existsById("hi!");
         boolean boolean12 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -1238,14 +1267,14 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean12 = courseRepository0.existsById("");
         boolean boolean14 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -1260,11 +1289,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course9 = null;
         courseRepository0.addCourse(course9);
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -1281,14 +1310,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -1309,16 +1339,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -1340,13 +1371,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -1362,12 +1394,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course11 = null;
         courseRepository0.addCourse(course11);
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -1386,7 +1418,8 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean10 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -1411,15 +1444,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -1438,16 +1472,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -1467,10 +1502,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -1492,13 +1527,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -1516,15 +1552,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -1540,14 +1577,14 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean12 = courseRepository0.existsById("");
         boolean boolean14 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -1564,9 +1601,9 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course9 = null;
         courseRepository0.addCourse(course9);
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -1580,10 +1617,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course7 = null;
         courseRepository0.addCourse(course7);
         java.lang.Class<?> wildcardClass9 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass9);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass9);
     }
 
     @Test
@@ -1603,13 +1640,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -1627,13 +1665,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -1652,13 +1691,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -1677,13 +1716,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -1702,14 +1741,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -1726,13 +1766,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -1748,13 +1788,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean10 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -1771,15 +1812,15 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean14 = courseRepository0.existsById("hi!");
         boolean boolean16 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -1800,16 +1841,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -1827,15 +1869,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -1851,10 +1894,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course9 = null;
         courseRepository0.addCourse(course9);
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -1867,7 +1910,7 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course3 = null;
         courseRepository0.addCourse(course3);
         java.lang.Class<?> wildcardClass5 = courseRepository0.getClass();
-        org.junit.Assert.assertNotNull(wildcardClass5);
+        assertNotNull(wildcardClass5);
     }
 
     @Test
@@ -1888,14 +1931,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -1913,15 +1957,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -1942,13 +1987,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -1963,9 +2008,9 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course7 = null;
         courseRepository0.addCourse(course7);
         java.lang.Class<?> wildcardClass9 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass9);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass9);
     }
 
     @Test
@@ -1985,11 +2030,12 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
     }
 
     @Test
@@ -2008,16 +2054,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -2036,11 +2083,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -2059,12 +2106,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -2085,16 +2133,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -2113,16 +2162,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -2140,12 +2190,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -2161,14 +2211,14 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean12 = courseRepository0.existsById("hi!");
         boolean boolean14 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -2185,13 +2235,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -2211,17 +2261,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -2238,13 +2289,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -2263,14 +2314,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -2286,12 +2338,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course11 = null;
         courseRepository0.addCourse(course11);
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -2307,12 +2359,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course11 = null;
         courseRepository0.addCourse(course11);
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -2329,15 +2381,15 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean14 = courseRepository0.existsById("");
         boolean boolean16 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -2357,13 +2409,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -2387,13 +2440,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -2413,13 +2467,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -2436,9 +2491,9 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course9 = null;
         courseRepository0.addCourse(course9);
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -2459,14 +2514,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -2485,15 +2541,15 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -2514,12 +2570,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -2537,15 +2594,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -2567,15 +2625,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -2587,10 +2646,10 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean4 = courseRepository0.existsById("");
         boolean boolean6 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass7 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass7);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass7);
     }
 
     @Test
@@ -2604,12 +2663,12 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean8 = courseRepository0.existsById("hi!");
         boolean boolean10 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -2635,13 +2694,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -2660,17 +2720,17 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean18 = courseRepository0.existsById("hi!");
         boolean boolean20 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -2695,20 +2755,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -2727,9 +2788,9 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course11 = null;
         courseRepository0.addCourse(course11);
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -2748,9 +2809,9 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course11 = null;
         courseRepository0.addCourse(course11);
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -2768,8 +2829,8 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course9 = null;
         courseRepository0.addCourse(course9);
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -2788,16 +2849,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -2808,9 +2870,9 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean2 = courseRepository0.existsById("");
         boolean boolean4 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass5 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass5);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass5);
     }
 
     @Test
@@ -2837,16 +2899,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -2866,17 +2929,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -2888,10 +2952,10 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean4 = courseRepository0.existsById("hi!");
         boolean boolean6 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass7 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass7);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass7);
     }
 
     @Test
@@ -2906,11 +2970,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course9 = null;
         courseRepository0.addCourse(course9);
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -2935,14 +2999,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -2969,14 +3034,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -2990,11 +3056,12 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean6 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
     }
 
     @Test
@@ -3017,20 +3084,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -3049,15 +3117,15 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -3082,11 +3150,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -3104,15 +3172,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -3139,14 +3208,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -3163,14 +3233,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -3189,14 +3260,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -3217,18 +3289,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -3247,12 +3320,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -3273,17 +3347,17 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -3301,14 +3375,14 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -3328,15 +3402,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -3352,14 +3427,14 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean12 = courseRepository0.existsById("");
         boolean boolean14 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -3380,17 +3455,17 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -3404,8 +3479,8 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course5 = null;
         courseRepository0.addCourse(course5);
         java.lang.Class<?> wildcardClass7 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertNotNull(wildcardClass7);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertNotNull(wildcardClass7);
     }
 
     @Test
@@ -3419,12 +3494,12 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean8 = courseRepository0.existsById("hi!");
         boolean boolean10 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -3443,14 +3518,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -3467,13 +3543,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -3494,18 +3570,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -3523,16 +3600,16 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean16 = courseRepository0.existsById("hi!");
         boolean boolean18 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -3551,13 +3628,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -3580,16 +3657,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -3603,12 +3681,12 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean8 = courseRepository0.existsById("hi!");
         boolean boolean10 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -3621,11 +3699,11 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean6 = courseRepository0.existsById("hi!");
         boolean boolean8 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass9 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass9);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass9);
     }
 
     @Test
@@ -3640,13 +3718,13 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean10 = courseRepository0.existsById("hi!");
         boolean boolean12 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -3665,16 +3743,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -3691,15 +3770,15 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean14 = courseRepository0.existsById("");
         boolean boolean16 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -3714,11 +3793,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course9 = null;
         courseRepository0.addCourse(course9);
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -3737,11 +3816,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -3760,13 +3839,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -3790,10 +3869,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -3816,15 +3895,15 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -3836,10 +3915,10 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean4 = courseRepository0.existsById("");
         boolean boolean6 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass7 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass7);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass7);
     }
 
     @Test
@@ -3861,13 +3940,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -3890,20 +3970,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -3923,17 +4004,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -3955,19 +4037,20 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -3984,15 +4067,15 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean14 = courseRepository0.existsById("");
         boolean boolean16 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -4012,15 +4095,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -4035,13 +4119,13 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean10 = courseRepository0.existsById("");
         boolean boolean12 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -4062,11 +4146,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -4084,12 +4168,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -4112,20 +4196,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -4142,13 +4227,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -4165,15 +4250,15 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean14 = courseRepository0.existsById("");
         boolean boolean16 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -4194,14 +4279,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -4218,11 +4304,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course11 = null;
         courseRepository0.addCourse(course11);
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -4245,18 +4331,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -4285,17 +4372,17 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course29 = null;
         courseRepository0.addCourse(course29);
         java.lang.Class<?> wildcardClass31 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass31);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass31);
     }
 
     @Test
@@ -4312,14 +4399,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -4341,14 +4429,14 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -4371,18 +4459,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -4404,17 +4493,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -4432,14 +4522,14 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -4454,11 +4544,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course9 = null;
         courseRepository0.addCourse(course9);
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -4481,14 +4571,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -4507,17 +4598,17 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean18 = courseRepository0.existsById("");
         boolean boolean20 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -4536,16 +4627,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -4568,16 +4660,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -4597,15 +4690,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -4630,17 +4724,17 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course25 = null;
         courseRepository0.addCourse(course25);
         java.lang.Class<?> wildcardClass27 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass27);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass27);
     }
 
     @Test
@@ -4659,16 +4753,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -4692,17 +4787,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -4718,11 +4814,12 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean8 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
     }
 
     @Test
@@ -4743,15 +4840,15 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -4768,14 +4865,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -4800,18 +4898,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -4828,11 +4927,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course11 = null;
         courseRepository0.addCourse(course11);
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -4846,11 +4945,12 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean6 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
     }
 
     @Test
@@ -4875,18 +4975,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -4907,13 +5008,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -4932,7 +5033,8 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean10 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4952,7 +5054,8 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean8 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -4969,12 +5072,12 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean8 = courseRepository0.existsById("hi!");
         boolean boolean10 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -4998,14 +5101,14 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -5028,11 +5131,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -5051,17 +5154,17 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean18 = courseRepository0.existsById("");
         boolean boolean20 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -5081,15 +5184,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -5112,17 +5216,17 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course23 = null;
         courseRepository0.addCourse(course23);
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -5149,17 +5253,17 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course27 = null;
         courseRepository0.addCourse(course27);
         java.lang.Class<?> wildcardClass29 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass29);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass29);
     }
 
     @Test
@@ -5181,17 +5285,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -5213,19 +5318,20 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -5240,13 +5346,13 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean10 = courseRepository0.existsById("hi!");
         boolean boolean12 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -5264,16 +5370,16 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean16 = courseRepository0.existsById("hi!");
         boolean boolean18 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -5293,14 +5399,14 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -5323,14 +5429,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -5358,13 +5465,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -5388,17 +5496,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -5417,11 +5526,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -5442,16 +5551,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -5470,17 +5580,17 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean18 = courseRepository0.existsById("hi!");
         boolean boolean20 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -5500,11 +5610,12 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
     }
 
     @Test
@@ -5523,7 +5634,7 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course9 = null;
         courseRepository0.addCourse(course9);
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -5551,13 +5662,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -5575,12 +5687,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -5599,14 +5711,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -5628,14 +5741,14 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -5658,20 +5771,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -5694,12 +5808,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -5723,10 +5838,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -5754,13 +5869,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -5777,15 +5893,15 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean14 = courseRepository0.existsById("");
         boolean boolean16 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -5806,18 +5922,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -5840,20 +5957,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -5878,16 +5996,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -5907,15 +6026,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -5936,16 +6056,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -5966,19 +6087,19 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean22 = courseRepository0.existsById("");
         boolean boolean24 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -6006,13 +6127,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -6037,13 +6159,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -6061,16 +6183,16 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean16 = courseRepository0.existsById("");
         boolean boolean18 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -6091,12 +6213,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -6117,19 +6240,19 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean22 = courseRepository0.existsById("");
         boolean boolean24 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -6150,7 +6273,8 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -6172,17 +6296,17 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean18 = courseRepository0.existsById("");
         boolean boolean20 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -6195,11 +6319,11 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean6 = courseRepository0.existsById("hi!");
         boolean boolean8 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass9 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass9);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass9);
     }
 
     @Test
@@ -6219,14 +6343,14 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -6249,19 +6373,19 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course25 = null;
         courseRepository0.addCourse(course25);
         java.lang.Class<?> wildcardClass27 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertNotNull(wildcardClass27);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertNotNull(wildcardClass27);
     }
 
     @Test
@@ -6278,14 +6402,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -6307,20 +6432,20 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean24 = courseRepository0.existsById("");
         boolean boolean26 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass27 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertNotNull(wildcardClass27);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertNotNull(wildcardClass27);
     }
 
     @Test
@@ -6337,11 +6462,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course11 = null;
         courseRepository0.addCourse(course11);
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -6359,16 +6484,16 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean16 = courseRepository0.existsById("hi!");
         boolean boolean18 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -6386,12 +6511,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -6416,19 +6541,19 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course27 = null;
         courseRepository0.addCourse(course27);
         java.lang.Class<?> wildcardClass29 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertNotNull(wildcardClass29);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertNotNull(wildcardClass29);
     }
 
     @Test
@@ -6451,13 +6576,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -6478,13 +6603,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -6504,17 +6629,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -6532,16 +6658,16 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean16 = courseRepository0.existsById("");
         boolean boolean18 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -6556,13 +6682,13 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean10 = courseRepository0.existsById("");
         boolean boolean12 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -6583,18 +6709,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -6617,13 +6744,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -6643,12 +6770,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -6667,17 +6794,17 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean18 = courseRepository0.existsById("hi!");
         boolean boolean20 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -6700,12 +6827,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -6728,21 +6856,21 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean26 = courseRepository0.existsById("");
         boolean boolean28 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass29 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
-        org.junit.Assert.assertNotNull(wildcardClass29);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertTrue(boolean28 == false, "'" + boolean28 + "' != '" + false + "'");
+        assertNotNull(wildcardClass29);
     }
 
     @Test
@@ -6765,14 +6893,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -6794,20 +6923,20 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean24 = courseRepository0.existsById("hi!");
         boolean boolean26 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass27 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertNotNull(wildcardClass27);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertNotNull(wildcardClass27);
     }
 
     @Test
@@ -6831,17 +6960,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -6864,16 +6994,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -6900,14 +7031,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -6927,18 +7059,18 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean20 = courseRepository0.existsById("");
         boolean boolean22 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -6964,17 +7096,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -6987,11 +7120,11 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean6 = courseRepository0.existsById("");
         boolean boolean8 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass9 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass9);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass9);
     }
 
     @Test
@@ -7011,15 +7144,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -7039,18 +7173,18 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean20 = courseRepository0.existsById("hi!");
         boolean boolean22 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -7075,14 +7209,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -7100,11 +7235,12 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean10 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
     }
 
     @Test
@@ -7129,16 +7265,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -7155,13 +7292,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -7186,14 +7323,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -7218,9 +7356,9 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -7240,16 +7378,16 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -7270,11 +7408,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -7300,23 +7438,24 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean30 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
     }
 
     @Test
@@ -7334,14 +7473,14 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -7364,9 +7503,9 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -7386,18 +7525,18 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean20 = courseRepository0.existsById("");
         boolean boolean22 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -7424,12 +7563,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -7456,16 +7596,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -7485,16 +7626,16 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -7515,9 +7656,9 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -7542,20 +7683,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -7571,12 +7713,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course11 = null;
         courseRepository0.addCourse(course11);
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -7601,22 +7743,23 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean28 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
     }
 
     @Test
@@ -7633,15 +7776,15 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean14 = courseRepository0.existsById("hi!");
         boolean boolean16 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -7659,12 +7802,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -7684,18 +7827,18 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean20 = courseRepository0.existsById("");
         boolean boolean22 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -7717,18 +7860,18 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course23 = null;
         courseRepository0.addCourse(course23);
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -7748,18 +7891,18 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean20 = courseRepository0.existsById("");
         boolean boolean22 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -7790,12 +7933,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -7820,22 +7964,23 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean28 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
     }
 
     @Test
@@ -7852,14 +7997,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -7878,17 +8024,17 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean18 = courseRepository0.existsById("hi!");
         boolean boolean20 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -7913,16 +8059,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -7941,16 +8088,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -7969,17 +8117,17 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean18 = courseRepository0.existsById("");
         boolean boolean20 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -8000,19 +8148,19 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean22 = courseRepository0.existsById("hi!");
         boolean boolean24 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -8033,18 +8181,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -8065,15 +8214,15 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -8098,20 +8247,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -8131,16 +8281,16 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -8165,13 +8315,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -8190,16 +8340,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -8229,10 +8380,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course23 = null;
         courseRepository0.addCourse(course23);
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -8257,15 +8408,15 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course23 = null;
         courseRepository0.addCourse(course23);
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -8284,14 +8435,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -8317,10 +8469,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -8341,13 +8493,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -8372,20 +8524,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -8402,12 +8555,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean10 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -8437,13 +8591,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -8468,16 +8623,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -8499,15 +8655,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -8529,17 +8686,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -8561,19 +8719,20 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -8591,16 +8750,16 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean16 = courseRepository0.existsById("");
         boolean boolean18 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -8617,14 +8776,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -8651,9 +8811,9 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -8674,19 +8834,19 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean22 = courseRepository0.existsById("hi!");
         boolean boolean24 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -8709,16 +8869,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -8742,22 +8903,22 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean28 = courseRepository0.existsById("");
         boolean boolean30 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass31 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
-        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
-        org.junit.Assert.assertNotNull(wildcardClass31);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertTrue(boolean28 == false, "'" + boolean28 + "' != '" + false + "'");
+        assertTrue(boolean30 == false, "'" + boolean30 + "' != '" + false + "'");
+        assertNotNull(wildcardClass31);
     }
 
     @Test
@@ -8780,18 +8941,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -8820,12 +8982,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -8847,19 +9010,20 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -8878,15 +9042,15 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -8909,13 +9073,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -8935,12 +9099,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -8956,14 +9120,14 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean12 = courseRepository0.existsById("");
         boolean boolean14 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -8979,12 +9143,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course11 = null;
         courseRepository0.addCourse(course11);
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -9007,13 +9171,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -9035,12 +9199,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -9057,14 +9221,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -9089,16 +9254,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -9125,16 +9291,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -9155,17 +9322,17 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -9186,16 +9353,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -9222,16 +9390,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -9254,11 +9423,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -9272,12 +9441,12 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean8 = courseRepository0.existsById("hi!");
         boolean boolean10 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass11 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass11);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass11);
     }
 
     @Test
@@ -9302,11 +9471,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -9330,20 +9499,20 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course27 = null;
         courseRepository0.addCourse(course27);
         java.lang.Class<?> wildcardClass29 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertNotNull(wildcardClass29);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertNotNull(wildcardClass29);
     }
 
     @Test
@@ -9366,14 +9535,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -9392,13 +9562,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -9421,16 +9591,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -9452,20 +9623,20 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean24 = courseRepository0.existsById("hi!");
         boolean boolean26 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass27 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertNotNull(wildcardClass27);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertNotNull(wildcardClass27);
     }
 
     @Test
@@ -9487,15 +9658,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -9516,17 +9688,17 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -9546,18 +9718,18 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean20 = courseRepository0.existsById("hi!");
         boolean boolean22 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -9581,20 +9753,20 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course27 = null;
         courseRepository0.addCourse(course27);
         java.lang.Class<?> wildcardClass29 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertNotNull(wildcardClass29);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertNotNull(wildcardClass29);
     }
 
     @Test
@@ -9618,21 +9790,22 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
     }
 
     @Test
@@ -9657,12 +9830,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -9683,11 +9857,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -9709,17 +9883,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -9751,13 +9926,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -9780,20 +9956,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -9814,7 +9991,8 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -9835,15 +10013,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -9874,9 +10053,9 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course23 = null;
         courseRepository0.addCourse(course23);
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -9897,18 +10076,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -9927,15 +10107,15 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -9954,11 +10134,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -9979,18 +10159,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -10013,18 +10194,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -10042,14 +10224,14 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -10071,10 +10253,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -10102,20 +10284,20 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course31 = null;
         courseRepository0.addCourse(course31);
         java.lang.Class<?> wildcardClass33 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertNotNull(wildcardClass33);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertNotNull(wildcardClass33);
     }
 
     @Test
@@ -10137,20 +10319,20 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean24 = courseRepository0.existsById("hi!");
         boolean boolean26 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass27 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertNotNull(wildcardClass27);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertNotNull(wildcardClass27);
     }
 
     @Test
@@ -10175,18 +10357,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -10206,16 +10389,16 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -10241,12 +10424,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -10273,13 +10456,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course23 = null;
         courseRepository0.addCourse(course23);
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -10300,16 +10483,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -10327,13 +10511,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean12 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -10359,23 +10544,24 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean30 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
     }
 
     @Test
@@ -10393,15 +10579,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -10427,17 +10614,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -10467,10 +10655,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course23 = null;
         courseRepository0.addCourse(course23);
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -10494,19 +10682,20 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -10531,17 +10720,17 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course25 = null;
         courseRepository0.addCourse(course25);
         java.lang.Class<?> wildcardClass27 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass27);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass27);
     }
 
     @Test
@@ -10564,16 +10753,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -10596,15 +10786,15 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -10624,18 +10814,18 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean20 = courseRepository0.existsById("hi!");
         boolean boolean22 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -10659,16 +10849,16 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course23 = null;
         courseRepository0.addCourse(course23);
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -10692,21 +10882,22 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
     }
 
     @Test
@@ -10726,15 +10917,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -10759,20 +10951,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -10795,18 +10988,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -10825,14 +11019,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -10848,11 +11043,12 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean8 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
     }
 
     @Test
@@ -10876,19 +11072,20 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -10911,7 +11108,8 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -10936,20 +11134,20 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean24 = courseRepository0.existsById("");
         boolean boolean26 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass27 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertNotNull(wildcardClass27);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertNotNull(wildcardClass27);
     }
 
     @Test
@@ -10972,21 +11170,21 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean26 = courseRepository0.existsById("hi!");
         boolean boolean28 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass29 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
-        org.junit.Assert.assertNotNull(wildcardClass29);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertTrue(boolean28 == false, "'" + boolean28 + "' != '" + false + "'");
+        assertNotNull(wildcardClass29);
     }
 
     @Test
@@ -11005,16 +11203,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean16 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -11040,19 +11239,20 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -11069,15 +11269,15 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean14 = courseRepository0.existsById("");
         boolean boolean16 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -11100,20 +11300,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -11143,13 +11344,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -11167,16 +11369,16 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean16 = courseRepository0.existsById("");
         boolean boolean18 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -11208,13 +11410,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -11234,12 +11437,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -11256,15 +11459,15 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean14 = courseRepository0.existsById("");
         boolean boolean16 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -11278,10 +11481,10 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course7 = null;
         courseRepository0.addCourse(course7);
         java.lang.Class<?> wildcardClass9 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertNotNull(wildcardClass9);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertNotNull(wildcardClass9);
     }
 
     @Test
@@ -11302,18 +11505,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -11338,18 +11542,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -11373,15 +11578,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -11401,16 +11607,16 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -11437,11 +11643,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -11469,23 +11675,24 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean32 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
     }
 
     @Test
@@ -11508,17 +11715,17 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course23 = null;
         courseRepository0.addCourse(course23);
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -11543,11 +11750,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -11568,13 +11775,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -11596,16 +11803,16 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -11627,19 +11834,20 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -11662,18 +11870,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -11694,16 +11903,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -11723,17 +11933,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -11753,17 +11964,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -11783,17 +11995,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -11816,7 +12029,8 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
@@ -11840,18 +12054,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -11873,19 +12088,20 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -11909,14 +12125,14 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -11943,18 +12159,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -11976,18 +12193,18 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course23 = null;
         courseRepository0.addCourse(course23);
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -12011,18 +12228,18 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course25 = null;
         courseRepository0.addCourse(course25);
         java.lang.Class<?> wildcardClass27 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(wildcardClass27);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(wildcardClass27);
     }
 
     @Test
@@ -12045,21 +12262,21 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean26 = courseRepository0.existsById("hi!");
         boolean boolean28 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass29 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
-        org.junit.Assert.assertNotNull(wildcardClass29);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertTrue(boolean28 == false, "'" + boolean28 + "' != '" + false + "'");
+        assertNotNull(wildcardClass29);
     }
 
     @Test
@@ -12075,14 +12292,14 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean12 = courseRepository0.existsById("hi!");
         boolean boolean14 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -12104,15 +12321,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -12135,21 +12353,21 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean26 = courseRepository0.existsById("hi!");
         boolean boolean28 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass29 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
-        org.junit.Assert.assertNotNull(wildcardClass29);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertTrue(boolean28 == false, "'" + boolean28 + "' != '" + false + "'");
+        assertNotNull(wildcardClass29);
     }
 
     @Test
@@ -12175,21 +12393,22 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean28 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
     }
 
     @Test
@@ -12213,21 +12432,22 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
     }
 
     @Test
@@ -12246,15 +12466,15 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -12279,14 +12499,15 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
     }
 
     @Test
@@ -12309,18 +12530,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -12347,20 +12569,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean28 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -12384,15 +12607,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -12409,13 +12633,13 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -12437,15 +12661,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -12463,16 +12688,16 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean16 = courseRepository0.existsById("");
         boolean boolean18 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -12499,11 +12724,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -12531,15 +12756,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -12573,13 +12799,14 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean28 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
     }
 
     @Test
@@ -12599,18 +12826,18 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean20 = courseRepository0.existsById("");
         boolean boolean22 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -12631,9 +12858,9 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course13 = null;
         courseRepository0.addCourse(course13);
         java.lang.Class<?> wildcardClass15 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass15);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass15);
     }
 
     @Test
@@ -12662,9 +12889,9 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -12688,22 +12915,22 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean28 = courseRepository0.existsById("");
         boolean boolean30 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass31 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
-        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
-        org.junit.Assert.assertNotNull(wildcardClass31);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertTrue(boolean28 == false, "'" + boolean28 + "' != '" + false + "'");
+        assertTrue(boolean30 == false, "'" + boolean30 + "' != '" + false + "'");
+        assertNotNull(wildcardClass31);
     }
 
     @Test
@@ -12726,20 +12953,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -12757,16 +12985,16 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean16 = courseRepository0.existsById("hi!");
         boolean boolean18 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -12786,18 +13014,18 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean20 = courseRepository0.existsById("");
         boolean boolean22 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -12823,20 +13051,20 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course29 = null;
         courseRepository0.addCourse(course29);
         java.lang.Class<?> wildcardClass31 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertNotNull(wildcardClass31);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertNotNull(wildcardClass31);
     }
 
     @Test
@@ -12859,20 +13087,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -12891,17 +13120,17 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean18 = courseRepository0.existsById("hi!");
         boolean boolean20 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -12930,16 +13159,17 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
     }
 
     @Test
@@ -12957,14 +13187,14 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -12986,19 +13216,20 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -13020,15 +13251,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -13049,15 +13281,15 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course19 = null;
         courseRepository0.addCourse(course19);
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -13074,11 +13306,11 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course11 = null;
         courseRepository0.addCourse(course11);
         java.lang.Class<?> wildcardClass13 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertNotNull(wildcardClass13);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertNotNull(wildcardClass13);
     }
 
     @Test
@@ -13102,21 +13334,22 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
     }
 
     @Test
@@ -13135,17 +13368,17 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean18 = courseRepository0.existsById("");
         boolean boolean20 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass21 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass21);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass21);
     }
 
     @Test
@@ -13166,18 +13399,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -13208,12 +13442,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -13238,23 +13473,23 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean30 = courseRepository0.existsById("hi!");
         boolean boolean32 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass33 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
-        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
-        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
-        org.junit.Assert.assertNotNull(wildcardClass33);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertTrue(boolean28 == false, "'" + boolean28 + "' != '" + false + "'");
+        assertTrue(boolean30 == false, "'" + boolean30 + "' != '" + false + "'");
+        assertTrue(boolean32 == false, "'" + boolean32 + "' != '" + false + "'");
+        assertNotNull(wildcardClass33);
     }
 
     @Test
@@ -13282,12 +13517,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course23 = null;
         courseRepository0.addCourse(course23);
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -13312,22 +13547,23 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean28 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
     }
 
     @Test
@@ -13352,20 +13588,21 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
     }
 
     @Test
@@ -13386,17 +13623,17 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course21 = null;
         courseRepository0.addCourse(course21);
         java.lang.Class<?> wildcardClass23 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertNotNull(wildcardClass23);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertNotNull(wildcardClass23);
     }
 
     @Test
@@ -13420,16 +13657,16 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course23 = null;
         courseRepository0.addCourse(course23);
         java.lang.Class<?> wildcardClass25 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertNotNull(wildcardClass25);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertNotNull(wildcardClass25);
     }
 
     @Test
@@ -13452,19 +13689,19 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course25 = null;
         courseRepository0.addCourse(course25);
         java.lang.Class<?> wildcardClass27 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertNotNull(wildcardClass27);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertNotNull(wildcardClass27);
     }
 
     @Test
@@ -13491,25 +13728,25 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean34 = courseRepository0.existsById("");
         boolean boolean36 = courseRepository0.existsById("");
         java.lang.Class<?> wildcardClass37 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
-        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
-        org.junit.Assert.assertTrue("'" + boolean32 + "' != '" + false + "'", boolean32 == false);
-        org.junit.Assert.assertTrue("'" + boolean34 + "' != '" + false + "'", boolean34 == false);
-        org.junit.Assert.assertTrue("'" + boolean36 + "' != '" + false + "'", boolean36 == false);
-        org.junit.Assert.assertNotNull(wildcardClass37);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertTrue(boolean28 == false, "'" + boolean28 + "' != '" + false + "'");
+        assertTrue(boolean30 == false, "'" + boolean30 + "' != '" + false + "'");
+        assertTrue(boolean32 == false, "'" + boolean32 + "' != '" + false + "'");
+        assertTrue(boolean34 == false, "'" + boolean34 + "' != '" + false + "'");
+        assertTrue(boolean36 == false, "'" + boolean36 + "' != '" + false + "'");
+        assertNotNull(wildcardClass37);
     }
 
     @Test
@@ -13534,12 +13771,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean18 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -13563,22 +13801,22 @@ public class CourseRepositoryRegressionTest0 {
         boolean boolean28 = courseRepository0.existsById("");
         boolean boolean30 = courseRepository0.existsById("hi!");
         java.lang.Class<?> wildcardClass31 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
-        org.junit.Assert.assertTrue("'" + boolean20 + "' != '" + false + "'", boolean20 == false);
-        org.junit.Assert.assertTrue("'" + boolean22 + "' != '" + false + "'", boolean22 == false);
-        org.junit.Assert.assertTrue("'" + boolean24 + "' != '" + false + "'", boolean24 == false);
-        org.junit.Assert.assertTrue("'" + boolean26 + "' != '" + false + "'", boolean26 == false);
-        org.junit.Assert.assertTrue("'" + boolean28 + "' != '" + false + "'", boolean28 == false);
-        org.junit.Assert.assertTrue("'" + boolean30 + "' != '" + false + "'", boolean30 == false);
-        org.junit.Assert.assertNotNull(wildcardClass31);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
+        assertTrue(boolean20 == false, "'" + boolean20 + "' != '" + false + "'");
+        assertTrue(boolean22 == false, "'" + boolean22 + "' != '" + false + "'");
+        assertTrue(boolean24 == false, "'" + boolean24 + "' != '" + false + "'");
+        assertTrue(boolean26 == false, "'" + boolean26 + "' != '" + false + "'");
+        assertTrue(boolean28 == false, "'" + boolean28 + "' != '" + false + "'");
+        assertTrue(boolean30 == false, "'" + boolean30 + "' != '" + false + "'");
+        assertNotNull(wildcardClass31);
     }
 
     @Test
@@ -13597,15 +13835,15 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -13625,12 +13863,12 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -13648,15 +13886,16 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean14 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
     }
 
     @Test
@@ -13676,14 +13915,14 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course17 = null;
         courseRepository0.addCourse(course17);
         java.lang.Class<?> wildcardClass19 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass19);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass19);
     }
 
     @Test
@@ -13704,18 +13943,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -13737,17 +13977,18 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
     }
 
     @Test
@@ -13765,14 +14006,14 @@ public class CourseRepositoryRegressionTest0 {
         com.example.Course course15 = null;
         courseRepository0.addCourse(course15);
         java.lang.Class<?> wildcardClass17 = courseRepository0.getClass();
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertNotNull(wildcardClass17);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertNotNull(wildcardClass17);
     }
 
     @Test
@@ -13805,12 +14046,13 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean26 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
     }
 
     @Test
@@ -13834,19 +14076,20 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean24 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -13868,19 +14111,20 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("hi!");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 
     @Test
@@ -13901,18 +14145,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean20 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
     }
 
     @Test
@@ -13934,19 +14179,19 @@ public class CourseRepositoryRegressionTest0 {
         // The following exception was thrown during execution in test generation
         try {
             boolean boolean22 = courseRepository0.existsById("");
-            org.junit.Assert.fail("Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
+            fail(
+                    "Expected exception of type java.lang.NullPointerException; message: Cannot invoke \"com.example.Course.getCourseId()\" because \"course\" is null");
         } catch (java.lang.NullPointerException e) {
             // Expected exception.
         }
-        org.junit.Assert.assertTrue("'" + boolean2 + "' != '" + false + "'", boolean2 == false);
-        org.junit.Assert.assertTrue("'" + boolean4 + "' != '" + false + "'", boolean4 == false);
-        org.junit.Assert.assertTrue("'" + boolean6 + "' != '" + false + "'", boolean6 == false);
-        org.junit.Assert.assertTrue("'" + boolean8 + "' != '" + false + "'", boolean8 == false);
-        org.junit.Assert.assertTrue("'" + boolean10 + "' != '" + false + "'", boolean10 == false);
-        org.junit.Assert.assertTrue("'" + boolean12 + "' != '" + false + "'", boolean12 == false);
-        org.junit.Assert.assertTrue("'" + boolean14 + "' != '" + false + "'", boolean14 == false);
-        org.junit.Assert.assertTrue("'" + boolean16 + "' != '" + false + "'", boolean16 == false);
-        org.junit.Assert.assertTrue("'" + boolean18 + "' != '" + false + "'", boolean18 == false);
+        assertTrue(boolean2 == false, "'" + boolean2 + "' != '" + false + "'");
+        assertTrue(boolean4 == false, "'" + boolean4 + "' != '" + false + "'");
+        assertTrue(boolean6 == false, "'" + boolean6 + "' != '" + false + "'");
+        assertTrue(boolean8 == false, "'" + boolean8 + "' != '" + false + "'");
+        assertTrue(boolean10 == false, "'" + boolean10 + "' != '" + false + "'");
+        assertTrue(boolean12 == false, "'" + boolean12 + "' != '" + false + "'");
+        assertTrue(boolean14 == false, "'" + boolean14 + "' != '" + false + "'");
+        assertTrue(boolean16 == false, "'" + boolean16 + "' != '" + false + "'");
+        assertTrue(boolean18 == false, "'" + boolean18 + "' != '" + false + "'");
     }
 }
-
