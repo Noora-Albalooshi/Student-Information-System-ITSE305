@@ -8,7 +8,7 @@ public class User {
     private String password;
     private String role; // Student, Faculty, or Admin
     private String fullName;
-    private String ; // for students
+    private String major; // for students
     private double gpa; // for students
     private String department; // for faculty
 
