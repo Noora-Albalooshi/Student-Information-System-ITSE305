@@ -1,0 +1,26 @@
+name: Phase 5 Workflow
+
+on:
+  pull_request:
+    branches: [ "main" ]
+    types: [opened, synchronize, reopened, edited]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fail if PR title contains FAIL
+        run: |
+          TITLE="${{ github.event.pull_request.title }}"
+          echo "PR title: $TITLE"
+          if [[ "$TITLE" == *FAIL* ]]; then
+            echo "Intentional failure triggered from PR title."
+            exit 1
+          fi
+
+      - name: Confirm workflow ran
+        run: echo "Workflow triggered successfully"
