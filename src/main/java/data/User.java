@@ -4,7 +4,7 @@ package data;
  * Represents a user with email, password, role, full name, and extra info.
  */
 public class User {
-    private String ;
+    private String email;
     private String password;
     private String role; // Student, Faculty, or Admin
     private String fullName;
