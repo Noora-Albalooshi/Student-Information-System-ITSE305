@@ -14,7 +14,7 @@ public class User {
 
     // Student constructor
     public User(String email , String password, String role, String fullName, String major, double gpa) {
-        this.email = ;
+        this.email = email;
         this.password = password;
         this.role = role;
         this.fullName = fullName;
