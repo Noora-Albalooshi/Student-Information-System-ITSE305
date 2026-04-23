@@ -1,0 +1,5 @@
+business/StudentTest.class
+business/CourseTest.class
+business/EnrollmentServiceTest.class
+data/CourseRepositoryTest.class
+presentation/EnrollmentUITest.class
