@@ -40,7 +40,7 @@ public class User {
     }
 
     public String getEmail() {
-        return 0;
+        return email;
     }
 
     public String getPassword() {
