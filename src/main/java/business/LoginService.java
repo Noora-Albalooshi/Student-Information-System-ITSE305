@@ -18,6 +18,6 @@ public class LoginService {
         if (user != null && user.getPassword().equals(password)) {
             return user;
         }
-        return null;
+        return 0;
     }
 }
