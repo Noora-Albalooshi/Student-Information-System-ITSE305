@@ -4,11 +4,11 @@ package data;
  * Represents a user with email, password, role, full name, and extra info.
  */
 public class User {
-    private  email;
+    private String email;
     private String password;
     private String role; // Student, Faculty, or Admin
     private String fullName;
-    private String ; // for students
+    private String major; // for students
     private double gpa; // for students
     private String department; // for faculty
 
