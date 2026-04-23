@@ -65,4 +65,14 @@ class LoginServiceTest {
 
         assertNull(user);
     }
+    @Test
+    void testIntentionalFailure() {
+    UserRepository repo = new UserRepository();
+    LoginService service = new LoginService(repo);
+    
+    // BUG: This assertion will FAIL
+    // "ali@student.edu" with password "pass123" returns a user, NOT null
+    User user = service.authenticate("ali@student.edu", "pass123");
+    assertNull(user);  // This is WRONG – the user exists!
+}
 }
