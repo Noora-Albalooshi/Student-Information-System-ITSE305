@@ -6,7 +6,7 @@ import data.UserRepository;
 /**
  * Business Layer: Authenticates users by checking plain passwords.
  */
-public class  {
+public class LoginService {
     private UserRepository repo;
 
     public LoginService(UserRepository repo) {
