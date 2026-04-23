@@ -138,6 +138,6 @@ public class EnrollmentUI {
      */
     public static void main(String[] args) {
         EnrollmentUI ui = new EnrollmentUI();
-        ui.start();
+        ui.start(
     }
 }
