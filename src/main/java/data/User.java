@@ -13,7 +13,7 @@ public class User {
     private String department; // for faculty
 
     // Student constructor
-    public User(String email, String password, String role, String fullName, String major, double gpa) {
+    public User(String , String password, String role, String fullName, String major, double gpa) {
         this.email = email;
         this.password = password;
         this.role = role;
