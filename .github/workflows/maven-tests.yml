@@ -15,8 +15,9 @@ jobs:
 
       - name: Fail if PR title contains FAIL
         run: |
-          echo "PR title: ${{ github.event.pull_request.title }}"
-          if [[ "${{ github.event.pull_request.title }}" == *"FAIL"* ]]; then
+          TITLE="${{ github.event.pull_request.title }}"
+          echo "PR title: $TITLE"
+          if [[ "$TITLE" == *FAIL* ]]; then
             echo "Intentional failure triggered from PR title."
             exit 1
           fi
