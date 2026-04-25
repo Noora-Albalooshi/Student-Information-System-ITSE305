@@ -1,14 +1,12 @@
 package submitgrades;
-
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
+import org.junit.Test;
+import static org.junit.Assert.*;
 import javax.swing.SwingUtilities;
 
 public class SubmitGradesUITest {
 
     @Test
-    void testUI() throws Exception {
+    public void testUI() throws Exception {
         final SubmitGradesUI[] ui = new SubmitGradesUI[1];
 
         SwingUtilities.invokeAndWait(() -> ui[0] = new SubmitGradesUI());
@@ -19,4 +17,3 @@ public class SubmitGradesUITest {
         ui[0].dispose();
     }
 }
-

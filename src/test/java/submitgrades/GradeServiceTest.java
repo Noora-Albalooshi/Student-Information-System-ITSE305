@@ -1,12 +1,10 @@
 package submitgrades;
-
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
+import org.junit.Test;
+import static org.junit.Assert.*;
 public class GradeServiceTest {
 
     @Test
-    void testSuccess() {
+    public void testSuccess() {
         GradeService service = new GradeService();
         Grade g = service.submitGrade("CS101", "S001", "A", true, true);
 
@@ -14,7 +12,7 @@ public class GradeServiceTest {
     }
 
     @Test
-    void testDuplicate() {
+    public void testDuplicate() {
         GradeService service = new GradeService();
         service.submitGrade("CS101", "S001", "A", true, true);
 

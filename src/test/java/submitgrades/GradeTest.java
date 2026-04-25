@@ -1,12 +1,12 @@
 package submitgrades;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class GradeTest {
 
     @Test
-    void testConstructorAndGetters() {
+    public void testConstructorAndGetters() {
         Grade grade = new Grade("CS101", "S001", "A", true, true);
 
         assertEquals("CS101", grade.getCourseId());

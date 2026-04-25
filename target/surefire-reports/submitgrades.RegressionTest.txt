@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: submitgrades.GradeRepositoryTest
+Test set: submitgrades.RegressionTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s -- in submitgrades.GradeRepositoryTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 s -- in submitgrades.RegressionTest

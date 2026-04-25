@@ -1,12 +1,12 @@
 package submitgrades;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class GradeRepositoryTest {
 
     @Test
-    void testAddAndExists() {
+    public void testAddAndExists() {
         GradeRepository repo = new GradeRepository();
         repo.addGrade(new Grade("CS101", "S001", "A", true, true));
 
@@ -14,7 +14,7 @@ public class GradeRepositoryTest {
     }
 
     @Test
-    void testNotExists() {
+    public void testNotExists() {
         GradeRepository repo = new GradeRepository();
 
         assertFalse(repo.existsByStudentAndCourse("S002", "CS102"));
