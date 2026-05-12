@@ -16,8 +16,8 @@ public class CreateCourseUI extends JFrame {
     private CourseService service = new CourseService();
 
     public CreateCourseUI() {
-        setTitle("Create Course");
-        setSize(500, 400);
+        setTitle("Create Course UC");
+        setSize(520, 420);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
