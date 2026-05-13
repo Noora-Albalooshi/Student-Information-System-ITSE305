@@ -1,4 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
+<<<<<<< HEAD
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -6,10 +7,22 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
     <groupId>com.example</groupId>
     <artifactId>course-test</artifactId>
     <version>1.0-SNAPSHOT</version>
+=======
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>sis</groupId>
+    <artifactId>login-system</artifactId>
+    <version>1.0</version>
+>>>>>>> 904157d8d48e10ba87f68e49e461f80e9aff3d70
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+<<<<<<< HEAD
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -18,6 +31,24 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>5.10.2</version>
+=======
+    </properties>
+
+    <dependencies>
+        <!-- JUnit 5 (your hand-written tests) -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.10.0</version>
+            <scope>test</scope>
+        </dependency>
+        
+        <!-- JUnit 4 (for Randoop generated tests) -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+>>>>>>> 904157d8d48e10ba87f68e49e461f80e9aff3d70
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -27,8 +58,17 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
+<<<<<<< HEAD
                 <version>3.2.5</version>
             </plugin>
         </plugins>
     </build>
 </project>
+=======
+                <version>3.2.2</version>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
+>>>>>>> 904157d8d48e10ba87f68e49e461f80e9aff3d70
