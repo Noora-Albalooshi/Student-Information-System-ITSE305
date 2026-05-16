@@ -8,15 +8,20 @@ import java.util.Collection;
  */
 public class EnrollmentService {
     private CourseRepository courseRepository;
-    private Student currentStudent;
+   //  delet private Student currentStudent;
     
     public EnrollmentService() {
         this.courseRepository = new CourseRepository();
-        this.currentStudent = new Student("S001", "John Doe", "Computer Science", 2023);
+       //  delet this.currentStudent = new Student("S001", "John Doe", "Computer Science", 2023);
         // Student has completed Java Programming
-        this.currentStudent.addCompletedCourse("itcs113");
+      //  delet  this.currentStudent.addCompletedCourse("itcs113");
     }
-    
+    //add
+    private Student getStudentById(String studentId) {
+    Student student = new Student(studentId, "John Doe", "Computer Science", 2023);
+    student.addCompletedCourse("itcs113");
+    return student;
+}
     /**
      * Checks if student has already completed this course
      * @param student The student to check
@@ -64,6 +69,14 @@ public class EnrollmentService {
      * Main enrollment method implementing complete business logic flow.
      */
     public EnrollmentResult enrollInCourse(String studentId, String courseCode) {
+           if (studentId == null || studentId.trim().isEmpty() || courseCode == null || courseCode.trim().isEmpty()) {
+        return new EnrollmentResult(false,"Student ID and Course Code cannot be empty.");
+       
+        
+    }
+       //add
+         Student student = getStudentById(studentId);
+        
         // Step 1: Validate course existence
         Course course = courseRepository.findCourseByCode(courseCode);
         if (course == null) {
@@ -71,7 +84,8 @@ public class EnrollmentService {
         }
         
         // Step 2: NEW VALIDATION - Check if student already completed this course
-        if (hasCompletedCourse(currentStudent, courseCode)) {
+        // if (hasCompletedCourse(currentStudent, courseCode)) {
+        if (hasCompletedCourse(student, courseCode)){
             return new EnrollmentResult(false, 
                 String.format("Cannot enroll in %s - You have already completed this course.", courseCode));
         }
@@ -89,7 +103,8 @@ public class EnrollmentService {
         }
         
         // Step 5: Verify prerequisites
-        if (!checkPrerequisites(currentStudent, course)) {
+        //if (!checkPrerequisites(currentStudent, course)) {
+        if (!checkPrerequisites(student, course)) {
             return new EnrollmentResult(false, 
                 String.format("Prerequisites not met for %s. Required: %s", 
                     courseCode, course.getPrerequisites()));
@@ -111,6 +126,7 @@ public class EnrollmentService {
         return courseRepository.getAllCourses();
     }
     
+    /** delet
     public Student getCurrentStudent() {
         return currentStudent;
     }
