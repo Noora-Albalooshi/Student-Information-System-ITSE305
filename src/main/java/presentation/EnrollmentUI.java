@@ -25,8 +25,9 @@ public class EnrollmentUI {
      * Main menu display and interaction loop
      */
     public void start() {
-        Student student = enrollmentService.getCurrentStudent();
-        System.out.println("\n" + "=".repeat(60));
+        Student student = new Student("S001", "John Doe", "Computer Science", 2023);
+        student.addCompletedCourse("itcs113");    
+            System.out.println("\n" + "=".repeat(60));
         System.out.println("     COURSE ENROLLMENT SYSTEM");
         System.out.println("=".repeat(60));
         System.out.println("Welcome, " + student.getName() + "!");
@@ -35,6 +36,113 @@ public class EnrollmentUI {
         System.out.println("Completed Courses: " + student.getCompletedCourses());
         
         while (true) {
+            displayMenu();
+            int choice = getUserChoice();
+            
+            switch (choice) {
+                case 1:
+                    displayAvailableCourses();
+                    break;
+                case 2:
+                    enrollInCourse();
+                    break;
+                case 3:  
+                    System.out.println("\nThank you for using the Enrollment System!");
+                    scanner.close();
+                    return;
+                default:
+                    System.out.println("\n❌ Invalid choice. Please try again.");
+            }
+        }
+    }
+    
+    /**
+     * Displays the main menu options
+     */
+    private void displayMenu() {
+        System.out.println("\n" + "-".repeat(40));
+        System.out.println("MAIN MENU");
+        System.out.println("-".repeat(40));
+        System.out.println("1. View Available Courses");
+        System.out.println("2. Enroll in a Course");
+        System.out.println("3. Exit");  
+        System.out.print("\nEnter your choice (1-3): ");  
+    }
+    
+    /**
+     * Gets user input for menu choice
+     * @return The user's choice as integer
+     */
+    private int getUserChoice() {
+        try {
+            return Integer.parseInt(scanner.nextLine());
+        } catch (NumberFormatException e) {
+            return -1;
+        }
+    }
+    
+    /**
+     * Displays all available courses with their details
+     */
+    private void displayAvailableCourses() {
+        System.out.println("\n" + "-".repeat(60));
+        System.out.println("AVAILABLE COURSES");
+        System.out.println("-".repeat(60));
+        
+        Collection<Course> courses = enrollmentService.getAllCourses();
+         Student student = new Student("S001", "John Doe", "Computer Science", 2023);
+        student.addCompletedCourse("itcs113");
+        
+        for (Course course : courses) {
+            // Check if student completed this course
+            boolean completed = student.getCompletedCourses().stream()
+                .anyMatch(c -> c.equalsIgnoreCase(course.getCourseCode()));
+            
+            System.out.println(course.toString());
+            System.out.println("   Prerequisites: " + 
+                (course.getPrerequisites().isEmpty() ? "None" : course.getPrerequisites()));
+            System.out.println("   Available Seats: " + course.getAvailableSeats());
+            
+            // Show completion status
+            if (completed) {
+                System.out.println("   ⭐ COMPLETED - You have already passed this course");
+            }
+            
+            System.out.println();
+        }
+    }
+    
+    /**
+     * Handles the course enrollment process
+     */
+    private void enrollInCourse() {
+        System.out.println("\n" + "-".repeat(40));
+        System.out.println("COURSE ENROLLMENT");
+        System.out.println("-".repeat(40));
+        
+        System.out.print("\nEnter course code to enroll (e.g., itcs113): ");
+        String courseCode = scanner.nextLine().toLowerCase();
+        
+        EnrollmentService.EnrollmentResult result = 
+            enrollmentService.enrollInCourse("S001", courseCode);
+        
+        System.out.println("\n" + "=".repeat(50));
+        if (result.isSuccess()) {
+            System.out.println("✅ " + result.getMessage());
+        } else {
+            System.out.println("❌ " + result.getMessage());
+        }
+        System.out.println("=".repeat(50));
+    }
+    
+    /**
+     * Main method to start the application
+     */
+    public static void main(String[] args) {
+        EnrollmentUI ui = new EnrollmentUI();
+        ui.start();
+    }
+}        while (true) {
             displayMenu();
             int choice = getUserChoice();
             
