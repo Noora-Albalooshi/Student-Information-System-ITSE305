@@ -155,19 +155,19 @@ public class CourseRepository {
         
         // Validation Rule 1: Course exists
         if (course == null) {
-            System.out.println(COURSE_NOT_FOUND_DEBUG + courseCode);
+            //System.out.println(COURSE_NOT_FOUND_DEBUG + courseCode);
             return false;
         }
         
         // Validation Rule 2: Seats available
         if (course.getCurrentEnrollment() >= course.getMaxSeats()) {
-            System.out.println(NO_SEATS_DEBUG);
+           // System.out.println(NO_SEATS_DEBUG);
             return false;
         }
         
         // Validation Rule 3: Not already enrolled
         if (isStudentEnrolled(studentId, courseCode)) {
-            System.out.println(ALREADY_ENROLLED_DEBUG);
+            //System.out.println(ALREADY_ENROLLED_DEBUG);
             return false;
         }
         
@@ -179,7 +179,7 @@ public class CourseRepository {
         // Update course enrollment count
         course.setCurrentEnrollment(course.getCurrentEnrollment() + 1);
         
-        System.out.println(ENROLLMENT_SUCCESS_DEBUG + courseCode);
+        //System.out.println(ENROLLMENT_SUCCESS_DEBUG + courseCode);
         return true;
     }
 }
