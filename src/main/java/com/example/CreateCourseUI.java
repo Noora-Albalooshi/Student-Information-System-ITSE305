@@ -86,6 +86,11 @@ public class CreateCourseUI extends JFrame {
                 Course course = service.addCourse(id, name, credit, prerequisite);
 
                 outputArea.setText("Course added successfully!\n\n" + course.getCourseDetails());
+                //fixed the input fields to be empty insted of staying filled
+                idField.setText("");
+                nameField.setText("");
+                creditField.setText("");
+                prerequisiteField.setText("");
 
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(this,
