@@ -87,7 +87,10 @@ public class CreateCourseUI extends JFrame {
 
                 outputArea.setText("Course added successfully!\n\n" + course.getCourseDetails());
                 //fix the input fields to be empty instead of staying filled
-                //----------------
+                idField.setText("");
+                nameField.setText("");
+                creditField.setText("");
+                prerequisiteField.setText("");
 
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(this,
