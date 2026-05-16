@@ -8,6 +8,9 @@ public class GradeService {
         repository = new GradeRepository();
     }
 
+    private boolean isDuplicateGrade(String studentId, String courseId) {
+    return repository.existsByStudentAndCourse(studentId, courseId);
+}
     public Grade submitGrade(String courseId, String studentId, String finalGrade,
                              boolean enrolled, boolean assessmentsRecorded) {
 
@@ -31,7 +34,7 @@ public class GradeService {
             throw new IllegalArgumentException("All required assessments must be recorded before submitting the final grade.");
         }
 
-        if (repository.existsByStudentAndCourse(studentId, courseId)) {
+        if (isDuplicateGrade(studentId, courseId)) {
             throw new IllegalArgumentException("Grade already submitted for this student in this course.");
         }
 
