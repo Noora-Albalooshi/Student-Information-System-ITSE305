@@ -14,9 +14,9 @@ public class SubmitGradesUI extends JFrame {
     private JButton submitButton;
 
     // Connects the UI to the business layer
-    private GradeService service = new GradeService();
-
-    public SubmitGradesUI() {
+    private GradeService service;
+   public SubmitGradesUI(GradeService service) {
+    this.service = service;
         setTitle("Submit Grades");
         setSize(550, 420);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -114,6 +114,6 @@ public class SubmitGradesUI extends JFrame {
 
     // Starts the Swing application
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new SubmitGradesUI().setVisible(true));
+        SwingUtilities.invokeLater(() -> new SubmitGradesUI(new GradeService()).setVisible(true));
     }
 }
