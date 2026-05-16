@@ -3,7 +3,7 @@ package submitgrades;
 import java.util.ArrayList;
 
 public class GradeRepository {
-    private ArrayList<Grade> grades = new ArrayList<>();
+    private List<Grade> grades = new ArrayList<>();
 
     public void addGrade(Grade grade) {
         grades.add(grade);
